@@ -2683,9 +2683,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00091"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00092" id="brp-0092">
 					<brRelatedTo>
@@ -2725,9 +2723,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00092"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00093" id="brp-0093">
 					<brRelatedTo>
