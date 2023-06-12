@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<brDecision
+  brDecisionIdentNumber="BRDP-S1-00006"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../schema/flat/brdoc.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+  <brDecisionText>
+    <para>Currently Schemas to be used in which information set used:
+      <randomList>
+        <listItem><para>ACT</para></listItem>
+        <listItem><para>Business rule document</para></listItem>
+        <listItem><para>CIR</para></listItem>
+        <listItem><para>Crew/Operator information</para></listItem>
+        <listItem><para>Front matter</para></listItem>
+        <listItem><para>ICN metadata</para></listItem>
+        <listItem><para>Publication module</para></listItem>
+        </randomList>
+    </para>
+    <para>Whenever to complete all publications need more schema, use schema as stated as in S1000D.</para>
+  </brDecisionText>
+
+</brDecision>

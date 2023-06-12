@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../style/xsl/main.xsl"?>
+<!DOCTYPE dmodule [
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../schema/flat/brdoc.xsd"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+  <identAndStatusSection>
+    <dmAddress>
+      <dmIdent>
+        <dmCode
+          modelIdentCode="NC212ITNIAD"
+          systemDiffCode="ABC"
+          systemCode="E00"
+          subSystemCode="0"
+          subSubSystemCode="0"
+          assyCode="00"
+          disassyCode="00"
+          disassyCodeVariant="A0"
+          infoCode="024"
+          infoCodeVariant="A"
+          itemLocationCode="A"
+        />
+        <language
+          languageIsoCode="en"
+          countryIsoCode="EN"
+        />
+        <issueInfo
+        issueNumber="001"
+        inWork="01"
+        />
+      </dmIdent>
+      <dmAddressItems>
+        <issueDate year="2023" month="12" day="29"/>
+        <dmTitle>
+          <techName>BRDP</techName>
+          <infoName>list of BRDP used.</infoName>
+        </dmTitle>
+      </dmAddressItems>
+    </dmAddress>
+    <dmStatus issueType="new">
+      <security securityClassification="01"/>
+      <responsiblePartnerCompany>
+        <enterpriseName>PT Dirgantara Indonesia</enterpriseName>
+      </responsiblePartnerCompany>
+      <originator>
+        <enterpriseName>PT Dirgantara Indonesia</enterpriseName>
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>All</simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef>
+          <dmRefIdent>
+            <dmCode modelIdentCode="NC212ITNIAD" systemDiffCode="AAA" systemCode="D00"
+              subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00"
+              disassyCodeVariant="AA" infoCode="022" infoCodeVariant="A" itemLocationCode="D" />
+          </dmRefIdent>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <unverified/>
+      </qualityAssurance>
+
+
+    </dmStatus>
+  </identAndStatusSection>
+  <content>
+    <brDoc>
+      <brLevelledPara>
+        <brPara brDecisionPointUniqueIdent="BRDP-S1-00001">
+          <brRelatedTo>
+            <sourceDocRef>
+              <dmRef>
+                <dmRefIdent>
+                  <dmCode
+                    modelIdentCode="S1000D"
+                    systemDiffCode="A"
+                    systemCode="01"
+                    subSystemCode="0"
+                    subSubSystemCode="3"
+                    assyCode="00"
+                    disassyCode="00"
+                    disassyCodeVariant="00A"
+                    infoCode="040"
+                    infoCodeVariant="A"
+                    itemLocationCode="A"
+                  />
+                </dmRefIdent>
+              </dmRef>
+            </sourceDocRef>
+            <brCategoryGroup>
+              <brCategory brCategoryNumber="2">
+                <title>Product definition business rules</title>
+              </brCategory>
+            </brCategoryGroup>
+          </brRelatedTo>
+          <brDecisionPointContent>
+            <title>Use of "I" and "O"</title>
+            <brDecisionPointText>
+              <para>Product definition business rules cover the data module coding strategy related to how the Product is broken down (eg, physical or functional). Included is the definition of the model identification codes to be used in the Product and its subsystems. Supplier subsystems and identifications also need to be considered.</para>
+            </brDecisionPointText>
+          </brDecisionPointContent>
+          <brDecision brDecisionIdentNumber="NC212ITNIAD-BR-00001">
+            <brDecisionText>
+              <para>Never use I and O letter for identification of anything.</para>
+            </brDecisionText>
+          </brDecision>
+        </brPara>
+      </brLevelledPara>
+      <brLevelledPara>
+        <brPara brDecisionPointUniqueIdent="BRDP-S1-00002">
+          <brRelatedTo>
+            <sourceDocRef>
+              <dmRef>
+                <dmRefIdent>
+                  <dmCode
+                    modelIdentCode="S1000D"
+                    systemDiffCode="A"
+                    systemCode="01"
+                    subSystemCode="0"
+                    subSubSystemCode="3"
+                    assyCode="00"
+                    disassyCode="00"
+                    disassyCodeVariant="00A"
+                    infoCode="040"
+                    infoCodeVariant="A"
+                    itemLocationCode="A"
+                  />
+                </dmRefIdent>
+              </dmRef>
+            </sourceDocRef>
+            <brCategoryGroup>
+              <brCategory brCategoryNumber="4">
+                <title>Security</title>
+              </brCategory>
+            </brCategoryGroup>
+          </brRelatedTo>
+          <brDecisionPointContent>
+            <title>List of permitted CAGE codes and/or names to be used for the technical publication project:</title>
+            <brDecisionPointText>
+              <para>Create a list of permitted CAGE codes and/or names of the enterprises.</para>
+            </brDecisionPointText>
+          </brDecisionPointContent>
+          <brDecision brDecisionIdentNumber="NC212ITNIAD-BR-00002">
+            <brDecisionText>
+              <para>PTDI: S7812</para>
+            </brDecisionText>
+          </brDecision>
+        </brPara>
+      </brLevelledPara>
+      <brLevelledPara>
+        <brPara brDecisionPointUniqueIdent="BRDP-S1-00003">
+          <brRelatedTo>
+            <sourceDocRef>
+              <dmRef>
+                <dmRefIdent>
+                  <dmCode
+                    modelIdentCode="S1000D"
+                    systemDiffCode="A"
+                    systemCode="02"
+                    subSystemCode="0"
+                    subSubSystemCode="5"
+                    assyCode="01"
+                    disassyCode="00"
+                    disassyCodeVariant="00A"
+                    infoCode="040"
+                    infoCodeVariant="A"
+                    itemLocationCode="A"
+                  />
+                </dmRefIdent>
+              </dmRef>
+            </sourceDocRef>
+            <brCategoryGroup>
+              <brCategory brCategoryNumber="2">
+                <title>Allocation of Product model identification code</title>
+                <brCategoryDescription>
+                  <para>Decide which model identification codes to use for the Product and/or project.</para>
+                </brCategoryDescription>
+              </brCategory>
+            </brCategoryGroup>
+          </brRelatedTo>
+          <brDecisionPointContent>
+            <title>Issue of S1000D to be used</title>
+            <brDecisionPointText>
+              <para>Decide which issue or issues of S1000D to be used.</para>
+            </brDecisionPointText>
+          </brDecisionPointContent>
+          <brDecision brDecisionIdentNumber="NC212ITNIAD-BR-00001">
+            <brDecisionText>
+              <para>use S1000D issue 5.0</para>
+            </brDecisionText>
+          </brDecision>
+        </brPara>
+      </brLevelledPara>
+      <brLevelledPara>
+        <brPara brDecisionPointUniqueIdent="BRDP-S1-00004">
+          <brRelatedTo>
+            <sourceDocRef>
+              <dmRef>
+                <dmRefIdent>
+                  <dmCode
+                    modelIdentCode="S1000D"
+                    systemDiffCode="A"
+                    systemCode="02"
+                    subSystemCode="0"
+                    subSubSystemCode="5"
+                    assyCode="01"
+                    disassyCode="00"
+                    disassyCodeVariant="00A"
+                    infoCode="040"
+                    infoCodeVariant="A"
+                    itemLocationCode="A"
+                  />
+                </dmRefIdent>
+              </dmRef>
+            </sourceDocRef>
+            <brCategoryGroup>
+              <brCategory brCategoryNumber="2">
+                <title>Allocation of Product model identification code</title>
+                <brCategoryDescription>
+                  <para>Decide which model identification codes to use for the Product and/or project.</para>
+                </brCategoryDescription>
+              </brCategory>
+            </brCategoryGroup>
+          </brRelatedTo>
+          <brDecisionPointContent>
+            <title>Information sets to be used:</title>
+            <brDecisionPointText>
+              <para>Decide which information sets, given in S1000D and/or project specific, to be used.</para>
+            </brDecisionPointText>
+          </brDecisionPointContent>
+          <brDecision brDecisionIdentNumber="NC212ITNIAD-BR-00004">
+            <brDecisionText>
+              <para>list of information sets to be used for PTDI manuals:
+                <randomList>
+                  <listItem><para>Crew/Operator information</para></listItem>
+                  <listItem><para>Description and operation</para></listItem>
+                  <listItem><para>Common information and data</para></listItem>
+                  <listItem><para>Aircrew information</para></listItem>
+                </randomList>
+              </para>
+            </brDecisionText>
+          </brDecision>
+        </brPara>
+      </brLevelledPara>
+      <brLevelledPara>
+        <brPara brDecisionPointUniqueIdent="BRDP-S1-00332">
+          <brRelatedTo>
+            <sourceDocRef>
+              <dmRef>
+                <dmRefIdent>
+                  <dmCode
+                    modelIdentCode="S1000D"
+                    systemDiffCode="A"
+                    systemCode="04"
+                    subSystemCode="0"
+                    subSubSystemCode="3"
+                    assyCode="01"
+                    disassyCode="00"
+                    disassyCodeVariant="00A"
+                    infoCode="040"
+                    infoCodeVariant="A"
+                    itemLocationCode="A"
+                  />
+                </dmRefIdent>
+              </dmRef>
+            </sourceDocRef>
+            <brCategoryGroup>
+              <brCategory brCategoryNumber="2">
+                <title>Allocation of Product model identification code</title>
+                <brCategoryDescription>
+                  <para>Decide which model identification codes to use for the Product and/or project.</para>
+                </brCategoryDescription>
+              </brCategory>
+            </brCategoryGroup>
+          </brRelatedTo>
+          <brDecisionPointContent>
+            <title>Product definition business rules</title>
+            <brDecisionPointText>
+              <para>Product definition business rules cover the data module coding strategy related to how the Product is broken down (eg, physical or functional). Included is the definition of the model identification codes to be used in the Product and its subsystems. Supplier subsystems and identifications also need to be considered.</para>
+            </brDecisionPointText>
+          </brDecisionPointContent>
+          <brDecision brDecisionIdentNumber="NC212ITNIAD-BR-00332">
+            <brDecisionText>
+              <para>
+                the model identification code is NC212ITNIAD.
+              </para>
+            </brDecisionText>
+          </brDecision>
+        </brPara>
+      </brLevelledPara>
+    </brDoc>
+  </content>
+</dmodule>

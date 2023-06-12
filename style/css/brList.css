@@ -1,0 +1,29 @@
+table{
+  table-layout: fixed;
+  width: 100%;
+}
+th:nth-child(1){
+  width: 20px;
+}
+th:nth-child(2){
+  width: 85px;
+}
+th:nth-child(3){
+  max-width: 40%;
+}
+th:nth-child(4){
+  max-width: 40%;
+}
+th:nth-child(5){
+  width: 100px;
+}
+
+table td {
+  overflow: hidden;
+  white-space: nowrap;
+  height: 20px;
+}
+
+.dump_blue{
+  border: 1px solid blue;
+}

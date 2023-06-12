@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:msxsl="urn:schemas-microsoft-com:xslt"
+  xmlns:user="http://mycompany.com/mynamespace">
+
+  <xsl:template match="para">
+    
+    <!-- <xsl:variable name="isShowDmCode" select="'yes'"/> -->
+    <!-- <xsl:param name="isShowDmCode"/> -->
+    <p>
+      <xsl:apply-templates>
+        <xsl:with-param name="isShowDmCode" select="'yes'"/>
+        <xsl:with-param name="isShowDmCode">YES</xsl:with-param>
+      </xsl:apply-templates>
+      <!-- <xsl:apply-templates /> -->
+      <!-- <xsl:choose>
+        <xsl:when test="/descendant::dmCode/ancestor::listItem">
+          <xsl:apply-templates>
+            <xsl:with-param name="isShowDmCode" select="'yes'"/>
+            <xsl:with-param name="isShowDmCode">YES</xsl:with-param>
+          </xsl:apply-templates>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:apply-templates/>
+        </xsl:otherwise>
+      </xsl:choose> -->
+    </p>
+  </xsl:template>
+
+  <xsl:template match="randomList">
+    <ul>
+      <xsl:for-each select="listItem">
+        <li>
+          <xsl:apply-templates />
+        </li>
+      </xsl:for-each>
+    </ul>
+  </xsl:template>
+
+  <xsl:template match="sequentialList">
+    <ol>
+      <xsl:for-each select="listItem">
+        <li>
+          <xsl:apply-templates />
+        </li>
+      </xsl:for-each>
+    </ol>
+  </xsl:template>
+
+  <xsl:template match="listItem">
+    <xsl:apply-templates />
+  </xsl:template>
+
+  <xsl:include href="commonConstruct/referencing/dmRef.xsl" />
+</xsl:stylesheet>

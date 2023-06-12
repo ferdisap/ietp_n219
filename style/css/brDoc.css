@@ -1,0 +1,51 @@
+body {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#close-detail{
+  position: fixed;
+  z-index: 10;
+  right: 15px;
+  width: 30px;
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mt-0 {
+  margin-top: 0
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.9rem;
+}
+#container-detail > div{
+  position: fixed;
+  overflow: auto;
+  height: 95vh;
+}
+#container-list{
+  position: relative;
+}
+
+.dump_red{
+  border: 1px solid red;
+}
+.p3{
+  padding: 3px;
+}

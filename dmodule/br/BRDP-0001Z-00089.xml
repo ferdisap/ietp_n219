@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<brDecision
+  brDecisionIdentNumber="BRDP-S1-00089"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../schema/flat/brdoc.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+  <brDecisionText>
+    <para>Use the S1000D example:
+      <sequentialList>
+        <listItem><para>New. Developed to support situation X.</para></listItem>
+        <listItem><para>Revised to incorporated modification XYZ.</para></listItem>
+        <listItem><para>Deleted. Data module no longer required.</para></listItem>
+      </sequentialList>
+    </para>
+  </brDecisionText>
+  
+</brDecision>

@@ -1,0 +1,13 @@
+#brDecision {
+  padding-left: 3px;
+  padding-right: 3px;
+  border: 5px solid green;
+  width: 100%;
+  height: auto;
+  position: sticky;
+  top: 0px;
+  background-color: aqua;
+}
+#container-detail #brPara{
+ background-color: white; 
+}
