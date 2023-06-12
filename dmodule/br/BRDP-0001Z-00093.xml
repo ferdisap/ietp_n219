@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <brDecision
-  brDecisionIdentNumber="BRDP-S1-00092"
+  brDecisionIdentNumber="BRDP-S1-00093"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../schema/flat/brdoc.xsd"
   xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The use of change marks on table is "marking individual rows within a table and the table title", refer to Chap 3.9.5.2.1.1 para_2.5.5.</para>
+    <para>The use change mark on the figures is "the figure and the figure title", refer to Chap 3.9.5.2.1.1 para_2.6.</para>
   </brDecisionText>
   
 </brDecision>
