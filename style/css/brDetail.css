@@ -11,3 +11,7 @@
 #container-detail #brPara{
  background-color: white; 
 }
+
+#container-detail li p {
+  margin-top: -1em;
+}

@@ -6,7 +6,7 @@ th:nth-child(1){
   width: 20px;
 }
 th:nth-child(2){
-  width: 100px;
+  width: 110px;
 }
 th:nth-child(3){
   max-width: 40%;
@@ -15,7 +15,7 @@ th:nth-child(4){
   max-width: 40%;
 }
 th:nth-child(5){
-  width: 100px;
+  width: 130px;
 }
 
 table td {
