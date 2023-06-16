@@ -3449,9 +3449,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00120"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00121" id="brp-0121">
 					<brRelatedTo>
@@ -3491,7 +3489,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00121">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -3533,7 +3531,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00122">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -3563,11 +3561,9 @@ is managed by both the creator and the customer.</para>
 						<s1000dSchemas appliccrossreftableXsd="0" brexXsd="1" checklistXsd="1" commentXsd="0" comrepXsd="1" condcrossreftableXsd="0" containerXsd="0" crewXsd="1" ddnXsd="0" descriptXsd="1" dmlXsd="0" faultXsd="1" frontmatterXsd="0" ipdXsd="0" learningXsd="1" pmXsd="0" prdcrossreftableXsd="0" procedXsd="1" processXsd="1" sbXsd="1" schedulXsd="1" scocontentXsd="1" scormcontentpackageXsd="0" updateXsd="0" wrngdataXsd="0" wrngfldsXsd="0" brdocXsd="1" icnmetadataXsd="0"/>
 					</brRelatedTo>
 					<brDecisionPointContent>
-						<title>Use of applicability information of various
-table child elements - attribute applicRefId of the element &#60;table&#62;:</title>
+						<title>Use of applicability information of various table child elements - attribute applicRefId of the element &#60;table&#62;:</title>
 						<brDecisionPointText>
-							<para>Decide whether and how to use the attribute applicRefId of various &#60;table&#62; child
-elements. The child elements can be differentiated based on Product configuration.</para>
+							<para>Decide whether and how to use the attribute applicRefId of various &#60;table&#62; child elements. The child elements can be differentiated based on Product configuration.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
@@ -3577,9 +3573,7 @@ elements. The child elements can be differentiated based on Product configuratio
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00123"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00128" id="brp-0128">
 					<brRelatedTo>
@@ -3638,9 +3632,7 @@ elements. The child elements can be differentiated based on Product configuratio
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00128"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00129" id="brp-0129">
 					<brRelatedTo>
@@ -3685,7 +3677,7 @@ elements. The child elements can be differentiated based on Product configuratio
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00129">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -3731,9 +3723,7 @@ elements. The child elements can be differentiated based on Product configuratio
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00130"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00131" id="brp-0131">
 					<brRelatedTo>
@@ -3783,7 +3773,7 @@ elements. The child elements can be differentiated based on Product configuratio
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00131">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -3843,9 +3833,7 @@ elements. The child elements can be differentiated based on Product configuratio
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00132"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00133" id="brp-0133">
 					<brRelatedTo>
@@ -3891,9 +3879,7 @@ elements. The child elements can be differentiated based on Product configuratio
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00133"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00134" id="brp-0134">
 					<brRelatedTo>
@@ -3939,9 +3925,7 @@ elements. The child elements can be differentiated based on Product configuratio
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00134"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00135" id="brp-0135">
 					<brRelatedTo>
@@ -3981,9 +3965,7 @@ elements. The child elements can be differentiated based on Product configuratio
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00135"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00136" id="brp-0136">
 					<brRelatedTo>

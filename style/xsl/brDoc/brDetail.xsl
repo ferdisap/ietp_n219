@@ -74,9 +74,8 @@
     <br/><br/>
     <xsl:for-each select="brDecisionPointValue">
       <span class="bold">Value allowed: &#160;</span><xsl:value-of select="@brDecisionValueAllowed"/>
-      <div style="margin-top:-10px">
-        <xsl:apply-templates/>
-      </div>
+      <xsl:apply-templates/>
+      <br></br>
     </xsl:for-each>
       
   </xsl:template>
