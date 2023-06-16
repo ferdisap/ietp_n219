@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <brDecision
-  brDecisionIdentNumber="BRDP-S1-00135"
+  brDecisionIdentNumber="BRDP-S1-00138"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../schema/flat/brdoc.xsd"
   xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>element &#60;workAreaLocationGroup&#62; shall be used in maintenance procedures information.</para>
-    <para>The child element used is only &#60;workLocation&#62;</para>
+    <para>The element &#60;installationLocation&#62; is used in maintenance procedure information (proceed.xsd)</para>
   </brDecisionText>
   
 </brDecision>

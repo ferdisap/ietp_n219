@@ -3999,16 +3999,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, define how to use the element &#60;workLocation&#62; and which data module types it will be used with. 
-</para>
+								<para>In case of Yes, define how to use the element &#60;workLocation&#62; and which data module types it will be used with. </para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00136"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00137" id="brp-0137">
 					<brRelatedTo>
@@ -4048,9 +4045,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00137"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00138" id="brp-0138">
 					<brRelatedTo>
@@ -4084,16 +4079,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, define how to use the element &#60;installationLocation&#62; and in which data module types to use it. 
-</para>
+								<para>In case of Yes, define how to use the element &#60;installationLocation&#62; and in which data module types to use it.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00138"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00139" id="brp-0139">
 					<brRelatedTo>
@@ -4127,16 +4119,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, define how to use the element &#60;productItem&#62; and which data module types to use it with.
-</para>
+								<para>In case of Yes, define how to use the element &#60;productItem&#62; and which data module types to use it with.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00139"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00140" id="brp-0140">
 					<brRelatedTo>
@@ -4170,16 +4159,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, define how to use the attribute productItemName. 
-</para>
+								<para>In case of Yes, define how to use the attribute productItemName.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00140"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00141" id="brp-0141">
 					<brRelatedTo>
@@ -4227,9 +4213,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00141"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00142" id="brp-0142">
 					<brRelatedTo>
@@ -4263,16 +4247,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, define how to use the element &#60;taskDuration&#62; taking into account the possibility of duplication and mismatch of data given in the maintenance planning information. 
-</para>
+								<para>In case of Yes, define how to use the element &#60;taskDuration&#62; taking into account the possibility of duplication and mismatch of data given in the maintenance planning information.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00142"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00143" id="brp-0143">
 					<brRelatedTo>
