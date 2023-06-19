@@ -4793,9 +4793,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00158"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00159" id="brp-0159">
 					<brRelatedTo>
@@ -4835,7 +4833,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00159">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -4910,9 +4908,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00160"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00163" id="brp-0163">
 					<brRelatedTo>
@@ -4946,16 +4942,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, define how to use to use the element &#60;quantityValue&#62; and the element &#60;quantityTolerance&#62; decomposition.
-</para>
+								<para>In case of Yes, define how to use to use the element &#60;quantityValue&#62; and the element &#60;quantityTolerance&#62; decomposition.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00163"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00164" id="brp-0164">
 					<brRelatedTo>
@@ -5000,9 +4993,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00164"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00166" id="brp-0166">
 					<brRelatedTo>
