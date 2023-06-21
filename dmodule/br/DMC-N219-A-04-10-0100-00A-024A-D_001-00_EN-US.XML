@@ -3904,7 +3904,7 @@ is managed by both the creator and the customer.</para>
 								</brCategoryDescription>
 							</brCategory>
 						</brCategoryGroup>
-						<s1000dSchemas appliccrossreftableXsd="0" brexXsd="0" checklistXsd="1" commentXsd="0" comrepXsd="0" condcrossreftableXsd="0" containerXsd="0" crewXsd="0" ddnXsd="0" descriptXsd="0" dmlXsd="0" faultXsd="1" frontmatterXsd="0" ipdXsd="0" learningXsd="0" pmXsd="0" prdcrossreftableXsd="0" procedXsd="0" processXsd="1" sbXsd="0" schedulXsd="1" scocontentXsd="0" scormcontentpackageXsd="0" updateXsd="0" wrngdataXsd="0" wrngfldsXsd="0" brdocXsd="0" icnmetadataXsd="0"/>
+						<s1000dSchemas appliccrossreftableXsd="0" brexXsd="0" checklistXsd="1" commentXsd="0" comrepXsd="0" condcrossreftableXsd="0" containerXsd="0" crewXsd="0" ddnXsd="0" descriptXsd="0" dmlXsd="0" faultXsd="1" frontmatterXsd="0" ipdXsd="0" learningXsd="0" pmXsd="0" prdcrossreftableXsd="0" procedXsd="1" processXsd="1" sbXsd="0" schedulXsd="1" scocontentXsd="0" scormcontentpackageXsd="0" updateXsd="0" wrngdataXsd="0" wrngfldsXsd="0" brdocXsd="0" icnmetadataXsd="0"/>
 					</brRelatedTo>
 					<brDecisionPointContent>
 						<title>Use of the element &#60;preliminaryRqmts&#62;:</title>
@@ -5039,9 +5039,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00166"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00167" id="brp-0167">
 					<brRelatedTo>
@@ -5081,16 +5079,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, define how to use the element &#60;accessPointRef&#62;.
-</para>
+								<para>In case of Yes, define how to use the element &#60;accessPointRef&#62;.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00167"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00169" id="brp-0169">
 					<brRelatedTo>
@@ -5124,16 +5119,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, define required index levels.
-</para>
+								<para>In case of Yes, define required index levels.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00169"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00171" id="brp-0171">
 					<brRelatedTo>
@@ -5173,9 +5165,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00171"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00172" id="brp-0172">
 					<brRelatedTo>
@@ -5209,16 +5199,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, define how to use the text element &#60;footnote&#62;.
-</para>
+								<para>In case of Yes, define how to use the text element &#60;footnote&#62;.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00172"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00173" id="brp-0173">
 					<brRelatedTo>

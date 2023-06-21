@@ -8,7 +8,9 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>Element &#60;preliminaryRqmts&#62; shall not be used in maintenance planning, fault isolation, and maintenance checklist. </para>
+    <!-- <para>Element &#60;preliminaryRqmts&#62; shall not be used in maintenance planning, fault isolation, and maintenance checklist. </para> -->
+    <para>Element &#60;preliminaryRqmts&#62; is used in proceedXsd and faultXsd only.</para>
+    <para>in proceedXsd (and other if used), the &#60;preliminaryRqmts&#62; accomdate all the necessary information used in element &#60;para&#62;, acting like bucket.</para>
   </brDecisionText>
   
 </brDecision>
