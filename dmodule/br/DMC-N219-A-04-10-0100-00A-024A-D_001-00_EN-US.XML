@@ -5248,22 +5248,17 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="multiple">
 							<brDecisionPointValue brDecisionValueAllowed="num">
-								<para>List of types of footnote markers (attribute footnoteMark).
-</para>
+								<para>List of types of footnote markers (attribute footnoteMark).</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="sym">
-								<para>List of types of footnote markers (attribute footnoteMark).
-</para>
+								<para>List of types of footnote markers (attribute footnoteMark).</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="alpha">
-								<para>List of types of footnote markers (attribute footnoteMark).
-</para>
+								<para>List of types of footnote markers (attribute footnoteMark).</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00173"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00560" id="brp-0560">
 					<brRelatedTo>
@@ -5300,9 +5295,7 @@ is managed by both the creator and the customer.</para>
 							<brDecisionPointValue brDecisionValueAllowed="No"/>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00560"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00177" id="brp-0177">
 					<brRelatedTo>
@@ -5356,9 +5349,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00177"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00178" id="brp-0178">
 					<brRelatedTo>
@@ -5403,19 +5394,15 @@ is managed by both the creator and the customer.</para>
 							</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
-							<brDecisionPointValue brDecisionValueAllowed="  &#60;note&#62;, &#60;para&#62;, and &#60;commonInfoDescrPara&#62;
-">
+							<brDecisionPointValue brDecisionValueAllowed="  &#60;note&#62;, &#60;para&#62;, and &#60;commonInfoDescrPara&#62;">
 								<para>As children of &#60;commonInfo&#62;.</para>
 							</brDecisionPointValue>
-							<brDecisionPointValue brDecisionValueAllowed="Only &#60;commonInfoDescrPara&#62;
-">
+							<brDecisionPointValue brDecisionValueAllowed="Only &#60;commonInfoDescrPara&#62;">
 								<para>As the only child of &#60;commonInfo&#62;.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00178"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00180" id="brp-0180">
 					<brRelatedTo>
@@ -5460,9 +5447,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00180"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00181" id="brp-0181">
 					<brRelatedTo>
@@ -5507,9 +5492,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00181"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00185" id="brp-0185">
 					<brRelatedTo>
@@ -5557,9 +5540,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00185"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00186" id="brp-0186">
 					<brRelatedTo>
@@ -5603,9 +5584,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00186"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00187" id="brp-0187">
 					<brRelatedTo>
@@ -5654,9 +5633,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00187"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00192" id="brp-0192">
 					<brRelatedTo>
@@ -5860,9 +5837,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00197"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00562" id="brp-0562">
 					<brRelatedTo>
@@ -12322,8 +12297,7 @@ is managed by both the creator and the customer.</para>
 							<brCategory brCategoryNumber="Cat008">
 								<title>Data integrity and management business rules</title>
 								<brCategoryDescription>
-									<para>Data integrity and management business rules enforce the referential integrity within the CSDB. Closely coupled with the data exchange business rules they cover how data
-is managed by both the creator and the customer.</para>
+									<para>Data integrity and management business rules enforce the referential integrity within the CSDB. Closely coupled with the data exchange business rules they cover how data is managed by both the creator and the customer.</para>
 								</brCategoryDescription>
 							</brCategory>
 							<brCategory brCategoryNumber="Cat005">
@@ -12348,9 +12322,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00382"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00383" id="brp-0383">
 					<brRelatedTo>
@@ -12377,8 +12349,7 @@ is managed by both the creator and the customer.</para>
 							<brCategory brCategoryNumber="Cat008">
 								<title>Data integrity and management business rules</title>
 								<brCategoryDescription>
-									<para>Data integrity and management business rules enforce the referential integrity within the CSDB. Closely coupled with the data exchange business rules they cover how data
-is managed by both the creator and the customer.</para>
+									<para>Data integrity and management business rules enforce the referential integrity within the CSDB. Closely coupled with the data exchange business rules they cover how data is managed by both the creator and the customer.</para>
 								</brCategoryDescription>
 							</brCategory>
 							<brCategory brCategoryNumber="Cat005">
@@ -12402,9 +12373,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00383"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00385" id="brp-0385">
 					<brRelatedTo>
