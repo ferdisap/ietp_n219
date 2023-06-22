@@ -5874,9 +5874,7 @@ is managed by both the creator and the customer.</para>
 							<brDecisionPointValue brDecisionValueAllowed="No"/>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00562"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00198" id="brp-0198">
 					<brRelatedTo>
@@ -5910,14 +5908,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Definition of the methodology of assigning tasks to groups.
-</para>
+								<para>Definition of the methodology of assigning tasks to groups.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00198">
+            <brDecisionPending/>
+          </brDecision>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00199" id="brp-0199">
 					<brRelatedTo>
@@ -5951,14 +5948,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, list the values for the attribute markerType, and their definitions.
-</para>
+								<para>In case of Yes, list the values for the attribute markerType, and their definitions.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00199">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -5994,14 +5990,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>List of values for the attribute sourceOfRqmt and their definitions.
-</para>
+								<para>List of values for the attribute sourceOfRqmt and their definitions.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00202"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00204" id="brp-0204">
 					<brRelatedTo>
@@ -6040,9 +6033,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00204"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00563" id="brp-0563">
 					<brRelatedTo>
@@ -6080,9 +6071,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00563"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00219" id="brp-0219">
 					<brRelatedTo>
@@ -6112,8 +6101,7 @@ is managed by both the creator and the customer.</para>
 					<brDecisionPointContent>
 						<title>Use of the element &#60;partSegment&#62; in the element &#60;itemSeqNumber&#62;:</title>
 						<brDecisionPointText>
-							<para>Decide whether to use the element &#38;#60partSegment&#62; to store the part data in the IPD data module each time the part is listed, or store the part data once externally in the part CIR data module.
-							</para>
+							<para>Decide whether to use the element &#60;partSegment&#62; to store the part data in the IPD data module each time the part is listed, or store the part data once externally in the part CIR data module.</para>
 							<note>
 								<notePara>The element &#60;partSegment&#62; must be used for S2000M IPD data modules.</notePara>
 							</note>
@@ -6126,9 +6114,9 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00219">
+            <brDecisionPending/>
+          </brDecision>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00221" id="brp-0221">
 					<brRelatedTo>
@@ -6168,9 +6156,9 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00221">
+            <brDecisionPending/>
+          </brDecision>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00222" id="brp-0222">
 					<brRelatedTo>
@@ -6208,14 +6196,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Range and definitions of the values for the attribute unitOfMeasure.
-</para>
+								<para>Range and definitions of the values for the attribute unitOfMeasure.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00222">
+            <brDecisionPending/>
+          </brDecision>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00223" id="brp-0223">
 					<brRelatedTo>
@@ -6249,12 +6236,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Definition of the method of identification of the optional part.
- Not used in S2000M projects</para>
+								<para>Definition of the method of identification of the optional part. Not used in S2000M projects</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00223">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6294,7 +6280,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00223">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6330,12 +6316,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Define the method of identification of the altered from part and the cases when it is to be defined.
-</para>
+								<para>Define the method of identification of the altered from part and the cases when it is to be defined.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00225">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6371,12 +6356,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Define the method of identification of the local fabrication material and the cases when it is to be defined.
-</para>
+								<para>Define the method of identification of the local fabrication material and the cases when it is to be defined.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00226">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6418,7 +6402,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00229">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6460,7 +6444,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00230">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6502,7 +6486,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00231">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6538,12 +6522,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Range and definitions of the values for the third character of the element &#60;service&#62;.
-</para>
+								<para>Range and definitions of the values for the third character of the element &#60;service&#62;.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00232">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6579,12 +6562,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>List of values to use for the sixth character of the element &#60;sourceMaintRecoverability&#62; and their definitions.
-</para>
+								<para>List of values to use for the sixth character of the element &#60;sourceMaintRecoverability&#62; and their definitions.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00233">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6626,7 +6608,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00234">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6668,7 +6650,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00235">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6709,7 +6691,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00237">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6745,12 +6727,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Definition of wire type content/codes.
-</para>
+								<para>Definition of wire type content/codes.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00239">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6790,14 +6771,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of how to use the wire sequential number.
-</para>
+								<para>In case of Yes, definition of how to use the wire sequential number.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00240">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6833,14 +6813,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, list of values of attribute connectionType and electrical equipment connection information in general.
-</para>
+								<para>In case of Yes, list of values of attribute connectionType and electrical equipment connection information in general.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00241">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -6880,7 +6859,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00244">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>

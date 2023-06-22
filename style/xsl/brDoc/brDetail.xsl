@@ -151,7 +151,7 @@
               <li>Service bulletin data module</li>
           </xsl:when>
           <xsl:when test="name()='schedulXsd'">
-              <li>Mmintenance planning data module</li>
+              <li>Maintenance planning data module</li>
           </xsl:when>
           <xsl:when test="name()='scocontentXsd'">
               <li>SCO content data module</li>
