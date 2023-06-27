@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The business rule which only for IPD is decided later.</para>
+    <para>Element &#60;alteredFromPart&#62; is used by using the CSN (element &#60;catalogSeqNumberRef&#60;) or CIR (element &#60;partRef&#60;).</para>
   </brDecisionText>
   
 </brDecision>

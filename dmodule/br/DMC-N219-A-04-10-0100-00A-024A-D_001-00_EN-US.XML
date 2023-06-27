@@ -6114,9 +6114,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00219">
-            <brDecisionPending/>
-          </brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00219"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00221" id="brp-0221">
 					<brRelatedTo>
@@ -6156,9 +6154,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00221">
-            <brDecisionPending/>
-          </brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00221"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00222" id="brp-0222">
 					<brRelatedTo>
@@ -6200,9 +6196,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00222">
-            <brDecisionPending/>
-          </brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00222"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00223" id="brp-0223">
 					<brRelatedTo>
@@ -6240,9 +6234,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00223">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00223"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00224" id="brp-0224">
 					<brRelatedTo>
@@ -6280,9 +6272,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00223">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00223"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00225" id="brp-0225">
 					<brRelatedTo>
@@ -6320,9 +6310,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00225">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00225"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00226" id="brp-0226">
 					<brRelatedTo>
@@ -6360,9 +6348,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00226">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00226"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00229" id="brp-0229">
 					<brRelatedTo>
@@ -6402,9 +6388,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00229">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00229"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00230" id="brp-0230">
 					<brRelatedTo>
@@ -6444,9 +6428,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00230">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00230"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00231" id="brp-0231">
 					<brRelatedTo>
@@ -6486,9 +6468,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00231">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00231"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00232" id="brp-0232">
 					<brRelatedTo>
@@ -6526,9 +6506,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00232">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00232"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00233" id="brp-0233">
 					<brRelatedTo>
@@ -6566,9 +6544,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00233">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00233"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00234" id="brp-0234">
 					<brRelatedTo>
@@ -6608,9 +6584,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00234">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00234"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00235" id="brp-0235">
 					<brRelatedTo>
@@ -6650,9 +6624,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00235">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00235"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00237" id="brp-0237">
 					<brRelatedTo>
@@ -6691,9 +6663,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001Z-00237">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00237"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00239" id="brp-0239">
 					<brRelatedTo>
@@ -6900,9 +6870,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00246"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00247" id="brp-0247">
 					<brRelatedTo>
@@ -6947,9 +6915,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00247"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00248" id="brp-0248">
 					<brRelatedTo>

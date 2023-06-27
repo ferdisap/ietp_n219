@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The business rule which only for IPD is decided later.</para>
+    <para>Element &#60;usableOnCodeAssy&#62; shall not be used.</para>
   </brDecisionText>
   
 </brDecision>
