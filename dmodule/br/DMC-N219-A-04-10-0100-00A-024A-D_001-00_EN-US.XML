@@ -9039,16 +9039,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, wording of any standard phrase for the introductory paragraph within each of the front matter list.
-</para>
+								<para>In case of Yes, wording of any standard phrase for the introductory paragraph within each of the front matter list.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00309"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00310" id="brp-0310">
 					<brRelatedTo>
@@ -9088,14 +9085,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of the use of &#60;footnoteRemarks&#62; to store the total number of pages for a complete S1000D publication (PM).
-</para>
+								<para>In case of Yes, definition of the use of &#60;footnoteRemarks&#62; to store the total number of pages for a complete S1000D publication (PM).</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00310"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00311" id="brp-0311">
 					<brRelatedTo>
