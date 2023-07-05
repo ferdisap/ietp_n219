@@ -9129,14 +9129,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Definition of the use of &#60;footnoteRemarks&#62; to store the total number of pages for a complete non-S1000D publication.
-</para>
+								<para>Definition of the use of &#60;footnoteRemarks&#62; to store the total number of pages for a complete non-S1000D publication.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00311"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00313" id="brp-0313">
 					<brRelatedTo>
@@ -9176,16 +9173,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of how to use the element &#60;contentDescription&#62; (eg, to add information about the training resource).
-</para>
+								<para>In case of Yes, definition of how to use the element &#60;contentDescription&#62; (eg, to add information about the training resource).</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00313"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00314" id="brp-0314">
 					<brRelatedTo>
@@ -9225,16 +9219,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of how to use the element &#60;contentDescription&#62; (eg, to add information about the content defined in the training step).
-</para>
+								<para>In case of Yes, definition of how to use the element &#60;contentDescription&#62; (eg, to add information about the content defined in the training step).</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00314"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00315" id="brp-0315">
 					<brRelatedTo>
@@ -9279,9 +9270,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00315"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00316" id="brp-0316">
 					<brRelatedTo>
@@ -9325,9 +9314,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00316"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00317" id="brp-0317">
 					<brRelatedTo>
@@ -9380,9 +9367,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00317"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00318" id="brp-0318">
 					<brRelatedTo>
@@ -9433,9 +9418,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00318"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00319" id="brp-0319">
 					<brRelatedTo>
@@ -9474,17 +9457,11 @@ is managed by both the creator and the customer.</para>
 							<para>Decide if textual applicability annotations are allowed in the element &#60;assert&#62; when using the computable applicability annotation branch or if every element &#60;assert&#62; must reference a declared product attribute or condition.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
-							<brDecisionPointValue brDecisionValueAllowed="Textual applicability annotations are allowed in the element &#60;assert&#62; when using the computable applicability annotation branch.
-">
-							</brDecisionPointValue>
-							<brDecisionPointValue brDecisionValueAllowed="Every element &#60;assert&#62; should reference a declared product attribute or condition.
-">
-							</brDecisionPointValue>
+							<brDecisionPointValue brDecisionValueAllowed="Textual applicability annotations are allowed in the element &#60;assert&#62; when using the computable applicability annotation branch."/>
+							<brDecisionPointValue brDecisionValueAllowed="Every element &#60;assert&#62; should reference a declared product attribute or condition."/>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00319"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00320" id="brp-0320">
 					<brRelatedTo>
