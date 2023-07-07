@@ -9502,14 +9502,11 @@ is managed by both the creator and the customer.</para>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="To specify the allowable values for a product attribute achieved by using both the attribute valuePattern and the element &#60;enumeration&#62;.">
 							</brDecisionPointValue>
-							<brDecisionPointValue brDecisionValueAllowed="To allow open text without using the attribute valuePattern and the element &#60;enumeration&#62;.
-">
+							<brDecisionPointValue brDecisionValueAllowed="To allow open text without using the attribute valuePattern and the element &#60;enumeration&#62;.">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00320"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00321" id="brp-0321">
 					<brRelatedTo>
@@ -9560,9 +9557,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00321"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00322" id="brp-0322">
 					<brRelatedTo>
@@ -9607,9 +9602,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00322"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00323" id="brp-0323">
 					<brRelatedTo>
@@ -9654,9 +9647,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00323"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00324" id="brp-0324">
 					<brRelatedTo>
@@ -9701,9 +9692,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00324"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00325" id="brp-0325">
 					<brRelatedTo>
@@ -9754,9 +9743,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00325"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00326" id="brp-0326">
 					<brRelatedTo>
@@ -9801,9 +9788,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00326"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00327" id="brp-0327">
 					<brRelatedTo>
@@ -9847,9 +9832,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00327"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00328" id="brp-0328">
 					<brRelatedTo>
@@ -9891,9 +9874,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00328"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00329" id="brp-0329">
 					<brRelatedTo>
@@ -9920,8 +9901,7 @@ is managed by both the creator and the customer.</para>
 							<brCategory brCategoryNumber="Cat008">
 								<title>Data integrity and management business rules</title>
 								<brCategoryDescription>
-									<para>Data integrity and management business rules enforce the referential integrity within the CSDB. Closely coupled with the data exchange business rules they cover how data
-is managed by both the creator and the customer.</para>
+									<para>Data integrity and management business rules enforce the referential integrity within the CSDB. Closely coupled with the data exchange business rules they cover how data is managed by both the creator and the customer.</para>
 								</brCategoryDescription>
 							</brCategory>
 							<brCategory brCategoryNumber="Cat010">
@@ -9954,8 +9934,7 @@ is managed by both the creator and the customer.</para>
 					<brDecisionPointContent>
 						<title>Application of project specific values for configurable attributes:</title>
 						<brDecisionPointText>
-							<para>Decide whether to use any project specific attribute values, which values to use and
-allocate suitable definitions and interpretations.
+							<para>Decide whether to use any project specific attribute values, which values to use and allocate suitable definitions and interpretations.
 							</para>
 							<note>
 								<notePara>There are specific business rules decision points for some of the configurable attributes given in the authoring chapters. Refer to Chap <dmRef>
@@ -10196,9 +10175,7 @@ allocate suitable definitions and interpretations.
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00329"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00330" id="brp-0330">
 					<brRelatedTo>
@@ -10233,16 +10210,13 @@ allocate suitable definitions and interpretations.
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, list of the project specific values to use for the attribute quantityUnitOfMeasure and corresponding definitions.
-</para>
+								<para>In case of Yes, list of the project specific values to use for the attribute quantityUnitOfMeasure and corresponding definitions.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00330"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00331" id="brp-0331">
 					<brRelatedTo>
