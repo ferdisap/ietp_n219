@@ -11384,9 +11384,7 @@ is managed by both the creator and the customer.</para>
 							<brDecisionPointValue brDecisionValueAllowed="No"/>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00565"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00566" id="brp-0566">
 					<brRelatedTo>
@@ -11430,9 +11428,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00566"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00567" id="brp-0567">
 					<brRelatedTo>
@@ -11477,9 +11473,7 @@ is managed by both the creator and the customer.</para>
 							<brDecisionPointValue brDecisionValueAllowed="No"/>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00567"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00367" id="brp-0367">
 					<brRelatedTo>
@@ -11524,14 +11518,12 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00367"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00369" id="brp-0369">
 					<brRelatedTo>
 						<sourceDocRef>
-							<dmRef referredFragment="Para_2.3.3">
+							<dmRef referredFragment="Para_2.3.2">
 								<dmRefIdent>
 									<dmCode modelIdentCode="S1000D" systemDiffCode="A" systemCode="04" subSystemCode="1" subSubSystemCode="0" assyCode="0200" disassyCode="00" disassyCodeVariant="A" infoCode="040" infoCodeVariant="A" itemLocationCode="A"/>
 								</dmRefIdent>
@@ -11565,9 +11557,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00369"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00370" id="brp-0370">
 					<brRelatedTo>
@@ -11606,9 +11596,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00370"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00368" id="brp-0368">
 					<brRelatedTo>
@@ -11642,14 +11630,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Set or sets of business rules to be applied within the given project or the organization, and the data module codes for the corresponding BREX data modules.
-</para>
+								<para>Set or sets of business rules to be applied within the given project or the organization, and the data module codes for the corresponding BREX data modules.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00368"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00373" id="brp-0373">
 					<brRelatedTo>
@@ -11683,16 +11668,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, rules on how the attributes extensionProducer and extensionCode must be used.
-</para>
+								<para>In case of Yes, rules on how the attributes extensionProducer and extensionCode must be used.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00373"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00374" id="brp-0374">
 					<brRelatedTo>
@@ -11731,9 +11713,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00374"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00376" id="brp-0376">
 					<brRelatedTo>
@@ -11772,9 +11752,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00376"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00377" id="brp-0377">
 					<brRelatedTo>
@@ -11837,9 +11815,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00377"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00378" id="brp-0378">
 					<brRelatedTo>
@@ -11878,9 +11854,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00378"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00379" id="brp-0379">
 					<brRelatedTo>
@@ -11914,16 +11888,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, list of CIR data module types to be published.
- Refer to the decision on BRDP-S1-00377.</para>
+								<para>In case of Yes, list of CIR data module types to be published. Refer to the decision on BRDP-S1-00377.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00379"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00380" id="brp-0380">
 					<brRelatedTo>
@@ -11957,18 +11928,14 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Single data module">
-								<para>List of CIR types to be captured in a single dedicated data module within a Project or for a specific model identification code.
-</para>
+								<para>List of CIR types to be captured in a single dedicated data module within a Project or for a specific model identification code.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="Several data modules">
-								<para>List of CIR types to be captured in several dedicated CIR data modules within a Project or for a specific model identification code.
-</para>
+								<para>List of CIR types to be captured in several dedicated CIR data modules within a Project or for a specific model identification code.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00380"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00381" id="brp-0381">
 					<brRelatedTo>
@@ -12013,9 +11980,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00381"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00382" id="brp-0382">
 					<brRelatedTo>
@@ -12168,9 +12133,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00385"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00386" id="brp-0386">
 					<brRelatedTo>
@@ -12221,9 +12184,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00386"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00387" id="brp-0387">
 					<brRelatedTo>
@@ -12364,9 +12325,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00389"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00390" id="brp-0390">
 					<brRelatedTo>
