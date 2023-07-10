@@ -12,7 +12,7 @@
         <xsl:value-of select="@modelIdentCode"/>-<xsl:value-of select="@systemDiffCode"/>-<xsl:value-of select="@systemCode"/>-<xsl:value-of select="@subSystemCode"/><xsl:value-of select="@subSubSystemCode"/>-<xsl:value-of select="@assyCode"/>-<xsl:value-of select="@disassyCode"/><xsl:value-of select="@disassyCodeVariant"/>-<xsl:value-of select="@infoCode"/><xsl:value-of select="@infoCodeVariant"/>-<xsl:value-of select="@itemLocationCode"/>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:value-of select="@systemCode"/>.<xsl:value-of select="@subSubSystemCode"/>.<xsl:value-of select="@assyCode"/>.<xsl:value-of select="@disassyCode"/><xsl:value-of select="@disassyCodeVariant"/>
+        <xsl:value-of select="@systemCode"/>-<xsl:value-of select="@subSystemCode"/><xsl:value-of select="@subSubSystemCode"/>-<xsl:value-of select="@assyCode"/>-<xsl:value-of select="@disassyCode"/><xsl:value-of select="@disassyCodeVariant"/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
