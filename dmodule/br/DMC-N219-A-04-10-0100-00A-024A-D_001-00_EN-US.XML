@@ -12528,7 +12528,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="BRDP-0001-00393"/>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00393"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00394" id="brp-0394">
 					<brRelatedTo>
@@ -12572,9 +12572,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00394"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00395" id="brp-0395">
 					<brRelatedTo>
@@ -12618,7 +12616,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00395">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -12671,9 +12669,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00396"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00397" id="brp-0397">
 					<brRelatedTo>
@@ -12725,14 +12721,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>List of product instances contained in a PCT data module. Options include listing all product instances in service or listing only the product instances within an organization.
-</para>
+								<para>List of product instances contained in a PCT data module. Options include listing all product instances in service or listing only the product instances within an organization.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00397"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00398" id="brp-0398">
 					<brRelatedTo>
@@ -12789,9 +12782,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00398"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00399" id="brp-0399">
 					<brRelatedTo>
@@ -12847,9 +12838,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00399"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00400" id="brp-0400">
 					<brRelatedTo>
@@ -12906,9 +12895,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00400"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00401" id="brp-0401">
 					<brRelatedTo>
@@ -12965,9 +12952,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00401"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00403" id="brp-0403">
 					<brRelatedTo>
@@ -13007,14 +12992,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>List of properties associated to the technical information objects (eg, names, short names) to store within the data module when delivered.
-</para>
+								<para>List of properties associated to the technical information objects (eg, names, short names) to store within the data module when delivered.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00403"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00404" id="brp-0404">
 					<brRelatedTo>
@@ -13048,14 +13030,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>List of the applicable systems for land and sea products.
-</para>
+								<para>List of the applicable systems for land and sea products.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00404"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00405" id="brp-0405">
 					<brRelatedTo>

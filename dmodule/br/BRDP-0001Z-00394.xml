@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <brDecision
-  brDecisionIdentNumber="BRDP-S1-00393"
+  brDecisionIdentNumber="BRDP-S1-00394"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../schema/flat/brdoc.xsd"
   xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>One instance of each data module types (ACT, PCT, CCT), refer to BRDP-S1-00380.</para>
+    <para>Product's product attribute or product's condition is but not limited to:
+      <randomList>
+        <listItem><para> Divide product attributes into properties that are set during Product manufacture, and condition types into properties that are set after Product delivery</para></listItem>
+        <listItem><para>Divide product attributes into properties that will not change during the life cycle of the Product and condition types into properties that can change</para></listItem>
+      </randomList>
+    </para>
   </brDecisionText>
   
 </brDecision>
