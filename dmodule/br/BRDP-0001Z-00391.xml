@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <brDecision
-  brDecisionIdentNumber="BRDP-S1-00317"
+  brDecisionIdentNumber="BRDP-S1-00391"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../schema/flat/brdoc.xsd"
   xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The element &#60;displayText&#62; shall not be used to avoid duplication data from element &#60;assert&#62;, &#60;evaluate&#62;, and &#60;expression&#62;.</para>
+    <para>The not valid content in IETM shall be displayed in hidden.</para>
   </brDecisionText>
   
 </brDecision>
