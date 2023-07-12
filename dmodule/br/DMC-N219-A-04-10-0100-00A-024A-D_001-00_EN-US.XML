@@ -13068,12 +13068,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Definition of how to use the element field descriptions of the wiring data description Schema in an interactive wiring publication.
-</para>
+								<para>Definition of how to use the element field descriptions of the wiring data description Schema in an interactive wiring publication.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00405">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -13109,16 +13108,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of the scope of these introduction data modules.
-</para>
+								<para>In case of Yes, definition of the scope of these introduction data modules.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-406"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00407" id="brp-0407">
 					<brRelatedTo>
@@ -13157,9 +13153,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00407"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00408" id="brp-0408">
 					<brRelatedTo>
@@ -13198,9 +13192,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00408"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00409" id="brp-0409">
 					<brRelatedTo>
@@ -13241,9 +13233,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00409"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00410" id="brp-0410">
 					<brRelatedTo>
@@ -13282,8 +13272,8 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00410">
+            <brDecisionPending/>
 					</brDecision>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00411" id="brp-0411">
@@ -13318,15 +13308,14 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition and how the simplified harness layout must look like.
-</para>
+								<para>In case of Yes, definition and how the simplified harness layout must look like.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00411">
+            <brDecisionPending/>
 					</brDecision>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00412" id="brp-0412">
@@ -13361,14 +13350,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of the changes of the proposed structure for the Product (eg, population of the zone information in the unit or assembly group of the SNS instead of in the subsystem/sub-subsystem group). 
-</para>
+								<para>In case of Yes, definition of the changes of the proposed structure for the Product (eg, population of the zone information in the unit or assembly group of the SNS instead of in the subsystem/sub-subsystem group). </para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00413">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -13409,7 +13397,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00413">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -13445,14 +13433,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of the changes of the proposed structure for the Product (eg, population of the zone information in the unit or assembly group of the SNS instead of in the subsystem/sub-subsystem group).
-</para>
+								<para>In case of Yes, definition of the changes of the proposed structure for the Product (eg, population of the zone information in the unit or assembly group of the SNS instead of in the subsystem/sub-subsystem group).</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00414">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -13493,7 +13480,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00415">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -13534,9 +13521,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00416"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00417" id="brp-0417">
 					<brRelatedTo>
@@ -13570,14 +13555,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Definition of the required information for each electrical or electronic item of equipment that has electrical connections.
-</para>
+								<para>Definition of the required information for each electrical or electronic item of equipment that has electrical connections.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00417"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00418" id="brp-0418">
 					<brRelatedTo>
@@ -13618,9 +13600,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00418"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00419" id="brp-0419">
 					<brRelatedTo>
@@ -13654,14 +13634,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of the changes of the proposed structure for the Product (eg, population of the zone information in the unit or assembly group of the SNS instead of in the subsystem/sub-subsystem group).
-</para>
+								<para>In case of Yes, definition of the changes of the proposed structure for the Product (eg, population of the zone information in the unit or assembly group of the SNS instead of in the subsystem/sub-subsystem group).</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00419">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -13697,14 +13676,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of how to generate harness wire list data modules for a page-oriented or an interactive wiring publication from the wiring data modules that are based on the wiring Schema.
-</para>
+								<para>In case of Yes, definition of how to generate harness wire list data modules for a page-oriented or an interactive wiring publication from the wiring data modules that are based on the wiring Schema.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00420">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
