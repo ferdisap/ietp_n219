@@ -13718,16 +13718,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of how to generate connection list data modules for a page-oriented or an interactive wiring publication from the wiring data modules that are based on the wiring Schema.
-</para>
+								<para>In case of Yes, definition of how to generate connection list data modules for a page-oriented or an interactive wiring publication from the wiring data modules that are based on the wiring Schema.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00421"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00422" id="brp-0422">
 					<brRelatedTo>
@@ -13761,16 +13758,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of how to generate harness plug and receptacle list data modules for a page-oriented or an interactive wiring publication from the wiring data modules that are based on the wiring Schema.
-</para>
+								<para>In case of Yes, definition of how to generate harness plug and receptacle list data modules for a page-oriented or an interactive wiring publication from the wiring data modules that are based on the wiring Schema.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00422"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00423" id="brp-0423">
 					<brRelatedTo>
@@ -13804,16 +13798,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of how to generate terminal list data modules for a page-oriented or an interactive wiring publication from the wiring data modules that are based on the wiring Schema.
-</para>
+								<para>In case of Yes, definition of how to generate terminal list data modules for a page-oriented or an interactive wiring publication from the wiring data modules that are based on the wiring Schema.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00423"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00424" id="brp-0424">
 					<brRelatedTo>
@@ -13847,16 +13838,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of how to generate splice list data modules for a page-oriented or an interactive wiring publication from the wiring data modules that are based on the wiring Schema.
-</para>
+								<para>In case of Yes, definition of how to generate splice list data modules for a page-oriented or an interactive wiring publication from the wiring data modules that are based on the wiring Schema.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00423"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00425" id="brp-0425">
 					<brRelatedTo>
@@ -13890,16 +13878,13 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Yes">
-								<para>In case of Yes, definition of how to generate earth point list data modules for a page-oriented or an interactive wiring publication from the wiring data modules that are based on the wiring Schema.
-</para>
+								<para>In case of Yes, definition of how to generate earth point list data modules for a page-oriented or an interactive wiring publication from the wiring data modules that are based on the wiring Schema.</para>
 							</brDecisionPointValue>
 							<brDecisionPointValue brDecisionValueAllowed="No">
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00425"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00427" id="brp-0427">
 					<brRelatedTo>
@@ -13933,14 +13918,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Definition of the level of detail to provide in the functional and technical descriptions.
-</para>
+								<para>Definition of the level of detail to provide in the functional and technical descriptions.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00427"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00428" id="brp-0428">
 					<brRelatedTo>
@@ -13983,7 +13965,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00428">
 						<brDecisionPending/>
 					</brDecision>
 				</brPara>
@@ -14019,14 +14001,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Definition of the level of detail to provide in the maintenance and servicing data modules.
-</para>
+								<para>Definition of the level of detail to provide in the maintenance and servicing data modules.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00429"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00430" id="brp-0430">
 					<brRelatedTo>
@@ -14060,14 +14039,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Definition of how to implement the lists of consumables, materials, expendables, standard SE, special SE and tools.
-</para>
+								<para>Definition of how to implement the lists of consumables, materials, expendables, standard SE, special SE and tools.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00430"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00431" id="brp-0431">
 					<brRelatedTo>
@@ -14106,9 +14082,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00431"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00432" id="brp-0432">
 					<brRelatedTo>
@@ -14142,14 +14116,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Definition of the level of detail to provide in the IPD modules.
-</para>
+								<para>Definition of the level of detail to provide in the IPD modules.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00432"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00433" id="brp-0433">
 					<brRelatedTo>
@@ -14188,9 +14159,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00433"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00434" id="brp-0434">
 					<brRelatedTo>
@@ -14229,9 +14198,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00434"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00435" id="brp-0435">
 					<brRelatedTo>
@@ -14270,9 +14237,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00435"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00436" id="brp-0436">
 					<brRelatedTo>
@@ -14316,9 +14281,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00436"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00437" id="brp-0437">
 					<brRelatedTo>
@@ -14357,9 +14320,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00437"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00438" id="brp-0438">
 					<brRelatedTo>
@@ -14399,9 +14360,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00438"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00439" id="brp-0439">
 					<brRelatedTo>
@@ -14435,14 +14394,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Definition of the threshold for minimum impact on weight that must be reported in a SB.
-</para>
+								<para>Definition of the threshold for minimum impact on weight that must be reported in a SB.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00439"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00440" id="brp-0440">
 					<brRelatedTo>
@@ -14476,14 +14432,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Definition of the threshold for minimum impact on balance that must be reported in a SB. 
-</para>
+								<para>Definition of the threshold for minimum impact on balance that must be reported in a SB. </para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00440"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00441" id="brp-0441">
 					<brRelatedTo>
@@ -14517,14 +14470,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Definition of the threshold for minimum impact on electrical load that must be reported in a SB. 
-</para>
+								<para>Definition of the threshold for minimum impact on electrical load that must be reported in a SB. </para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00441"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00442" id="brp-0442">
 					<brRelatedTo>
@@ -14558,14 +14508,11 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
-								<para>Precise definitions of &#34;maintenance publications&#34; and &#34;operational publications&#34; and whether to separate them into different listings in the Impact on publications.
-</para>
+								<para>Precise definitions of &#34;maintenance publications&#34; and &#34;operational publications&#34; and whether to separate them into different listings in the Impact on publications.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00442"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00445" id="brp-0445">
 					<brRelatedTo>
@@ -14604,9 +14551,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00445"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00446" id="brp-0446">
 					<brRelatedTo>
@@ -14645,9 +14590,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00446"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00447" id="brp-0447">
 					<brRelatedTo>
@@ -14686,9 +14629,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00447"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00448" id="brp-0448">
 					<brRelatedTo>
@@ -14731,9 +14672,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00448"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00449" id="brp-0449">
 					<brRelatedTo>
@@ -14772,9 +14711,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00449"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00450" id="brp-0450">
 					<brRelatedTo>
@@ -14813,9 +14750,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00450"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00451" id="brp-0451">
 					<brRelatedTo>
@@ -14854,9 +14789,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00451"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00452" id="brp-0452">
 					<brRelatedTo>
@@ -14895,9 +14828,7 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision>
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="BRDP-0001Z-00452"/>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00453" id="brp-0453">
 					<brRelatedTo>
