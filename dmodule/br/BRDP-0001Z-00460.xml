@@ -8,9 +8,20 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>Front matter is mandatory.</para>
-    <para>In each of page-oriented publication should have front matter</para>
-    <para>In IETP, only one front matter which is separated from other PMC.</para>
+  <para>Page-oriented or IETP shall be included front matter which comply to S1000D-A-03-09-0400-00A-040A-A that are:
+    <sequentialList>
+      <listItem><para>Title Page</para></listItem>
+      <listItem><para>LOEP/LOEDM</para></listItem>
+      <listItem><para>CR</para></listItem>
+      <listItem><para>Access Illustration / LOI</para></listItem>
+      <listItem><para>LOA</para></listItem>
+      <listItem><para>LOT (optional)</para></listItem>
+      <listItem><para>LOS (optional)</para></listItem>
+      <listItem><para>TOC</para></listItem>
+      <listItem><para>LOASD (optional)</para></listItem>
+      <listItem><para>ACT</para></listItem>
+    </sequentialList>
+  </para>
   </brDecisionText>
   
 </brDecision>
