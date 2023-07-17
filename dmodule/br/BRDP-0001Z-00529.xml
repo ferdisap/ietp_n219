@@ -18,6 +18,11 @@
         <listItem><para>&#60;applicRefId&#62;</para></listItem>
       </sequentialList>
     </para>    
+    <para>The attribute which must be presented in TOC, are:
+      <sequentialList>
+        <listItem><para>applicRefId</para></listItem>
+      </sequentialList>
+    </para>    
   </brDecisionText>
   
 </brDecision>
