@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <brDecision
-  brDecisionIdentNumber="BRDP-S1-00458"
+  brDecisionIdentNumber="BRDP-S1-00506"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../schema/flat/brdoc.xsd"
   xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>Numbering check each drill (or step) shall be Arabic numerals(sequential numbering) such as 1,2,3 etc or 1,2,3.1/3.2. There must be no period [.] after the last digit number. if the choosen step, use bullet numbering.</para>
+    <para>Identation shall be used whenever the titles in procedural steps is not provided.</para>
   </brDecisionText>
   
 </brDecision>

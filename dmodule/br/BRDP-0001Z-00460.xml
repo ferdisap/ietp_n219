@@ -14,12 +14,14 @@
       <listItem><para>LOEP/LOEDM</para></listItem>
       <listItem><para>CR</para></listItem>
       <listItem><para>Access Illustration / LOI</para></listItem>
-      <listItem><para>LOA</para></listItem>
-      <listItem><para>LOT (optional)</para></listItem>
-      <listItem><para>LOS (optional)</para></listItem>
-      <listItem><para>TOC</para></listItem>
-      <listItem><para>LOASD (optional)</para></listItem>
+      <listItem><para>LOA - List of Abbreviation </para></listItem>
+      <listItem><para>LOT - List of Table (optional)</para></listItem>
+      <listItem><para>LOS - List of Symbols (optional)</para></listItem>
+      <listItem><para>TSR - Technical Standard Record (optional)</para></listItem>
+      <listItem><para>TOC - Table of Contents</para></listItem>
+      <listItem><para>LOASD - List of Applicable Standard Document (optional)</para></listItem>
       <listItem><para>ACT</para></listItem>
+      <listItem><para>LOF - List of Figures</para></listItem>
     </sequentialList>
   </para>
   </brDecisionText>
