@@ -89,7 +89,6 @@
 </xsl:template>
 
 <xsl:template match="brDecision">
-  <!-- <xsl:value-of select="@brDecisionIdentNumber"/> -->
   <xsl:if test="not(descendant::brDecisionPending)">
     <span><xsl:value-of select="@brDecisionIdentNumber"/></span>
   </xsl:if>
@@ -98,5 +97,40 @@
     <span><xsl:value-of select="@brDecisionIdentNumber"/></span>
   </xsl:if>
 </xsl:template>
+
+  <!-- textElemGroupStyle -->
+ <xsl:template match="para">
+    <p>
+      <xsl:apply-templates>
+        <xsl:with-param name="isShowDmCode" select="'yes'"/>
+        <xsl:with-param name="isShowDmCode">YES</xsl:with-param>
+      </xsl:apply-templates>
+    </p>
+  </xsl:template>
+
+  <xsl:template match="randomList">
+    <ul>
+      <xsl:for-each select="listItem">
+        <li>
+          <xsl:apply-templates />
+        </li>
+      </xsl:for-each>
+    </ul>
+  </xsl:template>
+
+  <xsl:template match="sequentialList">
+    <ol>
+      <xsl:for-each select="listItem">
+        <li>
+          <xsl:apply-templates />
+        </li>
+      </xsl:for-each>
+    </ol>
+  </xsl:template>
+
+  <xsl:template match="listItem">
+    <xsl:apply-templates />
+  </xsl:template>
+  <!-- end of textElemGroupStyle -->
 
 </xsl:stylesheet>

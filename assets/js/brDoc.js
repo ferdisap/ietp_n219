@@ -57,7 +57,6 @@ function openDetail(brId,brDecisionId,trId){
 
   window.brDetail = document.getElementById(trId);
   window.brDetail.style.backgroundColor = 'antiquewhite';
-
 }
 
 function closeDetail(){
