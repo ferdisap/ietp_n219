@@ -83,7 +83,12 @@
         <xsl:value-of select="@brDecisionPointUniqueIdent"/></a>
     </td>
     <td><xsl:value-of select="brDecisionPointContent/title"/></td>
-    <td><xsl:value-of select="brRelatedTo/brCategoryGroup/brCategory/@brCategoryNumber"/> - <xsl:value-of select="brRelatedTo/brCategoryGroup/brCategory/title"/></td>
+    <!-- <td><xsl:value-of select="brRelatedTo/brCategoryGroup/brCategory/@brCategoryNumber"/> - <xsl:value-of select="brRelatedTo/brCategoryGroup/brCategory/title"/></td> -->
+    <td>
+        <xsl:for-each select="brRelatedTo/brCategoryGroup/brCategory">
+          <xsl:value-of select="@brCategoryNumber"/>,&#160;
+        </xsl:for-each>
+    </td>
     <td><xsl:apply-templates select="brDecision"/></td>
   </tr>
 </xsl:template>

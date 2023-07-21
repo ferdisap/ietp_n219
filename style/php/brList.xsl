@@ -17,8 +17,8 @@
     <list>
       <xsl:attribute name="no"><xsl:number/></xsl:attribute>
       <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
-      <xsl:attribute name="tr_onclick">BrdpTable.setURLHash('<xsl:value-of select="@id"/>')</xsl:attribute>
-      <xsl:attribute name="td_ident_onclick">BrdpTable.openDetail('<xsl:value-of select="@brDecisionPointUniqueIdent"/>','<xsl:value-of select="./brDecision/@brDecisionIdentNumber"/>','<xsl:value-of select="@id"/>',this)</xsl:attribute>
+      <!-- <xsl:attribute name="tr_onclick">BrdpTable.setURLHash('<xsl:value-of select="@id"/>')</xsl:attribute> -->
+      <xsl:attribute name="tr_onclick">BrdpTable.openDetail('<xsl:value-of select="@brDecisionPointUniqueIdent"/>','<xsl:value-of select="./brDecision/@brDecisionIdentNumber"/>','<xsl:value-of select="@id"/>',this)</xsl:attribute>
       <ident>
         <a>
           <xsl:attribute name="href">javascript:void(0)</xsl:attribute>
@@ -30,7 +30,9 @@
         <xsl:value-of select="brDecisionPointContent/title"/>
       </title>
       <category>
-        <xsl:value-of select="brRelatedTo/brCategoryGroup/brCategory/@brCategoryNumber"/>
+        <xsl:for-each select="brRelatedTo/brCategoryGroup/brCategory">
+          <xsl:value-of select="@brCategoryNumber"/>,&#160;
+        </xsl:for-each>
       </category>
       <audit>none</audit>
       <decision>
