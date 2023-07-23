@@ -5,7 +5,6 @@
     <tr>
       <xsl:attribute name="no"><xsl:number/></xsl:attribute>
       <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
-      <!-- <xsl:attribute name="tr_onclick">BrdpTable.setURLHash('<xsl:value-of select="@id"/>')</xsl:attribute> -->
       <xsl:attribute name="onclick">BrdpTable.openDetail('<xsl:value-of select="@brDecisionPointUniqueIdent"/>','<xsl:value-of select="./brDecision/@brDecisionIdentNumber"/>','<xsl:value-of select="@id"/>',this)</xsl:attribute>
       <td>
         <a>

@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../schema/flat/brex.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+  <identAndStatusSection>
+    <dmAddress>
+      <dmIdent>
+        <dmCode modelIdentCode="N219" systemDiffCode="A"
+          systemCode="00" subSystemCode="0" subSubSystemCode="0"
+          assyCode="00" disassyCode="00" disassyCodeVariant="A"
+          infoCode="022" infoCodeVariant="A" itemLocationCode="D" />
+        <language languageIsoCode="en" countryIsoCode="US" />
+        <issueInfo issueNumber="001" inWork="00" />
+      </dmIdent>
+      <dmAddressItems>
+        <issueDate day="01" month="01" year="2016" />
+        <dmTitle>
+          <techName>This project</techName>
+          <infoName>Business rules</infoName>
+        </dmTitle>
+      </dmAddressItems>
+    </dmAddress>
+    <dmStatus issueType="new">
+      <security securityClassification="01" />
+      <responsiblePartnerCompany enterpriseCode="SI">
+        <enterpriseName>0001Z</enterpriseName>
+      </responsiblePartnerCompany>
+      <originator enterpriseCode="SI">
+        <enterpriseName>0001Z</enterpriseName>
+      </originator>
+      <applic>
+        <displayText>
+          <simplePara>N219 All</simplePara>
+        </displayText>
+      </applic>
+      <brexDmRef>
+        <dmRef>
+          <dmRefIdent>
+            <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+						<issueInfo issueNumber="001" inWork="00"/>
+          </dmRefIdent>
+        </dmRef>
+      </brexDmRef>
+      <qualityAssurance>
+        <firstVerification verificationType="tabtop" />
+      </qualityAssurance>
+    </dmStatus>
+  </identAndStatusSection>
+  <content>
+    <brex>
+      <commonInfo>
+        <para>This BREX data module gives the rules that apply to the N219.</para>
+      </commonInfo>
+      <snsRules>
+        <snsDescr>
+          <snsSystem>
+            <snsCode>00</snsCode>
+            <snsTitle>General</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>Product Description</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Product, General Maintenance</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Product, Safety</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Safety and Protective Device</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Technical Publication</snsTitle>
+              <snsSubSubSystem>
+                <snsCode>1</snsCode>
+                <snsTitle>Publication</snsTitle>
+              </snsSubSubSystem>
+              <snsSubSubSystem>
+                <snsCode>2</snsCode>
+                <snsTitle>Information Sets</snsTitle>
+              </snsSubSubSystem>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Material Data</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>9</snsCode>
+              <snsTitle>Battle Damage Repair</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>04</snsCode>
+            <snsTitle>Worthiness</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle> 
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Fatigue Index Calculations</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Operating Spectrum</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>05</snsCode>
+            <snsTitle>Scheduled/unscheduled Maintenance</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Time Limits</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Scheduled maintenance check lists</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Scheduled maintenance checks</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Unscheduled maintenance checks</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>6</snsCode>
+              <snsTitle>Acceptance and functional check usage</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>8</snsCode>
+              <snsTitle>Maintenance Allocation</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>06</snsCode>
+            <snsTitle>Dimension and areas</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Principal dimensions</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Reference lines</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Zones and areas</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Access provision</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Master shapes</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>07</snsCode>
+            <snsTitle>Lifting, shoring, recovering and transporting</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Jacking</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Shoring</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Slinging</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Recovering</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Transporting</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>08</snsCode>
+            <snsTitle>Leveling and weighing</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Mass and balance</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Leveling</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Weighing</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Mass and C.G. data</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Static stability</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>09</snsCode>
+            <snsTitle>Handling and maneuvering</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Handling</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Maneuvering</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>10</snsCode>
+            <snsTitle>Parking, mooring, storing, and return to service</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Parking</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Mooring</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Storing</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Return to service</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>11</snsCode>
+            <snsTitle>Placards and markings</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Exterior color schemes and markings</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Exterior placards and markings</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Interior placards and markings</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>12</snsCode>
+            <snsTitle>Servicing</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Replenishing and depleting</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Scheduled servicing</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Unscheduled servicing</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>14</snsCode>
+            <snsTitle>Product loading and offloading</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Support equipment</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Cargo</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Internal and external stores</snsTitle>
+              <snsSubSubSystem>
+                <snsCode>1</snsCode>
+                <snsTitle>Basic information</snsTitle>
+              </snsSubSubSystem>
+              <snsSubSubSystem>
+                <snsCode>2</snsCode>
+                <snsTitle>Supplementary information</snsTitle>
+              </snsSubSubSystem>
+              <snsSubSubSystem>
+                <snsCode>3</snsCode>
+                <snsTitle>Loading procedures</snsTitle>
+              </snsSubSubSystem>
+              <snsSubSubSystem>
+                <snsCode>4</snsCode>
+                <snsTitle>Offloading procedures</snsTitle>
+              </snsSubSubSystem>
+              <snsSubSubSystem>
+                <snsCode>5</snsCode>
+                <snsTitle>Loading and offloading procedures checklist</snsTitle>
+              </snsSubSubSystem>
+            </snsSubSystem>
+            
+          </snsSystem>
+          <snsSystem>
+            <snsCode>15</snsCode>
+            <snsTitle>Crew information</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Aircraft release/operating limitations</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Operational characteristics</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Normal procedures</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Emergency procedures</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Special conditions</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>6</snsCode>
+              <snsTitle>Performance Data</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>8</snsCode>
+              <snsTitle>Configuration</snsTitle>
+            </snsSubSystem>
+            
+          </snsSystem>
+          <snsSystem>
+            <snsCode>20</snsCode>
+            <snsTitle>Standard practices - Airframe systems</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>21</snsCode>
+            <snsTitle>Environmental control</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Compression</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Distribution</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Pressurization control</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Heating</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Cooling</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>6</snsCode>
+              <snsTitle>Temperature control</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>9</snsCode>
+              <snsTitle>Integrated ECS</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>22</snsCode>
+            <snsTitle>Auto flight</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Autopilot</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Speed-attitude correction</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>System monitor</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>23</snsCode>
+            <snsTitle>Communications</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Speech communication</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Data transmission and automatic calling</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Passenger address and entertainment</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Interphone</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Audio integrating and voice command systems</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>6</snsCode>
+              <snsTitle>Static discharging</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>7</snsCode>
+              <snsTitle>Audio and video monitoring</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>8</snsCode>
+              <snsTitle>Integrated automatic tunning</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>24</snsCode>
+            <snsTitle>Electrical power</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Generator drive</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>AC generation</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>DC generation</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>External power</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>AC electrical load distribution</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>6</snsCode>
+              <snsTitle>DC electrical load distribution</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>7</snsCode>
+              <snsTitle>Electrical monitoring and protection</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>25</snsCode>
+            <snsTitle>Equipment furnishing</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Flight compartment</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Passenger/operating crew compartment</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Additional compartments</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>6</snsCode>
+              <snsTitle>Emergency</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>8</snsCode>
+              <snsTitle>Insulation and linning</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>26</snsCode>
+            <snsTitle>Fire protection</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Detection</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Extinguishing</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Explosion suppression</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>27</snsCode>
+            <snsTitle>Flight controls</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Roll control</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Yaw control</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Pitch control</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Horizontal stabilizer</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Flaps</snsTitle>
+            </snsSubSystem>
+            
+          </snsSystem>
+          <snsSystem>
+            <snsCode>28</snsCode>
+            <snsTitle>Fuel</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Storage</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Distribution</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Dump</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Indicating</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>29</snsCode>
+            <snsTitle>Hydraulic power</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Main</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Indicating</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>30</snsCode>
+            <snsTitle>Ice and rain protection</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Air intakes</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Pitot and static</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>6</snsCode>
+              <snsTitle>Propellers/rotors</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>8</snsCode>
+              <snsTitle>Detection</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>31</snsCode>
+            <snsTitle>Indicating/recording systems</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Independent instruments</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Recordes</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>General computers</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>32</snsCode>
+            <snsTitle>Landing gear</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Main gear</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Nose gear</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Wheel and brakes</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Steering and maneuvering</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>6</snsCode>
+              <snsTitle>Position and warning</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>7</snsCode>
+              <snsTitle>Supplementary gear</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>33</snsCode>
+            <snsTitle>Lights</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Flight compartment</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Passenger compartment</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Cargo and service compartment</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Exterior lights</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>34</snsCode>
+            <snsTitle>Navigation</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Flight environment data</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Attitude and direction</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Landing and taxiing aids</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Independent position determining</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Dependent position determining</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>6</snsCode>
+              <snsTitle>Flight management computing</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>35</snsCode>
+            <snsTitle>Oxygen</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Crew</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Portable</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>44</snsCode>
+            <snsTitle>Cabin systems</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Cabin core system</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>50</snsCode>
+            <snsTitle>Cargo and accessory compartment</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Cargo compartments</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Cargo loading systems</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>51</snsCode>
+            <snsTitle>Standard practices - Structure</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Investigation, cleanup and aerodynamic smoothness</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Processes</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Materials</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Fasteners</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Support of airplane for repair and alignment check procedures</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>6</snsCode>
+              <snsTitle>Control surface balancing</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>7</snsCode>
+              <snsTitle>Repairs</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>8</snsCode>
+              <snsTitle>Electrical bonding</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>52</snsCode>
+            <snsTitle>Doors</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Passenger/crew</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Emergency exit</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Cargo</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Service and miscellaneous</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>7</snsCode>
+              <snsTitle>Door warning</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>53</snsCode>
+            <snsTitle>Fuselage</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Nose Fuselage</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Center Fuselage</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Tail</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>54</snsCode>
+            <snsTitle>Nacelle/pylons</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Nacelle</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Pylons</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Air management</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>55</snsCode>
+            <snsTitle>Stabilizers</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Horizontal stabilizer</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Elevator</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Vertical stabilizer</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Rudder</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>56</snsCode>
+            <snsTitle>Windows and canopies</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Flight compartment</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Fuselage compartment</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Door</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Inspection and observation</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>57</snsCode>
+            <snsTitle>Wings</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Center wing</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Outer wing</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Wing tip</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Leading edge and leading edge devices</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Trailing edge and trailing edge devices</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>6</snsCode>
+              <snsTitle>Ailerons, elevons, and flaperons</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>60</snsCode>
+            <snsTitle>Standard practices - Propeler/rotor</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>61</snsCode>
+            <snsTitle>Propellers/propulsors</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Propeller assembly</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Controlling</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Braking</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Indicating</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Propulsor duct</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>70</snsCode>
+            <snsTitle>Standard Practice - Engine</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>71</snsCode>
+            <snsTitle>Power plant</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>72</snsCode>
+            <snsTitle>Engine</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>73</snsCode>
+            <snsTitle>Engine fuel and control</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Distribution</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Controlling</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>74</snsCode>
+            <snsTitle>Ignition</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Electrical power supply</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Distribution</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>75</snsCode>
+            <snsTitle>Air</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Engine anti-icing</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Cooling</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Compressor control</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Indicating</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Air intake foreign object removal</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>76</snsCode>
+            <snsTitle>Engine Controls</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Power control</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Emergency shutdown</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>78</snsCode>
+            <snsTitle>Exhaust</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+          <snsSystem>
+            <snsCode>79</snsCode>
+            <snsTitle>Oil</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Storage</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Distribution</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Indicating</snsTitle>
+            </snsSubSystem>            
+          </snsSystem>
+
+          
+        </snsDescr>
+        <!-- <snsDescr>
+          <snsSystem>
+            <snsCode>30</snsCode>
+            <snsTitle>Ice and rain protection</snsTitle>
+            <snsSubSystem>
+              <snsCode>0</snsCode>
+              <snsTitle>General</snsTitle>
+              <snsSubSubSystem>
+                <snsCode>0</snsCode>
+                <snsTitle>General</snsTitle>
+              </snsSubSubSystem>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>1</snsCode>
+              <snsTitle>Air foil</snsTitle>
+              <snsSubSubSystem>
+                <snsCode>0</snsCode>
+                <snsTitle>Air foil general</snsTitle>
+              </snsSubSubSystem>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>2</snsCode>
+              <snsTitle>Air intakes</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>3</snsCode>
+              <snsTitle>Pitot and static</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>4</snsCode>
+              <snsTitle>Windows, windshields, canopies and doors</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>5</snsCode>
+              <snsTitle>Antennas and radomes</snsTitle>
+            </snsSubSystem>
+            <snsSubSystem>
+              <snsCode>6</snsCode>
+              <snsTitle>Propellers/rotors</snsTitle>
+            </snsSubSystem>
+          </snsSystem>
+        </snsDescr> -->
+      </snsRules>
+      <!-- Rules applicable to all Schemas -->
+      <contextRules>
+        <structureObjectRuleGroup>
+          <structureObjectRule>
+            <objectPath allowedObjectFlag="0">//dmAddress/dmIdent/dmCode/@infoCode</objectPath>
+            <objectUse>This BREX applies a small subset of information codes
+              (actually, too small for practical purposes)</objectUse>
+            <objectValue valueTailoring="closed" valueForm="range"
+              valueAllowed="000~022">Use iaw S1000D Iss 4.2</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single"
+              valueAllowed="920">Change</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single"
+              valueAllowed="993">Neutralization of a bacterial
+              substance</objectValue>
+          </structureObjectRule>
+          <structureObjectRule>
+            <objectPath allowedObjectFlag="0">//changeInline</objectPath>
+            <objectUse>Element changeInLine must not be used</objectUse>
+          </structureObjectRule>
+          <structureObjectRule>
+            <objectPath
+              allowedObjectFlag="0">//@changeType="delete"</objectPath>
+            <objectUse>Change annotation value -delete- is not allowed. Deleted text must always be
+              removed from the context, ie not just marked deleted using the attribute change set to
+              -delete-. Change history must not be preserved in data modules (and other CSDB
+              objects). This means that marked up changes in a data module issue must always only
+              concern changes since last issue. For all non-editorial changes, reason for change
+              must be given using the attribute reasonForUpdateRefIds on the element concerned</objectUse>
+          </structureObjectRule>
+          <structureObjectRule>
+            <objectPath allowedObjectFlag="2">//refs</objectPath>
+            <objectUse>The absence of the element refs will be presented with None.</objectUse>
+          </structureObjectRule>
+          <structureObjectRule>
+            <objectPath
+              allowedObjectFlag="0">//title/internalRef</objectPath>
+            <objectUse>References in titles are not allowed</objectUse>
+          </structureObjectRule>
+          <structureObjectRule>
+            <objectPath allowedObjectFlag="0">//title/dmRef</objectPath>
+            <objectUse>References in titles are not allowed</objectUse>
+          </structureObjectRule>
+          <structureObjectRule>
+            <objectPath allowedObjectFlag="0">//title/pmRef</objectPath>
+            <objectUse>References in titles are not allowed</objectUse>
+          </structureObjectRule>
+          <structureObjectRule>
+            <objectPath
+              allowedObjectFlag="0">//title/externalPubRef</objectPath>
+            <objectUse>References in titles are not allowed</objectUse>
+          </structureObjectRule>
+        </structureObjectRuleGroup>
+        <!-- The following list is not related to any specific context. Thus, it explicitly limits the commonly allowable notations for the project (ie, the base set) to CGM, JPG, TIF and PNG -->
+        <notationRuleList>
+          <notationRule>
+            <notationName allowedNotationFlag="1">JPG</notationName>
+            <objectUse>Only CGM, JPG, TIF and PNG illustration formats are allowed</objectUse>
+          </notationRule>
+          <notationRule>
+            <notationName allowedNotationFlag="1">TIF</notationName>
+            <objectUse>Only CGM, JPG, TIF and PNG illustration formats are allowed</objectUse>
+          </notationRule>
+          <notationRule>
+            <notationName allowedNotationFlag="1">PNG</notationName>
+            <objectUse>Only CGM, JPG, TIF and PNG illustration formats are allowed</objectUse>
+          </notationRule>
+        </notationRuleList>
+      </contextRules>
+      <!-- A structure rule specific to the Comment Schema -->
+      <contextRules rulesContext="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/comment.xsd">
+        <structureObjectRuleGroup>
+          <structureObjectRule>
+            <objectPath allowedObjectFlag="2">//comment</objectPath>
+            <objectUse>The comment object is not applied to these projects</objectUse>
+          </structureObjectRule>
+        </structureObjectRuleGroup>
+      </contextRules>
+      <!-- The following rule is specific to IPD data modules and limits the formats/notations for IPD modules to CGM only -->
+      <contextRules rulesContext="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/ipd.xsd">
+        <notationRuleList>
+          <notationRule>
+            <notationName allowedNotationFlag="1">CGM</notationName>
+            <objectUse>CGM is mandated to support hotpotting functionality in the catalogs.</objectUse>
+          </notationRule>
+        </notationRuleList>
+      </contextRules>
+      <!-- The following rule is specific to Process data modules and excludes the use of TIF while the rest of the base set (ie CGM, JPG and PNG) are still allowed -->
+      <contextRules rulesContext="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/process.xsd">
+        <notationRuleList>
+          <notationRule>
+            <notationName allowedNotationFlag="0">TIF</notationName>
+            <objectUse>Excluded since the project Process data module engine cannot render TIF
+              illustrations.</objectUse>
+          </notationRule>
+        </notationRuleList>
+      </contextRules>
+      <nonContextRules>
+        <nonContextRule>
+          <simplePara>CSDB synchronization between partner companies must occur last Sunday of each month.</simplePara>
+        </nonContextRule>
+      </nonContextRules>
+    </brex>
+  </content>
+</dmodule>

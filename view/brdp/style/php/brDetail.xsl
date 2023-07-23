@@ -49,29 +49,74 @@
              <span class="fw-bold">Business rule decision point content: - 
               <xsl:value-of select="//brDecisionPointContent/title"/>
              </span>
-             <br/>
              <!-- <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointText"/> -->
              <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointText">
-                <xsl:with-param name="isShowDmCode" select="'foobar'"/>
+                <xsl:with-param name="isShowDmCode" select="'yes'"/>
              </xsl:apply-templates>
-             <br/>
              <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointValueGroup"/>
           </div>          
         </div>
       </div>
   </xsl:template>
 
+  <xsl:template match="para">
+    <p>
+      <xsl:apply-templates>
+        <xsl:with-param name="isShowDmCode" select="'yes'"/>
+        <xsl:with-param name="isShowDmCode">YES</xsl:with-param>
+      </xsl:apply-templates>
+    </p>
+  </xsl:template>
+
+  <!-- <xsl:template match="emphasis">
+    <div style="margin-left:20px;">
+      <xsl:apply-templates />
+    </div>
+  </xsl:template> -->
+
+  <xsl:template match="randomList">
+    <ul>
+      <xsl:for-each select="listItem">
+        <li>
+          <xsl:apply-templates />
+        </li>
+      </xsl:for-each>
+    </ul>
+  </xsl:template>
+
+  <xsl:template match="sequentialList">
+    <ol>
+      <xsl:for-each select="listItem">
+        <li>
+          <xsl:apply-templates />
+        </li>
+      </xsl:for-each>
+    </ol>
+  </xsl:template>
+
+  <xsl:template match="listItem">
+    <xsl:apply-templates />
+  </xsl:template>
+
+  <xsl:template match="dmCode">
+    <xsl:param name="isShowDmCode"/>
+    <xsl:value-of select="$isShowDmCode"/>
+    <xsl:choose>
+      <xsl:when test="$isShowDmCode = 'yes'">
+        <xsl:value-of select="@modelIdentCode"/>-<xsl:value-of select="@systemDiffCode"/>-<xsl:value-of select="@systemCode"/>-<xsl:value-of select="@subSystemCode"/><xsl:value-of select="@subSubSystemCode"/>-<xsl:value-of select="@assyCode"/>-<xsl:value-of select="@disassyCode"/><xsl:value-of select="@disassyCodeVariant"/>-<xsl:value-of select="@infoCode"/><xsl:value-of select="@infoCodeVariant"/>-<xsl:value-of select="@itemLocationCode"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="@systemCode"/>-<xsl:value-of select="@subSystemCode"/><xsl:value-of select="@subSubSystemCode"/>-<xsl:value-of select="@assyCode"/>-<xsl:value-of select="@disassyCode"/><xsl:value-of select="@disassyCodeVariant"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
   <xsl:template match="brDecisionPointValueGroup">
-    <br></br>
     <span class="fw-bold">Values allowed: &#160;</span>You may select <span class="fw-bold"><xsl:value-of select="@brDecisionValueSelection"/></span> value.
-    <br/><br/>
     <xsl:for-each select="brDecisionPointValue">
       <span class="fw-bold">Value allowed: &#160;</span><xsl:value-of select="@brDecisionValueAllowed"/>
-      <br></br>
       <xsl:apply-templates/>
-      <br></br>
-    </xsl:for-each>
-      
+    </xsl:for-each>      
   </xsl:template>
 
   <xsl:template match="s1000dSchemas"> 

@@ -4,7 +4,7 @@
 	<identAndStatusSection>
 		<dmAddress>
 			<dmIdent>
-				<dmCode modelIdentCode="N219" systemDiffCode="G" systemCode="04" subSystemCode="1" subSubSystemCode="0" assyCode="0100" disassyCode="00" disassyCodeVariant="A" infoCode="024" infoCodeVariant="A" itemLocationCode="D"/>
+				<dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="04" subSystemCode="0" subSubSystemCode="0" assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="024" infoCodeVariant="A" itemLocationCode="D"/>
 				<language countryIsoCode="US" languageIsoCode="en"/>
 				<issueInfo issueNumber="001" inWork="00"/>
 			</dmIdent>
@@ -23,28 +23,20 @@
 					<dataDistribution>To be made available to all N219 Project by S1000D users.</dataDistribution>
 					<exportControl>
 						<exportRegistrationStmt>
-							<simplePara>Export of this data module to all countries that are the residence of
-								organizations that are users of S1000D is permitted. Storage of this data module
-								is to be at the discretion of the organization.</simplePara>
+							<simplePara>Export of this data module to all countries that are the residence of	organizations that are users of S1000D is permitted. Storage of this data module is to be at the discretion of the organization.</simplePara>
 						</exportRegistrationStmt>
 					</exportControl>
-					<dataHandling>There are no specific handling instructions for this data
-						module.</dataHandling>
-					<dataDestruction>Users may destroy this data module in accordance with their own local
-						procedures.</dataDestruction>
-					<dataDisclosure>There are no dissemination limitations that apply to this data
-						module.</dataDisclosure>
+					<dataHandling>There are no specific handling instructions for this data module.</dataHandling>
+					<dataDestruction>Users may destroy this data module in accordance with their own local procedures.</dataDestruction>
+					<dataDisclosure>There are no dissemination limitations that apply to this data module.</dataDisclosure>
 				</restrictionInstructions>
 				<restrictionInfo>
 					<copyright>
 						<copyrightPara>
-							<emphasis>Copyright (C) 2019</emphasis> by each of the following organizations:
+							<emphasis>Copyright (C) 2023</emphasis> by each of the following organizations:
 							<randomList>
 								<listItem>
-									<para>AeroSpace and Defence Industries Associations of Europe - ASD.</para>
-								</listItem>
-								<listItem>
-									<para>Ministries of Defence of the member countries of ASD.</para>
+									<para>PT. Dirgantara Indonesia</para>
 								</listItem>
 							</randomList>
 						</copyrightPara>
@@ -65,25 +57,25 @@
 							</randomList>
 						</copyrightPara>
 					</copyright>
-					<policyStatement>S1000D-SC-2016-017-002-00 Steering Committee TOR</policyStatement>
+					<!-- <policyStatement>S1000D-SC-2016-017-002-00 Steering Committee TOR</policyStatement> -->
 					<dataConds>There are no known conditions that would change the data restrictions for, or security classification of, this data module.</dataConds>
 				</restrictionInfo>
 			</dataRestrictions>
-			<responsiblePartnerCompany enterpriseCode="B6865">
-				<enterpriseName>AeroSpace and Defence Industries Association of Europe - ASD</enterpriseName>
+			<responsiblePartnerCompany enterpriseCode="0001Z">
+				<enterpriseName>PT. Dirgantara Indonesia</enterpriseName>
 			</responsiblePartnerCompany>
-			<originator enterpriseCode="B6865">
-				<enterpriseName>AeroSpace and Defence Industries Association of Europe - ASD</enterpriseName>
+			<originator enterpriseCode="0001Z">
+				<enterpriseName>PT. Dirgantara Indonesia</enterpriseName>
 			</originator>
 			<applic>
 				<displayText>
-					<simplePara>All</simplePara>
+					<simplePara>N219 All</simplePara>
 				</displayText>
 			</applic>
 			<brexDmRef>
 				<dmRef>
 					<dmRefIdent>
-						<dmCode modelIdentCode="S1000D" systemDiffCode="G" systemCode="04" subSystemCode="1" subSubSystemCode="0" assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+						<dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
 						<issueInfo issueNumber="001" inWork="00"/>
 					</dmRefIdent>
 				</dmRef>
