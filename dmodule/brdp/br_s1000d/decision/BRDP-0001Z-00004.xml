@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<brDecision
+  brDecisionIdentNumber="BRDP-S1-00004"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../schema/flat/brdoc.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+  <brDecisionText>
+    <!-- <para>list of information sets to be used for PTDI manuals:
+      <randomList>
+        <listItem><para>Crew/Operator information</para></listItem>
+        <listItem><para>Description and operation</para></listItem>
+        <listItem><para>Common information and data</para></listItem>
+        <listItem><para>Aircrew information</para></listItem>
+      </randomList>
+    </para> -->
+    <para>Refer to information_and_publication.xlsx</para>
+    <para>See sheet inforation_sets</para>
+  </brDecisionText>
+
+</brDecision>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<brDecision
+  brDecisionIdentNumber="BRDP-S1-00544"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../schema/flat/brdoc.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+  <brDecisionText>
+    <para>All files being transfered to customer (neutral repository, etc) shall be compressed by removing spacing and lines using Regex.</para>
+  </brDecisionText>
+  
+</brDecision>

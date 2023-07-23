@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<brDecision
+  brDecisionIdentNumber="BRDP-S1-00460"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../schema/flat/brdoc.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+  <brDecisionText>
+  <para>Page-oriented or IETP shall be included front matter which comply to S1000D-A-03-09-0400-00A-040A-A that are:
+    <sequentialList>
+      <listItem><para>Title Page</para></listItem>
+      <listItem><para>LOEP/LOEDM</para></listItem>
+      <listItem><para>CR</para></listItem>
+      <listItem><para>Access Illustration / LOI</para></listItem>
+      <listItem><para>LOA - List of Abbreviation </para></listItem>
+      <listItem><para>LOT - List of Table (optional)</para></listItem>
+      <listItem><para>LOS - List of Symbols (optional)</para></listItem>
+      <listItem><para>TSR - Technical Standard Record (optional)</para></listItem>
+      <listItem><para>TOC - Table of Contents</para></listItem>
+      <listItem><para>LOASD - List of Applicable Standard Document (optional)</para></listItem>
+      <listItem><para>ACT</para></listItem>
+      <listItem><para>LOF - List of Figures</para></listItem>
+    </sequentialList>
+  </para>
+  </brDecisionText>
+  
+</brDecision>

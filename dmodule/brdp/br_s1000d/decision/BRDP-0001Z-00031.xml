@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<brDecision
+  brDecisionIdentNumber="BRDP-S1-00031"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../schema/flat/brdoc.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+  <brDecisionText>
+    <para>Yes, use warning and/or caution externally (use CIR).</para>
+    <para>Warning and/or caution cannot always be used externally, so use the warning and/or caution internally.</para>
+    <para>Ex: using warning in certain description (eg. in crew information/AFM/AOM) is not used externally due to the warning/caution content never duplicates and &#60;warningAndCautionRef&#62; parent is only &#60;content&#62; (not textElementType).</para>
+  </brDecisionText>
+  
+</brDecision>

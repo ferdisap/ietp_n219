@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<brDecision
+  brDecisionIdentNumber="BRDP-S1-00099"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../schema/flat/brdoc.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+  <brDecisionText>
+    <para>Identifier used are:
+      <randomList>
+        <listItem><para>&#60;reqSupportEquips&#62; is used.</para></listItem>
+        <listItem><para>&#60;reqSupplies&#62; is not used.</para></listItem>
+        <listItem><para>&#60;reqSpares&#62; is not used.</para></listItem>
+        <listItem><para>&#60;workLocation&#62; is not used.</para></listItem>
+      </randomList>
+    </para>
+  </brDecisionText>
+  
+</brDecision>

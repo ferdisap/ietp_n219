@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<brDecision
+  brDecisionIdentNumber="BRDP-S1-00005"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../schema/flat/brdoc.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+  <brDecisionText>
+    
+    <para>Currently the publication to be produced are:
+      <randomList>
+        <listItem>
+          <para>Aircrew Information
+            <randomList>
+              <listItem><para>General (Descr and Operation system as per SNS)</para></listItem>
+              <listItem><para>Flight Manual (POH)</para></listItem>
+              <listItem><para>Aircraft Operation</para></listItem>
+              <listItem><para>Checklist</para></listItem>
+            </randomList>
+          </para>
+        </listItem>
+        <listItem>
+          <para>Common information and data
+            <randomList>
+              <listItem><para>Regulatory Information</para></listItem>
+            </randomList>
+          </para>
+        </listItem>
+      </randomList>
+    </para>
+    <para>See S1000D-A-05-03-0200-00A-040A-A Chap 5.3.2</para>
+    <para>See S1000D-A-05-02-0207-00A-040A-A Chap 5.2.2.7 Par 2</para>
+
+    <para>For the next, complete all publications as stated as in to information_and_publication.xlsx</para>
+    <para>see sheet publication_sets and then list of applicable publication sheet.</para>
+  </brDecisionText>
+
+</brDecision>

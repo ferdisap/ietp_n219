@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<brDecision
+  brDecisionIdentNumber="BRDP-S1-00026"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../schema/flat/brdoc.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+  <brDecisionText>
+    <para>Use the highlight text by attribute "emphasisType".</para>
+    <para>Below following value of the attribute:
+      <randomList>
+        <listItem>
+          <para>em01 - bold</para>
+        </listItem>
+        <listItem>
+          <para>em02 - italic</para>
+        </listItem>
+        <listItem>
+          <para>em03 - Underline</para>
+        </listItem>
+        <listItem>
+          <para>em04 - NOT USED</para>
+        </listItem>
+        <listItem>
+          <para>em05 - Strikethrough (not to be used to mark deleted text)</para>
+        </listItem>
+      </randomList>
+    </para>
+    <para>Uppercase, Italic, or underlining (not bold) are not permitted, except for legacy data. </para>
+  </brDecisionText>
+  
+</brDecision>

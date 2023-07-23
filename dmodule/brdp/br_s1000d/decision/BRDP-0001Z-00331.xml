@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<brDecision
+  brDecisionIdentNumber="BRDP-S1-00331"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../schema/flat/brdoc.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+  <brDecisionText>
+    <para>The data module coding strategy is as below:
+      <emphasis>Detail code name ---Digits--- Code</emphasis>
+      <sequentialList>
+        <listItem><para>Model Identification Code ---4--- N219 </para></listItem>
+        <listItem><para>System Difference Code ---1--- A (UOC) </para></listItem>
+        <listItem><para>System Code ---2--- 00 thru 99 </para></listItem>
+        <listItem><para>Subsystem code ---1--- 0 thru 9 </para></listItem>
+        <listItem><para>Subsubsystem code ---1--- 0 thru 9 </para></listItem>
+        <listItem><para>Assembly/unit code ---2--- 0 thru 99 </para></listItem>
+        <listItem><para>Disassembly code ---2--- Disassembly Number </para></listItem>
+        <listItem><para>Disassembly code variant ---1--- A thru Z </para></listItem>
+        <listItem><para>Information code ---3--- Refer to DMRL </para></listItem>
+        <listItem><para>Information code variant ---1--- Refer to DMRL </para></listItem>
+        <listItem><para>Item location code ---1--- A/B/C/D; refer to DMRL </para></listItem>
+      </sequentialList>
+    </para>
+  </brDecisionText>
+  
+</brDecision>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<brDecision
+  brDecisionIdentNumber="BRDP-S1-00309"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../schema/flat/brdoc.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+  <brDecisionText>
+    <para>The child element &#60;reducedPara&#62; of &#60;frontMatterList&#62; shall be used to contain: 
+      <randomList>
+        <listItem>
+          <para>LOEP: 
+            <sequentialList>
+              <listItem><para>"This publication includes the following pages after insertion of issue XXX, dated dd-month-yyy."</para></listItem>
+              <listItem><para>"C = Changed page; N = New page."</para></listItem>
+            </sequentialList>
+          </para>
+        </listItem>
+        <listItem>
+          <para>LOEDM: 
+            <sequentialList>
+              <listItem><para>"The listed documents is included last revision: dd-month-yyy."</para></listItem>
+              <listItem><para>"C = Changed page; N = New page."</para></listItem>
+            </sequentialList>
+          </para>
+        </listItem>
+        <listItem>
+          <para>Highlights: "The listed changes are introduced in issue XXX, dated dd-month-yyy, of this publication."</para>
+        </listItem>
+        <listItem>
+          <para>Updating Instruction: 
+            <sequentialList>
+              <listItem><para>"Remove or insert data modules as listed in Table 1."</para></listItem>
+              <listItem><para>"I = Insert data module; R = Remove data module."</para></listItem>
+            </sequentialList>
+          </para>
+        </listItem>
+      </randomList>
+    </para>
+  </brDecisionText>
+  
+</brDecision>

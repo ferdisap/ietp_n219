@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<brDecision
+  brDecisionIdentNumber="BRDP-S1-00118"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../schema/flat/brdoc.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+  <brDecisionText>
+    <para>When there needs a title (eg. levelled paragraph, table, figure), the element &#60;title&#62; shall be used. But when utilizing child elements of the element &#60;proceduralStep&#62; to write procedural step, if the context of the content is title, use the element &#60;title&#62;, otherwise use the element &#60;para&#62;.</para>
+  </brDecisionText>
+  
+</brDecision>
