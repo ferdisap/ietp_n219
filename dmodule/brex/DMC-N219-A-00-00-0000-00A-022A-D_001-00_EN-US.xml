@@ -51,7 +51,7 @@
   <content>
     <brex>
       <commonInfo>
-        <para>This BREX data module gives the rules that apply to the N219.</para>
+        <para>This BREX data module gives the rules (chapterized) that applied to the N219.</para>
       </commonInfo>
       <snsRules>
         <snsDescr>
@@ -1173,145 +1173,18 @@
 
           
         </snsDescr>
-        <!-- <snsDescr>
-          <snsSystem>
-            <snsCode>30</snsCode>
-            <snsTitle>Ice and rain protection</snsTitle>
-            <snsSubSystem>
-              <snsCode>0</snsCode>
-              <snsTitle>General</snsTitle>
-              <snsSubSubSystem>
-                <snsCode>0</snsCode>
-                <snsTitle>General</snsTitle>
-              </snsSubSubSystem>
-            </snsSubSystem>
-            <snsSubSystem>
-              <snsCode>1</snsCode>
-              <snsTitle>Air foil</snsTitle>
-              <snsSubSubSystem>
-                <snsCode>0</snsCode>
-                <snsTitle>Air foil general</snsTitle>
-              </snsSubSubSystem>
-            </snsSubSystem>
-            <snsSubSystem>
-              <snsCode>2</snsCode>
-              <snsTitle>Air intakes</snsTitle>
-            </snsSubSystem>
-            <snsSubSystem>
-              <snsCode>3</snsCode>
-              <snsTitle>Pitot and static</snsTitle>
-            </snsSubSystem>
-            <snsSubSystem>
-              <snsCode>4</snsCode>
-              <snsTitle>Windows, windshields, canopies and doors</snsTitle>
-            </snsSubSystem>
-            <snsSubSystem>
-              <snsCode>5</snsCode>
-              <snsTitle>Antennas and radomes</snsTitle>
-            </snsSubSystem>
-            <snsSubSystem>
-              <snsCode>6</snsCode>
-              <snsTitle>Propellers/rotors</snsTitle>
-            </snsSubSystem>
-          </snsSystem>
-        </snsDescr> -->
       </snsRules>
       <!-- Rules applicable to all Schemas -->
       <contextRules>
         <structureObjectRuleGroup>
           <structureObjectRule>
-            <objectPath allowedObjectFlag="0">//dmAddress/dmIdent/dmCode/@infoCode</objectPath>
-            <objectUse>This BREX applies a small subset of information codes
-              (actually, too small for practical purposes)</objectUse>
-            <objectValue valueTailoring="closed" valueForm="range"
-              valueAllowed="000~022">Use iaw S1000D Iss 4.2</objectValue>
-            <objectValue valueTailoring="closed" valueForm="single"
-              valueAllowed="920">Change</objectValue>
-            <objectValue valueTailoring="closed" valueForm="single"
-              valueAllowed="993">Neutralization of a bacterial
-              substance</objectValue>
-          </structureObjectRule>
-          <structureObjectRule>
-            <objectPath allowedObjectFlag="0">//changeInline</objectPath>
-            <objectUse>Element changeInLine must not be used</objectUse>
-          </structureObjectRule>
-          <structureObjectRule>
-            <objectPath
-              allowedObjectFlag="0">//@changeType="delete"</objectPath>
-            <objectUse>Change annotation value -delete- is not allowed. Deleted text must always be
-              removed from the context, ie not just marked deleted using the attribute change set to
-              -delete-. Change history must not be preserved in data modules (and other CSDB
-              objects). This means that marked up changes in a data module issue must always only
-              concern changes since last issue. For all non-editorial changes, reason for change
-              must be given using the attribute reasonForUpdateRefIds on the element concerned</objectUse>
-          </structureObjectRule>
-          <structureObjectRule>
-            <objectPath allowedObjectFlag="2">//refs</objectPath>
-            <objectUse>The absence of the element refs will be presented with None.</objectUse>
-          </structureObjectRule>
-          <structureObjectRule>
-            <objectPath
-              allowedObjectFlag="0">//title/internalRef</objectPath>
-            <objectUse>References in titles are not allowed</objectUse>
-          </structureObjectRule>
-          <structureObjectRule>
-            <objectPath allowedObjectFlag="0">//title/dmRef</objectPath>
-            <objectUse>References in titles are not allowed</objectUse>
-          </structureObjectRule>
-          <structureObjectRule>
-            <objectPath allowedObjectFlag="0">//title/pmRef</objectPath>
-            <objectUse>References in titles are not allowed</objectUse>
-          </structureObjectRule>
-          <structureObjectRule>
-            <objectPath
-              allowedObjectFlag="0">//title/externalPubRef</objectPath>
-            <objectUse>References in titles are not allowed</objectUse>
-          </structureObjectRule>
-        </structureObjectRuleGroup>
-        <!-- The following list is not related to any specific context. Thus, it explicitly limits the commonly allowable notations for the project (ie, the base set) to CGM, JPG, TIF and PNG -->
-        <notationRuleList>
-          <notationRule>
-            <notationName allowedNotationFlag="1">JPG</notationName>
-            <objectUse>Only CGM, JPG, TIF and PNG illustration formats are allowed</objectUse>
-          </notationRule>
-          <notationRule>
-            <notationName allowedNotationFlag="1">TIF</notationName>
-            <objectUse>Only CGM, JPG, TIF and PNG illustration formats are allowed</objectUse>
-          </notationRule>
-          <notationRule>
-            <notationName allowedNotationFlag="1">PNG</notationName>
-            <objectUse>Only CGM, JPG, TIF and PNG illustration formats are allowed</objectUse>
-          </notationRule>
-        </notationRuleList>
-      </contextRules>
-      <!-- A structure rule specific to the Comment Schema -->
-      <contextRules rulesContext="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/comment.xsd">
-        <structureObjectRuleGroup>
-          <structureObjectRule>
-            <objectPath allowedObjectFlag="2">//comment</objectPath>
-            <objectUse>The comment object is not applied to these projects</objectUse>
+            <brDecisionRef>
+            </brDecisionRef>
           </structureObjectRule>
         </structureObjectRuleGroup>
       </contextRules>
-      <!-- The following rule is specific to IPD data modules and limits the formats/notations for IPD modules to CGM only -->
-      <contextRules rulesContext="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/ipd.xsd">
-        <notationRuleList>
-          <notationRule>
-            <notationName allowedNotationFlag="1">CGM</notationName>
-            <objectUse>CGM is mandated to support hotpotting functionality in the catalogs.</objectUse>
-          </notationRule>
-        </notationRuleList>
-      </contextRules>
-      <!-- The following rule is specific to Process data modules and excludes the use of TIF while the rest of the base set (ie CGM, JPG and PNG) are still allowed -->
-      <contextRules rulesContext="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/process.xsd">
-        <notationRuleList>
-          <notationRule>
-            <notationName allowedNotationFlag="0">TIF</notationName>
-            <objectUse>Excluded since the project Process data module engine cannot render TIF
-              illustrations.</objectUse>
-          </notationRule>
-        </notationRuleList>
-      </contextRules>
+
+
       <nonContextRules>
         <nonContextRule>
           <simplePara>CSDB synchronization between partner companies must occur last Sunday of each month.</simplePara>

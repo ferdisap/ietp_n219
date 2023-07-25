@@ -53,19 +53,26 @@
              <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointText">
                 <xsl:with-param name="isShowDmCode" select="'yes'"/>
              </xsl:apply-templates>
-             <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointValueGroup"/>
+             <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointValueGroup">
+                <xsl:with-param name="marginBottom" select="'no'"/>
+             </xsl:apply-templates>
           </div>          
         </div>
       </div>
   </xsl:template>
 
   <xsl:template match="para">
+    <xsl:param name='marginBottom'/>  
     <p>
+      <xsl:if test="$marginBottom = 'no'">
+        <xsl:attribute name="class">mb-0</xsl:attribute> 
+      </xsl:if>
       <xsl:apply-templates>
         <xsl:with-param name="isShowDmCode" select="'yes'"/>
         <xsl:with-param name="isShowDmCode">YES</xsl:with-param>
       </xsl:apply-templates>
     </p>
+    
   </xsl:template>
 
   <!-- <xsl:template match="emphasis">
@@ -112,10 +119,14 @@
   </xsl:template>
 
   <xsl:template match="brDecisionPointValueGroup">
+    <xsl:param name="marginBottom"/>
     <span class="fw-bold">Values allowed: &#160;</span>You may select <span class="fw-bold"><xsl:value-of select="@brDecisionValueSelection"/></span> value.
+    <br/><br/>
     <xsl:for-each select="brDecisionPointValue">
       <span class="fw-bold">Value allowed: &#160;</span><xsl:value-of select="@brDecisionValueAllowed"/>
-      <xsl:apply-templates/>
+      <xsl:apply-templates>
+        <xsl:with-param name="marginBottom" select = "$marginBottom" />
+      </xsl:apply-templates>
     </xsl:for-each>      
   </xsl:template>
 

@@ -11,9 +11,9 @@
       the character &#34;I&#34; and &#34;O&#34; only can be used for model identification code.
     </para>
   </brDecisionText>
-  <brDecisionValueGroup>
-    <brDecisionValue brDecisionValueRegistered="SF815">
+  <!-- <brDecisionValueGroup>
+    <brDecisionValue brDecisionValueRegistered="0001Z">
       <para>SIOM. (this is an example for make easy development manuals)</para>
     </brDecisionValue>
-  </brDecisionValueGroup>
+  </brDecisionValueGroup> -->
 </brDecision>

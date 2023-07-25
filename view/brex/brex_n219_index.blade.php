@@ -1,6 +1,11 @@
 @extends('html_head')
 @section('styles')
 {{-- <link rel="stylesheet" href="/css/brdp/table.css"> --}}
+<style>
+  .dump_red {
+    border: 1px solid red;
+  }
+</style>
 @endSection
 
 @section('body')
@@ -10,9 +15,9 @@
   <div class="container text-center mt-3">
     <h1>N219 Project - BREX</h1>
     <div class="nav justify-content-center d-flex">
-      <a href="#" class="nav-link">SNS Rules</a>
-      <a href="#" class="nav-link disabled">Context Rules</a>
-      <a href="#" class="nav-link disabled">Non-Context Rules</a>
+      <a href="javascript:void(0)" onclick="Brex.showContent('snsRules', Brex.SnsRule.htmlDoc)" class="nav-link">SNS Rules</a>
+      <a href="javascript:void(0)" onclick="Brex.showContent('contextRules', Brex.ContextRule.htmlDoc)" class="nav-link">Context Rules</a>
+      <a href="#" class="nav-link">Non-Context Rules</a>
     </div>
     
     <div class="container mt-3 d-flex justify-content-center">
@@ -22,7 +27,7 @@
   </div>
 </header>
 
-<article id="sns-structure">
+<article id="snsStructure">
   <div class="d-flex justify-content-center flex-column container">
     <p>Sns is structured by the number of characters which is defined by the BRDP. This system is designed to provide standardization in the arrangement or addressing of the Product</p>
     <div class="d-flex justify-content-center w-100">
@@ -31,9 +36,8 @@
     </div>
   </div>
 </article>
-<article id="sns-rules">
-  
-</article>
+<article id="snsRules"></article>
+<article id="contextRules"></article>
 
 @endsection
 

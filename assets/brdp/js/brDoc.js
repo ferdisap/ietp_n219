@@ -13,7 +13,7 @@ xhr.send(null);
 const xslList = xhr.responseXML;
 // console.log("xslList",xslList);
 
-xhr.open('GET', "../../dmodule/brdp/br_s1000d/DMC-N219-A-04-10-0100-00A-024A-D_001-00_EN-US.xml", false);
+xhr.open('GET', "../../dmodule/brdp/br_s1000d/DMC-N219-A-00-00-0000-00A-024A-D_001-00_EN-US.xml", false);
 xhr.send(null);
 const xmlRef = xhr.responseXML;
 // console.log(xmlRef);
