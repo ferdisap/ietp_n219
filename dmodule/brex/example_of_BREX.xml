@@ -104,15 +104,10 @@
         <structureObjectRuleGroup>
           <structureObjectRule>
             <objectPath allowedObjectFlag="0">//dmAddress/dmIdent/dmCode/@infoCode</objectPath>
-            <objectUse>This BREX applies a small subset of information codes
-              (actually, too small for practical purposes)</objectUse>
-            <objectValue valueTailoring="closed" valueForm="range"
-              valueAllowed="000~022">Use iaw S1000D Iss 4.2</objectValue>
-            <objectValue valueTailoring="closed" valueForm="single"
-              valueAllowed="920">Change</objectValue>
-            <objectValue valueTailoring="closed" valueForm="single"
-              valueAllowed="993">Neutralization of a bacterial
-              substance</objectValue>
+            <objectUse>This BREX applies a small subset of information codes (actually, too small for practical purposes)</objectUse>
+            <objectValue valueTailoring="closed" valueForm="range" valueAllowed="000~022">Use iaw S1000D Iss 4.2</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="920">Change</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="993">Neutralization of a bacterial substance</objectValue>
           </structureObjectRule>
           <structureObjectRule>
             <objectPath allowedObjectFlag="0">//changeInline</objectPath>

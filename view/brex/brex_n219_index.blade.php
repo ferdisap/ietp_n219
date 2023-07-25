@@ -15,8 +15,8 @@
   <div class="container text-center mt-3">
     <h1>N219 Project - BREX</h1>
     <div class="nav justify-content-center d-flex">
-      <a href="javascript:void(0)" onclick="Brex.showContent('snsRules', Brex.SnsRule.htmlDoc)" class="nav-link">SNS Rules</a>
-      <a href="javascript:void(0)" onclick="Brex.showContent('contextRules', Brex.ContextRule.htmlDoc)" class="nav-link">Context Rules</a>
+      <a href="javascript:void(0)" onclick="Brex.showContent('SnsRule', Brex.SnsRule.htmlDoc)" class="nav-link">SNS Rules</a>
+      <a href="javascript:void(0)" onclick="Brex.showContent('ContextRule', Brex.ContextRule.htmlDoc)" class="nav-link">Context Rules</a>
       <a href="#" class="nav-link">Non-Context Rules</a>
     </div>
     
@@ -36,8 +36,8 @@
     </div>
   </div>
 </article>
-<article id="snsRules"></article>
-<article id="contextRules"></article>
+<article id="SnsRule"></article>
+<article id="ContextRule"></article>
 
 @endsection
 

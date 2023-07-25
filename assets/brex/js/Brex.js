@@ -15,7 +15,7 @@ const Brex = {
     async refresh(){
       this.xslDoc = await this.xslDoc();
       this.htmlDoc = await this.htmlDoc();
-      this.parent.renderHtml('snsRules', this.htmlDoc);
+      // this.parent.renderHtml('snsRule', this.htmlDoc);
     }
   },
 
@@ -24,10 +24,10 @@ const Brex = {
     url: "view/brex/style/xsl/contextRules.xml",
     xslDoc: async () => {
       console.log(this);
-      return await Brex.createXML(Brex.SnsRule.url);
+      return await Brex.createXML(Brex.ContextRule.url);
     },
     htmlDoc: () => {
-      return Brex.xmlToHtml(Brex.brexDoc, Brex.SnsRule.xslDoc).firstElementChild
+      return Brex.xmlToHtml(Brex.brexDoc, Brex.ContextRule.xslDoc).firstElementChild
     },  
     async refresh(){
       this.xslDoc = await this.xslDoc();
@@ -87,9 +87,12 @@ const Brex = {
     
     if (element != undefined){
       let container = document.getElementById(idContainer);
+      console.log(element, idContainer, container);
       container.innerHTML = element.outerHTML;
       this.currentContent = idContainer;
     }
+
+    localStorage.setItem('currentContent', this.currentContent);
   },
 
   async refresh(){
@@ -98,7 +101,29 @@ const Brex = {
 }
 
 
-document.addEventListener('DOMContentLoaded', function(){
-  Brex.refresh();
-  Brex.SnsRule.refresh()
+document.addEventListener('DOMContentLoaded', async () => {
+  let prom = new Promise(async (resolve, reject) => {
+    await Brex.refresh();
+    await Brex.SnsRule.refresh();
+    await Brex.ContextRule.refresh();
+
+    if (Brex.brexDoc instanceof XMLDocument){
+      resolve(true);    
+    } else {
+      reject(false);
+    }
+  });
+
+  // berfungsi agar diawal kita akan otomatis buka menu SNS Rules atau Context Rules atay Non Context Rules
+  prom.then( v => {
+    if(v){
+      let currentContent = localStorage.getItem('currentContent');
+      if (currentContent == null){
+        Brex.renderHtml('SnsRule', Brex.SnsRule.htmlDoc);
+      } else {
+        console.log(`Brex.${currentContent}`);
+        eval(`Brex.renderHtml('${currentContent}', Brex.${currentContent}.htmlDoc)`);
+      }
+    }
+  });
 })

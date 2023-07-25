@@ -7,9 +7,16 @@
   xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
   <brDecisionText>
-    <para>
-      the character &#34;I&#34; and &#34;O&#34; only can be used for model identification code.
+    <para>The character &#34;I&#34; and &#34;O&#34; can be used except:
+      <randomList>
+        <listItem><para>Dissasembly Code Variant</para></listItem>
+        <listItem><para>Info Code Variant</para></listItem>
+        <listItem><para>Attribute inwork</para></listItem>
+      </randomList>
     </para>
+    <!-- <para>
+      the character &#34;I&#34; and &#34;O&#34; only can be used for model identification code.
+    </para> -->
   </brDecisionText>
   <!-- <brDecisionValueGroup>
     <brDecisionValue brDecisionValueRegistered="0001Z">

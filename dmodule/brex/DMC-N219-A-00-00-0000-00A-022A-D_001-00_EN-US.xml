@@ -1177,9 +1177,17 @@
       <!-- Rules applicable to all Schemas -->
       <contextRules>
         <structureObjectRuleGroup>
-          <structureObjectRule>
-            <brDecisionRef>
-            </brDecisionRef>
+          <structureObjectRule id="sbr-001">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00001"/>
+            <objectPath allowedObjectFlag="0">//dmCode/@identCode | //dmCode/@infoCodeVariant | //issueInfo/@inwork </objectPath>
+            <objectUse>Those of attribute are not allowed to have letter I and O inside the value.</objectUse>
+            <objectValue valueForm="pattern" valueAllowed="[iIoO]">the matched pattern is not allowed</objectValue>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-002">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00002"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-00070"/>
+            <objectPath allowedObjectFlag="1">//originator/@enterpriseCode='0001Z'</objectPath>
+            <objectValue>the object value must be same</objectValue>
           </structureObjectRule>
         </structureObjectRuleGroup>
       </contextRules>
