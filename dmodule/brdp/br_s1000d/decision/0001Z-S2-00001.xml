@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<brDecision
+  brDecisionIdentNumber="BRDP-S2-00001"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../schema/flat/brdoc.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+  <brDecisionText>
+    <para>Use of the prefix value as below:
+      <randomList>
+        <listItem>
+          <para><verbatimText verbatimStyle="vs12">brPara</verbatimText> - "brp-.."</para>
+        </listItem>
+        <listItem>
+          <para><verbatimText verbatimStyle="vs12">para</verbatimText> - "par-.."</para>
+        </listItem>
+        <listItem>
+          <para><verbatimText verbatimStyle="vs12">structureObjectRule</verbatimText> - "sbr-.."</para>
+        </listItem>
+      </randomList>
+    </para>
+  </brDecisionText>
+</brDecision>

@@ -12,13 +12,13 @@
           assyCode="00" disassyCode="00" disassyCodeVariant="A"
           infoCode="022" infoCodeVariant="A" itemLocationCode="D" />
         <language languageIsoCode="en" countryIsoCode="US" />
-        <issueInfo issueNumber="001" inWork="00" />
+        <issueInfo issueNumber="000" inWork="01" />
       </dmIdent>
       <dmAddressItems>
         <issueDate day="01" month="01" year="2016" />
         <dmTitle>
-          <techName>This project</techName>
-          <infoName>Business rules</infoName>
+          <techName>N219</techName>
+          <infoName>Business rules exchange index</infoName>
         </dmTitle>
       </dmAddressItems>
     </dmAddress>
@@ -1186,6 +1186,7 @@
           <structureObjectRule id="sbr-002">
             <brDecisionRef brDecisionIdentNumber="0001Z-00002"/>
             <brDecisionRef brDecisionIdentNumber="0001Z-00070"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-00071"/>
             <objectPath allowedObjectFlag="1">//originator/@enterpriseCode='0001Z'</objectPath>
             <objectValue>the object value must be same</objectValue>
           </structureObjectRule>

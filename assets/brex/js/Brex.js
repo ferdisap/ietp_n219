@@ -1,4 +1,4 @@
-console.log('brex.js')
+console.log('Brex.js')
 
 const Brex = {
 
@@ -42,7 +42,7 @@ const Brex = {
     console.log(url);
     xhr = new XMLHttpRequest();
     let prom = new Promise((resolve,reject) => {
-      xhr.open(method, "/brdp?utility=getfile&ct=xml&path=" + url, false); 
+      xhr.open(method, "/?utility=getfile&ct=xml&path=" + url, false); 
       xhr.onload = () => {
         if (xhr.status >= 200 && xhr.status < 300) {
             return resolve(xhr.responseXML)

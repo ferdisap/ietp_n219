@@ -18,7 +18,7 @@
           <hr/>
 
           <!-- brDecision Related to -->
-          <div class="related_to">
+          <div class="related_to text-wrap">
             <h4 class="bold my-0">Business rule decision point is related to:</h4><br/>
 
             <!-- place in spesification -->
@@ -56,7 +56,7 @@
              <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointValueGroup">
                 <xsl:with-param name="marginBottom" select="'no'"/>
              </xsl:apply-templates>
-          </div>          
+          </div>
         </div>
       </div>
   </xsl:template>
@@ -75,11 +75,15 @@
     
   </xsl:template>
 
-  <!-- <xsl:template match="emphasis">
+  <xsl:template match="emphasis">
     <div style="margin-left:20px;">
       <xsl:apply-templates />
     </div>
-  </xsl:template> -->
+  </xsl:template>
+
+  <xsl:template match="verbatimText">
+    <code>&#60;<xsl:apply-templates/>&#62;</code>
+  </xsl:template>
 
   <xsl:template match="randomList">
     <ul>
