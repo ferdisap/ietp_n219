@@ -4,6 +4,7 @@
 @endSection
 @section('scripts_onTop')
 <script src="/?utility=getfile&ct=javascript&path=assets/general/js/hideShow.js"></script>
+@endsection
 @section('body')
 <header>
   @include('navbar')
@@ -18,7 +19,7 @@
     </div>
     
     <div class="container mt-3 d-flex justify-content-center">
-      <input class="form-control w-50" type="text" filterBy="all" placeholder="find everything of business rule.." aria-label="find business rule" onkeypress="Brdp.BrSearch.evetListener(this,event)">
+      <input class="form-control w-50" type="text" filterBy="all" placeholder="find everything of business rule.." aria-label="find business rule" onkeypress="Brdp.BrSearch.listener(this,event)">
     </div>
     <p id="totalSearchResult" class="mb-0 my-1"></p>
   </div>
@@ -28,5 +29,7 @@
 @endsection
 
 @section('scripts_onBottom')
-<script src="/?utility=getfile&ct=javascript&path=assets/brdp/js/Brdp.js"></script>
+<script src="/?utility=getfile&ct=javascript&path=assets/general/js/createXML.js"></script>
+<script src="/?utility=getfile&ct=javascript&path=assets/general/js/AllStyle.js"></script>
+<script src="/?utility=getfile&ct=javascript&path=assets/brdp/js/Brdp2.js"></script>
 @endsection
