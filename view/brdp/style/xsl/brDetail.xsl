@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+<xsl:include href="para.xsl"/>
+
+
   <xsl:template match="brPara">
       <div class="container w-100">
 
         <!-- BR Detail Container -->
-        <div id="brPara" onclick="changeZIndex(this)">
-          <!-- <xsl:attribute name="id"> <xsl:value-of select="@id" /> </xsl:attribute> -->
+        <div id="brPara">
           
-          <h1><xsl:value-of select="@brDecisionPointUniqueIdent"/>
-              <!-- <xsl:apply-templates select="brDecision/brDecisionPending"> -->
-                <xsl:if test="brDecision/brDecisionPending">&#160;-&#160;<span style="background-color:red">PENDING</span></xsl:if>
-                <!-- <xsl:value-of select="@brDecisionIdentNumber"/> -->
-              <!-- </xsl:apply-templates> -->
+          <h1>
+              <xsl:value-of select="@brDecisionPointUniqueIdent"/>
+              <xsl:if test="brDecision/brDecisionPending">&#160;-&#160;<span style="background-color:red">PENDING</span></xsl:if>
           </h1>
-          <h4><xsl:value-of select="//brDecisionPointContent/title"/></h4>
+          
+          <h4>
+            <xsl:value-of select="//brDecisionPointContent/title"/>
+          </h4>
+
           <hr/>
 
           <!-- brDecision Related to -->
@@ -22,46 +26,72 @@
             <h4 class="bold my-0">Business rule decision point is related to:</h4><br/>
 
             <!-- place in spesification -->
-            <span class="fw-bold">Place in specification:</span>
-            <p class="mt-0">
-              <span class="fw-bold">
-              <xsl:apply-templates select="//brRelatedTo//dmCode" />
-              <!-- <xsl:value-of select="//brRelatedTo//dmCode/@modelIdentCode"/>-<xsl:value-of select="//brRelatedTo//dmCode/@systemDiffCode"/>-<xsl:value-of select="//brRelatedTo//dmCode/@systemCode"/>-<xsl:value-of select="//brRelatedTo//dmCode/@subSystemCode"/><xsl:value-of select="//brRelatedTo//dmCode/@subSubSystemCode"/>-<xsl:value-of select="//brRelatedTo//dmCode/@assyCode"/>-<xsl:value-of select="//brRelatedTo//dmCode/@disassyCode"/><xsl:value-of select="//brRelatedTo//dmCode/@disassyCodeVariant"/>-<xsl:value-of select="//brRelatedTo//dmCode/@infoCode"/><xsl:value-of select="//brRelatedTo//dmCode/@infoCodeVariant"/>-<xsl:value-of select="//brRelatedTo//dmCode/@itemLocationCode"/> -->
-              </span>
-              &#160; <xsl:value-of select="//brRelatedTo//dmRef/@referredFragment"/>
-            </p>
+            <div>
+              <span class="fw-bold">Place in specification:</span>
+              <p class="mt-0 mb-3">
+                <span class="fw-bold">
+                  <xsl:apply-templates select="//brRelatedTo//dmCode" />
+                </span>
+                &#160; <xsl:value-of select="//brRelatedTo//dmRef/@referredFragment"/>
+              </p>
+            </div>
 
             <!-- business rule category -->
-            <span class="fw-bold">Business rule category:</span>
-            <p class="mt-0">
-              <span class="fw-bold">
-              <xsl:value-of select="//brRelatedTo//brCategory/@brCategoryNumber" />
-              </span>
-              &#160; <xsl:value-of select="//brRelatedTo//brCategory/title"/>
-            </p>
-            <apply-templates select="//brRelatedTo//brCategory/brCategoryDescription"/>
+            <div class="mt-0 mb-3">
+              <div onclick="hideShow(this)">
+                <span class="fw-bold">Business rule category: <xsl:value-of select="//brRelatedTo//brCategory/@brCategoryNumber" /></span>
+                &#160; <xsl:value-of select="//brRelatedTo//brCategory/title"/>
+              </div>
+              <div class="d-none">
+                <p><xsl:value-of select="brRelatedTo//brCategoryDescription"/></p>
+              </div>
+            </div>
 
              <!-- Related S1000D XML Schemas -->
-             <span class="fw-bold">Business rule applicability schema:</span><br/>
-             <xsl:apply-templates select="//brRelatedTo//s1000dSchemas"/>
+             <div class="mt-0 mb-3">
+               <span class="fw-bold" onclick="hideShow(this)">Business rule applicability schema: </span> &#160; <xsl:value-of select="count((brRelatedTo/s1000dSchemas/@*[.='1']))"/> schema(s) applied.
+               <div class="d-none">
+                  <xsl:apply-templates select="//brRelatedTo//s1000dSchemas"/>
+               </div>
+             </div>
 
              <!-- Decision Point Content -->
-             <span class="fw-bold">Business rule decision point content: - 
-              <xsl:value-of select="//brDecisionPointContent/title"/>
-             </span>
-             <!-- <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointText"/> -->
-             <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointText">
-                <xsl:with-param name="isShowDmCode" select="'yes'"/>
-             </xsl:apply-templates>
-             <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointValueGroup">
-                <xsl:with-param name="marginBottom" select="'no'"/>
-             </xsl:apply-templates>
+             <div class="mt-0 mb-3">
+               <span class="fw-bold">Business rule decision point content: </span> &#160; <xsl:value-of select="//brDecisionPointContent/title"/>
+               <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointText">
+                  <xsl:with-param name="isShowDmCode" select="'yes'"/>
+               </xsl:apply-templates>
+               
+               <!-- value Allowed -->
+               <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointValueGroup">
+                  <xsl:with-param name="marginBottom" select="'no'"/>
+               </xsl:apply-templates>
+             </div>
+
+             <!-- Audit -->
+             <div class="mt-0 mb-3">
+              <span class="fw-bold">Audit: </span> for <xsl:for-each select="brAudit/brDecisionRef"><xsl:value-of select="@brDecisionIdentNumber"/>; &#160;</xsl:for-each>
+              <br/>
+              Status: <span class="fw-bold"><xsl:apply-templates select="brAudit/brCurrentStatus"/></span>
+              <div>
+                <xsl:apply-templates select="brAudit/brAction"/>
+              </div>              
+             </div>
+
           </div>
         </div>
       </div>
   </xsl:template>
 
-  <xsl:template match="para">
+  <xsl:template match="brCurrentStatus">
+    <xsl:choose>
+      <xsl:when test="@brStatus = 'brst01'">Unverified</xsl:when>
+      <xsl:when test="@brStatus = 'brst02'">First verification</xsl:when>
+      <xsl:when test="@brStatus = 'brst03'">Second verification</xsl:when>
+    </xsl:choose>
+  </xsl:template>
+
+  <!-- <xsl:template match="para">
     <xsl:param name='marginBottom'/>  
     <p>
       <xsl:if test="$marginBottom = 'no'">
@@ -71,8 +101,7 @@
         <xsl:with-param name="isShowDmCode" select="'yes'"/>
         <xsl:with-param name="isShowDmCode">YES</xsl:with-param>
       </xsl:apply-templates>
-    </p>
-    
+    </p>    
   </xsl:template>
 
   <xsl:template match="emphasis">
@@ -120,14 +149,14 @@
         <xsl:value-of select="@systemCode"/>-<xsl:value-of select="@subSystemCode"/><xsl:value-of select="@subSubSystemCode"/>-<xsl:value-of select="@assyCode"/>-<xsl:value-of select="@disassyCode"/><xsl:value-of select="@disassyCodeVariant"/>
       </xsl:otherwise>
     </xsl:choose>
-  </xsl:template>
+  </xsl:template> -->
 
   <xsl:template match="brDecisionPointValueGroup">
     <xsl:param name="marginBottom"/>
     <span class="fw-bold">Values allowed: &#160;</span>You may select <span class="fw-bold"><xsl:value-of select="@brDecisionValueSelection"/></span> value.
-    <br/><br/>
+    <br/>
     <xsl:for-each select="brDecisionPointValue">
-      <span class="fw-bold">Value allowed: &#160;</span><xsl:value-of select="@brDecisionValueAllowed"/>
+      <span class="fw-bold">Value allowed: &#160;</span><xsl:value-of select="@brDecisionValueAllowed"/><br/>
       <xsl:apply-templates>
         <xsl:with-param name="marginBottom" select = "$marginBottom" />
       </xsl:apply-templates>

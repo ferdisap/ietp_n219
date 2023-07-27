@@ -3,11 +3,11 @@
 
   <xsl:include href="textElemGroupStyle.xsl"/>
 
-  <!-- <xsl:template match="para">
-    <p>
+  <xsl:template match="para">
+    <p class="xxx">
       <xsl:apply-templates/>
     </p>
-  </xsl:template> -->  
+  </xsl:template>  
 
   <!-- <xsl:template match="emphasis">
     <div style="margin-left:20px;">

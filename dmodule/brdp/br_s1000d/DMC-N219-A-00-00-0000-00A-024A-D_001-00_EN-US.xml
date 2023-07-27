@@ -180,6 +180,14 @@
 						<title>List of permitted CAGE codes and/or names to be used for the technical publication project:</title>
 						<brDecisionPointText>
 							<para>Create a list of permitted CAGE codes and/or names of the enterprises.</para>
+              <para>FOO
+                <randomList>
+                  <listItem>
+                    <para>foo bar</para>
+                    <para>foo baz</para>
+                  </listItem>
+                </randomList>
+              </para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">
@@ -194,7 +202,7 @@
             <brDecisionRef brDecisionIdentNumber="0001Z-S1-00071"/>
             <brAction brActionOwner="0001Z">
               <para>Refer to: 
-                <dmRef referredFragment="">
+                <dmRef referredFragment="#sbr-002">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
                     <issueInfo issueNumber="000" inWork="01"/>
@@ -207,7 +215,6 @@
                   </dmRefAddressItems>
                 </dmRef>
               </para>
-              <para>Refer to Brex DMC-N219-A-00-00-0000-00A-022A-D_001-00_EN-US #sbr-002.</para>
               <para>Use php Brex@enterpriseChecker.</para>
             </brAction>
             <brCurrentStatus brStatus="brst01"></brCurrentStatus>

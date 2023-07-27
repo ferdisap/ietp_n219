@@ -3,7 +3,7 @@ console.log('Brdp.js')
 const Brdp = {
   BrList: {
     get parent() {return Brdp;},
-    url: "view/brdp/style/php/brList.xsl",
+    url: "view/brdp/style/xsl/brList.xsl",
     xslDoc: async () => {
       return await Brdp.createXML(Brdp.BrList.url);
     },
@@ -17,7 +17,7 @@ const Brdp = {
   },
   BrDetail: {
     get parent() {return Brdp;},
-    url: "view/brdp/style/php/brDetail.xsl",
+    url: "view/brdp/style/xsl/brDetail.xsl",
     xpath: (brDecisionId) => {
       return `//brPara/brDecision[@brDecisionIdentNumber='${brDecisionId}']/parent::*`
     },
@@ -27,6 +27,10 @@ const Brdp = {
     detailOpen: [],
     xmlDoc: null,
     async openDetail(brIdent, brDecisionId, trId, el){
+      //set window hash
+      // window.location.hash = "#" + trId; // tidak pakai yang ini karena window akan langsung menuju hash
+      window.history.pushState({},"",window.location.origin + window.location.pathname + '#' + trId);
+
       if (!this.detailOpen.includes(trId)) {
         // open detail
         let tr = document.getElementById(trId + '_detail');
@@ -96,7 +100,7 @@ const Brdp = {
   },
   BrSearch: {    
     get parent() {return Brdp;},
-    evetListener(el, evt) {
+    listener(el, evt) {
       if (evt.keyCode === 13) { // enter button
         evt.preventDefault();
         /** script baru */
@@ -190,7 +194,7 @@ const Brdp = {
     },
     async renderResult(rootNode) {    
       const xsltProcessor = new XSLTProcessor();
-      let xslSearch = (this.xslSearch != undefined ? this.xslSearch: await this.parent.createXML('view/brdp/style/php/brListSearch.xsl', 'GET'));
+      let xslSearch = (this.xslSearch != undefined ? this.xslSearch: await this.parent.createXML('view/brdp/style/xsl/brListSearch.xsl', 'GET'));
       this.xslSearch = xslSearch;
       xsltProcessor.importStylesheet(await xslSearch);
   
@@ -219,7 +223,7 @@ const Brdp = {
   url: "dmodule/brdp/br_s1000d/DMC-N219-A-00-00-0000-00A-024A-D_001-00_EN-US.xml",
   brdpDoc: null,
 
-  /**   * 
+  /**  
    * @param {String} url
    * @param {String} method 
    * @returns XMLDocument if using async
@@ -318,5 +322,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     if(v){
       Brdp.renderHtml('BrList', Brdp.BrList.htmlDoc);
     }
+
+    document.querySelector(window.location.hash).scrollIntoView(true);
   });
 });
+
