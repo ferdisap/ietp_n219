@@ -882,6 +882,16 @@
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00013"/>
+          <brAudit>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00013"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S2-00002"/>
+            <brAction brActionOwner="0001Z">
+              <para>Those value decided will be applied to the style in <verbatimText verbatimStyle="vs02">security.xsl</verbatimText> and checked the error result by JavaScript <verbatimText verbatimStyle="vs28">GeneralValidation</verbatimText><verbatimText verbatimStyle="vs30">getErrorByComment</verbatimText>.</para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01">
+              <responsiblePartnerCompany enterpriseCode="0001Z"/>
+            </brCurrentStatus>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00014" id="brp-s1-00014">
 					<brRelatedTo>
@@ -19577,6 +19587,8 @@ is managed by both the creator and the customer.</para>
             </brDecisionPointContent>
             <brDecision brDecisionIdentNumber="0001Z-S2-00002"/>
             <brAudit>
+              <brDecisionRef brDecisionIdentNumber="0001Z-S2-00002"/>
+              <brDecisionRef brDecisionIdentNumber="0001Z-S1-00013"/>
               <brAction brActionOwner="0001Z">
                 <para>Those value decided will be applied to the style in <verbatimText verbatimStyle="vs02">verbatimText.xsl</verbatimText> and checked the error result by JavaScript <verbatimText verbatimStyle="vs28">GeneralValidation</verbatimText><verbatimText verbatimStyle="vs30">getErrorByComment</verbatimText>.</para>
               </brAction>

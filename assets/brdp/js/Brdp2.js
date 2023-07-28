@@ -5,21 +5,18 @@ const Brdp = {
     get parent() {return Brdp;},
     url: "view/brdp/style/xsl/brList.xsl",
     xslDoc: null,
-    setXslDoc: async () => {
-      await Brdp.createXML(Brdp.BrList.url).then(v => this.xslDoc = v).then(x => console.log(this.xslDoc));
+    async setXslDoc(){
+      return this.xslDoc = await this.parent.createXML(this.url);
     },
     htmlDoc:null,
-    setHtmlDoc: () => {
-      console.log(Brdp.BrList.xslDoc);
-      this.htmlDoc = Brdp.xmlToHtml(Brdp.brdpDoc, Brdp.BrList.xslDoc).firstElementChild;
+    async setHtmlDoc(){
+      return this.htmlDoc = this.parent.xmlToHtml(this.parent.brdpDoc.firstElementChild, this.xslDoc.firstElementChild);
     },  
     async refresh(){
-      // this.xslDoc = await this.setXslDoc();
-      // this.htmlDoc = await this.setHtmlDoc();
-      this.setXslDoc().then(v => this.setHtmlDoc);
-
-      // add Allstyle to this XSL
+      await this.setXslDoc();
       await (this.parent.addAllXslStyle.bind(this))(); //pake await agar xsl tambahan tergabung ke xsl ini
+      await this.setHtmlDoc();      
+      return this.xslDoc ? true : false;
     }
   },
   BrDetail: {
@@ -28,11 +25,10 @@ const Brdp = {
     xpath: (brDecisionId) => {
       return `//brPara/brDecision[@brDecisionIdentNumber='${brDecisionId}']/parent::*`
     },
-    xslDoc: async () => {
-      return await Brdp.createXML(Brdp.BrDetail.url);
+    async xslDoc(){
+      return await this.parent.createXML(this.url);
     },
     detailOpen: [],
-    xmlDoc: null,
     async openDetail(brIdent, brDecisionId, trId, el){
       //set window hash
       // window.location.hash = "#" + trId; // tidak pakai yang ini karena window akan langsung menuju hash
@@ -91,9 +87,9 @@ const Brdp = {
     },    
     async refresh(){
       this.xslDoc = await this.xslDoc();
-
       // add Allstyle to this XSL
       await (this.parent.addAllXslStyle.bind(this))(); //pake await agar xsl tambahan tergabung ke xsl ini
+      return true;
     }
   },
   BrDecision: {
@@ -138,7 +134,7 @@ const Brdp = {
       let brDataModule = document.implementation.createDocument(null, 'dmodule');
       brDataModule.firstElementChild.innerHTML = db.firstElementChild.innerHTML;
   
-      console.log('brDataModule',brDataModule);
+      // console.log('brDataModule',brDataModule);
   
       // 1. prepare array berisi XPath (filter) berurutan
       let step_xpaths = this.getXPaths(searchInput);
@@ -204,12 +200,13 @@ const Brdp = {
       return searchResult;
     },
     async renderResult(rootNode) {    
+      
       const xsltProcessor = new XSLTProcessor();
-      let xslSearch = (this.xslSearch != undefined ? this.xslSearch: await this.parent.createXML('view/brdp/style/xsl/brListSearch.xsl', 'GET'));
+      let xslSearch = this.parent.BrList.xslDoc;
       this.xslSearch = xslSearch;
-      xsltProcessor.importStylesheet(await xslSearch);
+      xsltProcessor.importStylesheet(xslSearch);
   
-      // rootNode berupa <root><brPara/>...<brPara/>...</root>
+      // rootNode berupa <dmodule><brPara/>...<brPara/>...</dmodule>
       let nodes = rootNode.children;
       let innerHTMLTbody = '';
       for(let node of nodes){
@@ -271,8 +268,11 @@ const Brdp = {
    * @returns 
    */
   renderHtml(idContainer, node){
+    console.log(window.nd = node);
     let div = document.createElement('div');
     div.innerHTML = node.outerHTML;
+
+    console.log(window.div = div);
 
     return this.showContent(idContainer, div);
   },
@@ -283,7 +283,6 @@ const Brdp = {
    * @returns HTML Document - should use dom.firstChildElement or more.
    */
   xmlToHtml(xmlDoc, xslDoc){
-    console.log(this);
     let xsltProcessor = new XSLTProcessor();
     xsltProcessor.importStylesheet(xslDoc)
 
@@ -313,10 +312,6 @@ const Brdp = {
     return newArr;
   },
 
-  async refresh(){
-    this.brdpDoc = await this.createXML(this.url);
-  },
-
   /**
    * this adalah object yang memanggil fungsi ini agar bisa ditambah ke xsl original (setelah xsl original nya telah di download)
    * jadi harus di bind(this);
@@ -327,28 +322,23 @@ const Brdp = {
       AllStyle.cache;
     }
     this.xslDoc.firstElementChild.innerHTML += AllStyle.xslDoc.firstElementChild.innerHTML;
-  }
+  },
+  
+  /** */
+  async refresh(){
+    return this.brdpDoc = await this.createXML(this.url);
+  },
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
-  let prom = new Promise(async (resolve, reject) => {
-    await Brdp.refresh();
-    await Brdp.BrList.refresh();
-    await Brdp.BrDetail.refresh();
+document.addEventListener('DOMContentLoaded',  () => {
 
-    if (Brdp.brdpDoc instanceof XMLDocument && Brdp.BrList.xslDoc instanceof XMLDocument){
-      resolve(true);    
-    } else {
-      reject(false);
-    }
-  });
-
-  prom.then( v => {
-    if(v){
-      Brdp.renderHtml('BrList', Brdp.BrList.htmlDoc);
-    }
-
-    document.querySelector(window.location.hash).scrollIntoView(true);
-  });
+    Brdp.refresh()
+    .then((v) => v ? Brdp.BrList.refresh() : false)
+    .then((v) =>  v ? Brdp.BrDetail.refresh() : false)
+    .then((v) =>  {
+      if (v) {
+        Brdp.renderHtml('BrList', Brdp.BrList.htmlDoc.firstElementChild);
+      }
+    })
 });
 

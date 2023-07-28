@@ -25,67 +25,70 @@
           <div class="related_to text-wrap">
             <h4 class="bold my-0">Business rule decision point is related to:</h4><br/>
 
-            <!-- place in spesification -->
             <div class="ms-3">
-              <span class="fw-bold">Place in specification:</span>
-              <p class="mt-0 mb-3">
-                <span class="fw-bold">
-                  <xsl:apply-templates select="//brRelatedTo//dmCode" />
-                </span>
-                &#160; <xsl:value-of select="//brRelatedTo//dmRef/@referredFragment"/>
-              </p>
-            </div>
-
-            <!-- business rule category -->
-            <xsl:comment>business rule category</xsl:comment>
-            <div class="mt-0 mb-3 ms-3">
-              <div onclick="hideShow(this)">
-                <span class="fw-bold">Business rule category: <xsl:value-of select="//brRelatedTo//brCategory/@brCategoryNumber" /></span>
-                &#160; <xsl:value-of select="//brRelatedTo//brCategory/title"/>
+              <!-- place in spesification -->
+              <div class="">
+                <span class="fw-bold">Place in specification:</span>
+                <p class="mt-0 mb-3">
+                  <span class="fw-bold">
+                    <xsl:apply-templates select="//brRelatedTo//dmCode" />
+                  </span>
+                  &#160; <xsl:value-of select="//brRelatedTo//dmRef/@referredFragment"/>
+                </p>
               </div>
-              <div class="d-none">
-                <p><xsl:value-of select="brRelatedTo//brCategoryDescription"/></p>
-              </div>
-            </div>
 
-             <!-- Related S1000D XML Schemas -->
-             <div class="mt-0 mb-3 ms-3">
-               <span class="fw-bold" onclick="hideShow(this)">Business rule applicability schema: </span> &#160; <xsl:value-of select="count((brRelatedTo/s1000dSchemas/@*[.='1']))"/> schema(s) applied.
-               <div class="d-none">
+              <!-- business rule category -->
+              <xsl:comment>business rule category</xsl:comment>
+              <div class="mt-0 mb-3``">
+                <div onclick="hideShow(this)">
+                  <span class="fw-bold">Business rule category: <xsl:value-of select="//brRelatedTo//brCategory/@brCategoryNumber" /></span>
+                  &#160; <xsl:value-of select="//brRelatedTo//brCategory/title"/>
+                </div>
+                <div class="d-none">
+                  <p><xsl:value-of select="brRelatedTo//brCategoryDescription"/></p>
+                </div>
+              </div>
+
+              <!-- Related S1000D XML Schemas -->
+              <div class="mt-0 mb-3``">
+                <span class="fw-bold" onclick="hideShow(this)">Business rule applicability schema: </span> &#160; <xsl:value-of select="count((brRelatedTo/s1000dSchemas/@*[.='1']))"/> schema(s) applied.
+                <div class="d-none">
                   <xsl:apply-templates select="brRelatedTo/s1000dSchemas"/>
-               </div>
-             </div>
+                </div>
+              </div>
 
-             <!-- Decision Point Content -->
-             <xsl:comment>Decision Point Content</xsl:comment>
-             <div class="mt-0 mb-3 ms-3">
-               
-               <span class="fw-bold">Business rule decision point content: </span> &#160;
+              <!-- Decision Point Content -->
+              <xsl:comment>Decision Point Content</xsl:comment>
+              <div class="mt-0 mb-3``">
+                
+                <span class="fw-bold">Business rule decision point content: </span> &#160;
                       <xsl:apply-templates select="//brDecisionPointContent/title">
                         <xsl:with-param name="heading">none</xsl:with-param>
                       </xsl:apply-templates>
 
-               <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointText">
+                <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointText">
                   <xsl:with-param name="isShowDmCode" select="'yes'"/>
-               </xsl:apply-templates>
-             </div>
+                </xsl:apply-templates>
+              </div>
 
-               <!-- value Allowed -->
-               <div class="mt-0 mb-3 ms-3">
-                  <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointValueGroup">
-                      <xsl:with-param name="marginBottom" select="'no'"/>
-                  </xsl:apply-templates>
+              <!-- value Allowed -->
+              <div class="mt-0 mb-3``">
+                <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointValueGroup">
+                    <xsl:with-param name="marginBottom" select="'no'"/>
+                </xsl:apply-templates>
                </div>
 
-             <!-- Audit -->
-             <div class="mt-0 mb-3 ms-3">
-              <span class="fw-bold">Audit: </span> for <xsl:for-each select="brAudit/brDecisionRef"><xsl:value-of select="@brDecisionIdentNumber"/>; &#160;</xsl:for-each>
-              <br/>
-              Status: <xsl:apply-templates select="brAudit/brCurrentStatus"/>
-              <div>
-                <xsl:apply-templates select="brAudit/brAction"/>
-              </div>              
-             </div>
+              <!-- Audit -->
+              <div class="mt-0 mb-3">
+                <span class="fw-bold">Audit: </span> for <xsl:for-each select="brAudit/brDecisionRef"><xsl:value-of select="@brDecisionIdentNumber"/>; &#160;</xsl:for-each>
+                <br/>
+                Status: <xsl:apply-templates select="brAudit/brCurrentStatus"/>
+                <div>
+                  <xsl:apply-templates select="brAudit/brAction"/>
+                </div>              
+              </div>
+
+            </div>
 
           </div>
         </div>

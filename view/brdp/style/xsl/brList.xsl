@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  <xsl:template match="/">
+  <xsl:template match="dmodule">
     <div>
       <div class="container-lg mt-3" style="width:90%; height:75vh; overflow:auto">
         <table id="brdpList-table">
@@ -52,16 +52,10 @@
             </tbody>       
         </table>
       </div>
-      <div id="tes">
-        <xsl:apply-templates select="//dmStatus/security"/>
-      </div>
+      <xsl:apply-templates select="//dmStatus/security"/>
     </div>
   </xsl:template>
 
-  <!-- <xsl:template match="security">
-      <span>FOO</span>
-  </xsl:template> -->
-  
   <xsl:template match="brPara">
     <tr>
       <xsl:attribute name="onmouseover">Brdp.BrDetail.changeBgColor(this)</xsl:attribute>
