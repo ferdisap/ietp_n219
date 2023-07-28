@@ -31,3 +31,8 @@ li > p {
 th, td{
   border: 1px solid black;
 }
+
+#ContextRule td:nth-child(4) {
+  text-align: center;
+  vertical-align: inherit;
+}

@@ -37,7 +37,7 @@ const AllStyle = {
           };
         });
       });
-      this.xslDoc = xsl;
+      return this.xslDoc = xsl;
     } else {
       let doc = AllStyle.withDrawCached
       return doc;

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<!-- <xsl:include href="?utility=getfile&amp;ct=xml&amp;path=view/brdp/style/xsl/textElemGroupStyle.xml"/> -->
 
 <xsl:template match="/">
   <div>
-    <link rel="stylesheet" href="/?utility=getfile&amp;ct=css&amp;path=view/brex/style/css/snsRules.css"/>
+    <link rel="stylesheet" href="/?utility=getfile&amp;ct=css&amp;path=view/brex/style/css/brex.css"/>
     <div class="d-flex justify-content-center flex-column container mt-3">
       <p><xsl:value-of select="//commonInfo"/></p>
       <table>

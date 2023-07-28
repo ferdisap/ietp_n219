@@ -6,7 +6,7 @@ const Brex = {
     get parent() {return Brex;},
     url: "view/brex/style/xsl/snsRules.xml",
     xslDoc: async () => {
-      console.log(this);
+      // console.log(this);
       return await Brex.createXML(Brex.SnsRule.url);
     },
     htmlDoc: () => {
@@ -15,7 +15,9 @@ const Brex = {
     async refresh(){
       this.xslDoc = await this.xslDoc();
       this.htmlDoc = await this.htmlDoc();
-      // this.parent.renderHtml('snsRule', this.htmlDoc);
+
+      // add Allstyle to this XSL
+      await (this.parent.addAllXslStyle.bind(this))(); //pake await agar xsl tambahan tergabung ke xsl ini
     }
   },
 
@@ -23,7 +25,7 @@ const Brex = {
     get parent() {return Brex;},
     url: "view/brex/style/xsl/contextRules.xml",
     xslDoc: async () => {
-      console.log(this);
+      // console.log(this);
       return await Brex.createXML(Brex.ContextRule.url);
     },
     htmlDoc: () => {
@@ -32,6 +34,9 @@ const Brex = {
     async refresh(){
       this.xslDoc = await this.xslDoc();
       this.htmlDoc = await this.htmlDoc();
+
+      // add Allstyle to this XSL
+      await (this.parent.addAllXslStyle.bind(this))(); //pake await agar xsl tambahan tergabung ke xsl ini
     }
   },
 
@@ -39,7 +44,7 @@ const Brex = {
   brexDoc: null,
 
   createXML(url, method = 'GET'){
-    console.log(url);
+    // console.log(url);
     xhr = new XMLHttpRequest();
     let prom = new Promise((resolve,reject) => {
       xhr.open(method, "/?utility=getfile&ct=xml&path=" + url, false); 
@@ -87,7 +92,7 @@ const Brex = {
     
     if (element != undefined){
       let container = document.getElementById(idContainer);
-      console.log(element, idContainer, container);
+      // console.log(element, idContainer, container);
       container.innerHTML = element.outerHTML;
       this.currentContent = idContainer;
     }
@@ -95,9 +100,21 @@ const Brex = {
     localStorage.setItem('currentContent', this.currentContent);
   },
 
+  /**
+   * this adalah object yang memanggil fungsi ini agar bisa ditambah ke xsl original (setelah xsl original nya telah di download)
+   * jadi harus di bind(this);
+   */
+  async addAllXslStyle(){
+    if (AllStyle.xslDoc == undefined){
+      await AllStyle.getListAllGeneralStyle();
+      AllStyle.cache;
+    }
+    this.xslDoc.firstElementChild.innerHTML += AllStyle.xslDoc.firstElementChild.innerHTML;
+  },
+
   async refresh(){
     this.brexDoc = await this.createXML(this.url);
-  }
+  },
 }
 
 
@@ -121,7 +138,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (currentContent == null){
         Brex.renderHtml('SnsRule', Brex.SnsRule.htmlDoc);
       } else {
-        console.log(`Brex.${currentContent}`);
+        // console.log(`Brex.${currentContent}`);
         eval(`Brex.renderHtml('${currentContent}', Brex.${currentContent}.htmlDoc)`);
       }
     }

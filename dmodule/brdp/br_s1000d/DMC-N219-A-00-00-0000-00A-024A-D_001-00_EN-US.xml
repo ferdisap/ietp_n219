@@ -180,14 +180,6 @@
 						<title>List of permitted CAGE codes and/or names to be used for the technical publication project:</title>
 						<brDecisionPointText>
 							<para>Create a list of permitted CAGE codes and/or names of the enterprises.</para>
-              <para>FOO
-                <randomList>
-                  <listItem>
-                    <para>foo bar</para>
-                    <para>foo baz</para>
-                  </listItem>
-                </randomList>
-              </para>
 						</brDecisionPointText>
 						<brDecisionPointValueGroup brDecisionValueSelection="single">
 							<brDecisionPointValue brDecisionValueAllowed="Text">

@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:output method="html"/>
+
+ <xsl:template match="/">
+    <link rel="stylesheet" href="bootstrap_5.2.0.min.css"/>
+    <div>
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
 
   <xsl:template match="verbatimText">
     <xsl:choose>
@@ -17,6 +27,5 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
 
 </xsl:stylesheet>

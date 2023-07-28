@@ -42,5 +42,7 @@
 @endsection
 
 @section('scripts_onBottom')
+<script src="/?utility=getfile&ct=javascript&path=assets/general/js/createXML.js"></script>
+<script src="/?utility=getfile&ct=javascript&path=assets/general/js/AllStyle.js"></script>
 <script src="/?utility=getfile&ct=javascript&path=assets/brex/js/Brex.js"></script>
 @endsection

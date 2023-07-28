@@ -260,7 +260,7 @@ const Brdp = {
     return prom
   },
 
-  /**   * 
+  /** 
    * @param {String} idContainer 
    * @param {HTML DOM Node} node 
    * @returns 
@@ -272,7 +272,7 @@ const Brdp = {
     return this.showContent(idContainer, div);
   },
     
- /**   * 
+ /** 
    * @param {xmlNode} xmlDoc 
    * @param {XMLDocument} xslDoc 
    * @returns HTML Document - should use dom.firstChildElement or more.
@@ -285,7 +285,7 @@ const Brdp = {
     return dom;
   },
 
-  /**   * 
+  /** 
    * @param {String} idContainer 
    * @param {HTMLNode} element 
    */
@@ -320,9 +320,6 @@ const Brdp = {
       await AllStyle.getListAllGeneralStyle();
       AllStyle.cache;
     }
-    // console.log(window.all = AllStyle.xslDoc);
-    // console.log(window.det = this.xslDoc);
-    // console.log(window.add = additionStyleDoc);
     this.xslDoc.firstElementChild.innerHTML += AllStyle.xslDoc.firstElementChild.innerHTML;
   }
 }

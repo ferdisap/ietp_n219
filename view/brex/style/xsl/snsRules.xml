@@ -3,7 +3,7 @@
 
 <xsl:template match="/">
   <div>
-    <link rel="stylesheet" href="/?utility=getfile&amp;ct=css&amp;path=view/brex/style/css/snsRules.css"/>
+    <link rel="stylesheet" href="/?utility=getfile&amp;ct=css&amp;path=view/brex/style/css/brex.css"/>
     <div class="d-flex justify-content-center flex-column container mt-3">
       <p><xsl:value-of select="//commonInfo"/></p>
       <table>

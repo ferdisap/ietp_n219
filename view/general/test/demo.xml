@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="demo.xsl"?>
+
+<para>
+  <listItem>
+    <verbatimText verbatimStyle="vs12">brPara</verbatimText>
+    <verbatimText verbatimStyle="vs13">brPara</verbatimText>
+    <verbatimText verbatimStyle="vs14">brPara</verbatimText>
+    <verbatimText verbatimStyle="vs22">brPara</verbatimText>
+  </listItem>
+</para>
