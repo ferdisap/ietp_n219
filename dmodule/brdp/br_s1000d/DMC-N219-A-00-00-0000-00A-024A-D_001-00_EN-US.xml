@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <?xml-stylesheet type="text/xsl" href="../../style/xsl/main.xsl"?> -->
 <dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../schema/flat/brdoc.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 	<identAndStatusSection>
 		<dmAddress>
@@ -17,7 +16,7 @@
 			</dmAddressItems>
 		</dmAddress>
 		<dmStatus issueType="new">
-			<security securityClassification="01"/>
+			<security securityClassification="05"/>
 			<dataRestrictions>
 				<restrictionInstructions>
 					<dataDistribution>To be made available to all N219 Project by S1000D users.</dataDistribution>
@@ -129,7 +128,7 @@
 					<brDecision brDecisionIdentNumber="0001Z-S1-00001"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>
+              <para> Refer to 
                 <dmRef referredFragment="sbr-001">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -146,8 +145,7 @@
                   </dmRefAddressItems>
                 </dmRef>
               </para>
-              <para>Refer to Brex DMC-N219-A-00-00-0000-00A-022A-D_001-00_EN-US #sbr-001.</para>
-              <para>Use php Brex@letterChecker.</para>
+              <para>Validation app is using JavaScript <verbatimText verbatimStyle="vs28">GeneralValidation</verbatimText>&#160;<verbatimText verbatimStyle="vs30">letterCheck</verbatimText></para>
             </brAction>
             <brCurrentStatus brStatus="brst01"></brCurrentStatus>
           </brAudit>
@@ -194,7 +192,7 @@
             <brDecisionRef brDecisionIdentNumber="0001Z-S1-00071"/>
             <brAction brActionOwner="0001Z">
               <para>Refer to: 
-                <dmRef referredFragment="#sbr-002">
+                <dmRef referredFragment="sbr-002">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
                     <issueInfo issueNumber="000" inWork="01"/>
@@ -207,7 +205,7 @@
                   </dmRefAddressItems>
                 </dmRef>
               </para>
-              <para>Use php Brex@enterpriseChecker.</para>
+              <para>Use JavaScript <verbatimText verbatimStyle="vs28">GeneralValidation</verbatimText><verbatimText verbatimStyle="vs30">enterpriseChecker</verbatimText>.</para>
             </brAction>
             <brCurrentStatus brStatus="brst01"></brCurrentStatus>
           </brAudit>
@@ -318,6 +316,12 @@
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00003"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>The validator is done by the php <verbatimText verbatimStyle="vs28">Csdb</verbatimText><verbatimText verbatimStyle="vs30">XsdSchemaValidator</verbatimText>.</para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00004" id="brp-s1-00004">
 					<brRelatedTo>
@@ -531,6 +535,12 @@
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00006"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>The validation done by manual checking the data management list (DML).</para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00007" id="brp-s1-00007">
 					<brRelatedTo>
@@ -573,6 +583,12 @@
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00007"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>The optional both element and attributes are decided in BRDP level 2 (BRDP-S2-xxxxx).</para>
+            </brAction>
+            <brCurrentStatus brStatus="brst02"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00008" id="brp-s1-00008">
 					<brRelatedTo>
@@ -639,6 +655,12 @@
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00008"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>The status of this rules is changed when the deliverables items are release and ready to be sent.</para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00009" id="brp-s1-00009">
 					<brRelatedTo>
@@ -2529,6 +2551,20 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00070"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <brDecisionRef brDecisionIdentNumber="0001Z-S1-00002"/>
+              <para>Refer to:
+                <dmRef referredFragment="brp-s1-00002">
+                  <dmRefIdent>
+                    <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="04" subSystemCode="0" subSubSystemCode="0" assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="024" infoCodeVariant="A" itemLocationCode="D"/>
+                    <issueInfo issueNumber="001" inWork="00"/>
+                  </dmRefIdent>
+                </dmRef>
+              </para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00071" id="brp-s1-00071">
 					<brRelatedTo>
@@ -19475,6 +19511,29 @@ is managed by both the creator and the customer.</para>
 				</brPara>
         <brLevelledPara>
           <brPara brDecisionPointUniqueIdent="BRDP-S2-00001" id="brp-s2-00001">
+            <brRelatedTo>
+              <sourceDocRef>
+                <dmRef referredFragment="Para_2">
+                  <dmRefIdent>
+                    <dmCode modelIdentCode="S1000D" systemDiffCode="A" systemCode="03" subSystemCode="0" subSubSystemCode="9" assyCode="0601" disassyCode="00" disassyCodeVariant="A" infoCode="040" infoCodeVariant="A" itemLocationCode="A"/>
+                  </dmRefIdent>
+                  <dmRefAddressItems>
+                    <dmTitle>
+                      <techName>Attributes</techName>
+                    </dmTitle>
+                  </dmRefAddressItems>
+                </dmRef>
+              </sourceDocRef>
+              <brCategoryGroup>
+                <brCategory brCategoryNumber="Cat006">
+                  <title>Data creation business rules - Text</title>
+                  <brCategoryDescription>
+                    <para>Text creation business rules consist of rules and guidelines (including terminology rules such as language and dictionaries, and the order of preference) for maximizing the amount of reuse that can be achieved within technical publications, and between technical publications and supporting training content.</para>
+                  </brCategoryDescription>
+                </brCategory>
+              </brCategoryGroup>
+              <s1000dSchemas appliccrossreftableXsd="1" brexXsd="1" checklistXsd="1" commentXsd="1" comrepXsd="1" condcrossreftableXsd="1" containerXsd="1" crewXsd="1" ddnXsd="1" descriptXsd="1" dmlXsd="1" faultXsd="1" frontmatterXsd="1" ipdXsd="1" learningXsd="1" pmXsd="1" prdcrossreftableXsd="1" procedXsd="1" processXsd="1" sbXsd="1" schedulXsd="1" scocontentXsd="1" scormcontentpackageXsd="1" updateXsd="1" wrngdataXsd="1" wrngfldsXsd="1" brdocXsd="1" icnmetadataXsd="1"/>
+            </brRelatedTo>
             <brDecisionPointContent>
               <title>Use of attribute id:</title>
               <brDecisionPointText>
@@ -19483,6 +19542,84 @@ is managed by both the creator and the customer.</para>
               <brDecisionPointValueGroup brDecisionValueSelection="multiple"/>
             </brDecisionPointContent>
             <brDecision brDecisionIdentNumber="0001Z-S2-00001"/>
+          </brPara>
+          <brPara brDecisionPointUniqueIdent="BRDP-S2-00002" id="brp-s2-00002">
+            <brRelatedTo>
+              <sourceDocRef>
+                <dmRef referredFragment="Para_2">
+                  <dmRefIdent>
+                    <dmCode modelIdentCode="S1000D" systemDiffCode="A" systemCode="03" subSystemCode="0" subSubSystemCode="9" assyCode="0601" disassyCode="00" disassyCodeVariant="A" infoCode="040" infoCodeVariant="A" itemLocationCode="A"/>
+                  </dmRefIdent>
+                  <dmRefAddressItems>
+                    <dmTitle>
+                      <techName>Attributes</techName>
+                      <infoName>Project configurable values</infoName>
+                    </dmTitle>
+                  </dmRefAddressItems>
+                </dmRef>
+              </sourceDocRef>
+              <brCategoryGroup>
+                <brCategory brCategoryNumber="Cat006">
+                  <title>Data creation business rules - Text</title>
+                  <brCategoryDescription>
+                    <para>Text creation business rules consist of rules and guidelines (including terminology rules such as language and dictionaries, and the order of preference) for maximizing the amount of reuse that can be achieved within technical publications, and between technical publications and supporting training content.</para>
+                  </brCategoryDescription>
+                </brCategory>
+              </brCategoryGroup>
+              <s1000dSchemas appliccrossreftableXsd="1" brexXsd="1" checklistXsd="1" commentXsd="1" comrepXsd="1" condcrossreftableXsd="1" containerXsd="1" crewXsd="1" ddnXsd="1" descriptXsd="1" dmlXsd="1" faultXsd="1" frontmatterXsd="1" ipdXsd="1" learningXsd="1" pmXsd="1" prdcrossreftableXsd="1" procedXsd="1" processXsd="1" sbXsd="1" schedulXsd="1" scocontentXsd="1" scormcontentpackageXsd="1" updateXsd="1" wrngdataXsd="1" wrngfldsXsd="1" brdocXsd="1" icnmetadataXsd="1"/>
+            </brRelatedTo>
+            <brDecisionPointContent>
+              <title>Customable <verbatimText verbatimStyle="vs13">verbatimStyle</verbatimText> :</title>
+              <brDecisionPointText>
+                <para>Decide what customized value of the attribute.</para>
+              </brDecisionPointText>
+              <brDecisionPointValueGroup brDecisionValueSelection="multiple"/>
+            </brDecisionPointContent>
+            <brDecision brDecisionIdentNumber="0001Z-S2-00002"/>
+            <brAudit>
+              <brAction brActionOwner="0001Z">
+                <para>Those value decided will be applied to the style in <verbatimText verbatimStyle="vs02">verbatimText.xsl</verbatimText> and checked the error result by JavaScript <verbatimText verbatimStyle="vs28">GeneralValidation</verbatimText><verbatimText verbatimStyle="vs30">getErrorByComment</verbatimText>.</para>
+              </brAction>
+              <brCurrentStatus brStatus="brst01">
+                <responsiblePartnerCompany enterpriseCode="0001Z"/>
+              </brCurrentStatus>
+            </brAudit>
+          </brPara>
+          <brPara brDecisionPointUniqueIdent="BRDP-S2-00003" id="brp-s2-00003">
+            <brRelatedTo>
+              <sourceDocRef>
+                <dmRef referredFragment="Para_2.7.1">
+                  <dmRefIdent>
+                    <dmCode modelIdentCode="S1000D" systemDiffCode="A" systemCode="02" subSystemCode="0" subSubSystemCode="5" assyCode="0100" disassyCode="00" disassyCodeVariant="A" infoCode="040" infoCodeVariant="A" itemLocationCode="A"/>
+                  </dmRefIdent>
+                </dmRef>
+              </sourceDocRef>
+              <brCategoryGroup>
+                <brCategory brCategoryNumber="Cat006">
+                  <title>Data exchange business rules</title>
+                  <brCategoryDescription>
+                    <para>The rules for how data must be exchanged between partners and customers are covered in business rule category 7. This includes for example the use of data dispatch notes and how data management requirement lists as well as CSDB status lists are used. The rules in this category include how the S1000D file based transfer protocol is used, the frequency of data exchanges, if unverified data are exchanged, the rules for data module and graphic issue numbers, and the acceptance and rejection criteria.</para>
+                  </brCategoryDescription>
+                </brCategory>
+              </brCategoryGroup>
+              <s1000dSchemas appliccrossreftableXsd="1" brexXsd="1" checklistXsd="1" commentXsd="1" comrepXsd="1" condcrossreftableXsd="1" containerXsd="1" crewXsd="1" ddnXsd="1" descriptXsd="1" dmlXsd="1" faultXsd="1" frontmatterXsd="1" ipdXsd="1" learningXsd="1" pmXsd="1" prdcrossreftableXsd="1" procedXsd="1" processXsd="1" sbXsd="1" schedulXsd="1" scocontentXsd="1" scormcontentpackageXsd="1" updateXsd="1" wrngdataXsd="1" wrngfldsXsd="1" brdocXsd="1" icnmetadataXsd="1"/>
+            </brRelatedTo>
+            <brDecisionPointContent>
+              <title>Commit system</title>
+              <brDecisionPointText>
+                <para>Decide and how the commit system run within the rule stated in 
+                  <dmRef referredFragment="Para_2.2">
+                    <dmRefIdent>
+                      <dmCode modelIdentCode="S1000D" systemDiffCode="A" systemCode="03" subSystemCode="0" subSubSystemCode="9" assyCode="0501" disassyCode="00" disassyCodeVariant="A" infoCode="040" infoCodeVariant="A" itemLocationCode="A"/>
+                    </dmRefIdent>
+                  </dmRef>
+                </para>
+              </brDecisionPointText>
+              <brDecisionPointValueGroup brDecisionValueSelection="single"/>
+            </brDecisionPointContent>
+            <brDecision>
+              <brDecisionPending/>
+            </brDecision>
           </brPara>
         </brLevelledPara>
       </brLevelledPara>

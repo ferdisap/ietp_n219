@@ -1,0 +1,12 @@
+<?xml version = "1.0"?>  
+<?xml-stylesheet type = "text/xsl" href = "demo3.xsl"?>  
+
+<brDecisionText>
+    <para>The character &#34;I&#34; and &#34;O&#34; can be used except:
+      <randomList>
+        <listItem><para>Dissasembly Code Variant</para></listItem>
+        <listItem><para>Info Code Variant</para></listItem>
+        <listItem><para>Attribute inwork</para></listItem>
+      </randomList>
+    </para>
+  </brDecisionText>

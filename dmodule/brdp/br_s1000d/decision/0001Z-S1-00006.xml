@@ -10,13 +10,24 @@
   <brDecisionText>
     <para>Currently Schemas to be used in which information set used:
       <randomList>
-        <listItem><para>ACT</para></listItem>
-        <listItem><para>Business rule document</para></listItem>
-        <listItem><para>CIR</para></listItem>
-        <listItem><para>Crew/Operator information</para></listItem>
-        <listItem><para>Front matter</para></listItem>
-        <listItem><para>ICN metadata</para></listItem>
-        <listItem><para>Publication module</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">appliccrossreftable.xsd</verbatimText> - ACT</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">brdoc.xsd</verbatimText> - Business rule document</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">brex.xsd</verbatimText> - Business rule exchange index</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">checklist.xsd</verbatimText> - Checklist</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">comrep.xsd</verbatimText> - CIR</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">condcrossreftable.xsd</verbatimText> - CCT</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">crew.xsd</verbatimText> - Crew information</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">descript.xsd</verbatimText> - Any Description Information</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">dml.xsd</verbatimText> - Data management list</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">frontmatter.xsd</verbatimText> - Front matter</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">icnmetadata.xsd</verbatimText> - ICN meta data</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">ipd.xsd</verbatimText> - IPD</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">pm.xsd</verbatimText> - Publication module</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">prdcrossreftable.xsd</verbatimText> - PCT</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">proced.xsd</verbatimText> - Procedural Information</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">process.xsd</verbatimText> - Process Information</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">sb.xsd</verbatimText> - Service Bulletin</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs02">schedul.xsd</verbatimText> - Schedule maintenance</para></listItem>
         </randomList>
     </para>
     <para>Whenever to complete all publications need more schema, use schema as stated as in S1000D.</para>

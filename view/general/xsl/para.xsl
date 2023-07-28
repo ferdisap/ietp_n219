@@ -4,9 +4,37 @@
   <xsl:include href="textElemGroupStyle.xsl"/>
 
   <xsl:template match="para">
-    <p class="xxx">
-      <xsl:apply-templates/>
-    </p>
+
+    <xsl:choose>
+      <xsl:when test="name(parent::*) = 'listItem'">
+        <span>
+          <xsl:apply-templates/>
+        </span> 
+      </xsl:when>
+      <xsl:when test="name(child::*) = 'randomList'">
+        <p class="mb-0">
+          <xsl:apply-templates/>
+        </p>
+      </xsl:when>
+      <xsl:otherwise>
+        <p>
+          <xsl:apply-templates/>
+        </p>
+      </xsl:otherwise>
+    </xsl:choose>
+
+    <!-- <xsl:choose>
+      <xsl:when test="name(parent::*) = 'listItem'">
+        <span>
+          <xsl:apply-templates/>
+        </span>      
+      </xsl:when>
+      <xsl:otherwise>
+        <p>
+          <xsl:apply-templates/>
+        </p>
+      </xsl:otherwise>
+    </xsl:choose>     -->
   </xsl:template>  
 
   <!-- <xsl:template match="emphasis">

@@ -1,6 +1,7 @@
 @extends('html_head')
 @section('styles')
 <link rel="stylesheet" href="/?utility=getfile&ct=css&path=view/brdp/style/css/table.css">
+<link rel="stylesheet" href="/?utility=getfile&ct=css&path=view/general/css/general.css">
 @endSection
 @section('scripts_onTop')
 <script src="/?utility=getfile&ct=javascript&path=assets/general/js/hideShow.js"></script>

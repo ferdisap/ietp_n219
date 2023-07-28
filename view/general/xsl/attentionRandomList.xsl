@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <xsl:include href="title.xsl"/>
-  <xsl:include href="listItem.xsl"/> 
+  <xsl:include href="attentionRandomListItem.xsl"/> 
 
-  <xsl:template match="randomList">
+  <xsl:template match="attentionRandomList">
     <ul>
       <xsl:apply-templates />
-    </ul>         
-  </xsl:template>  
+    </ul>
+  </xsl:template>
 
 </xsl:stylesheet>

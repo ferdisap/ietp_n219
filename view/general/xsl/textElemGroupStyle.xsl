@@ -3,7 +3,7 @@
 
 <xsl:include href="identNumber.xsl"/>
 <xsl:include href="indexFlag.xsl"/>
-<!-- <xsl:include href="changeInline.xsl"/>
+<xsl:include href="changeInline.xsl"/>
 <xsl:include href="emphasis.xsl"/>
 <xsl:include href="symbol.xsl"/>
 <xsl:include href="subScript.xsl"/>
@@ -17,7 +17,7 @@
 <xsl:include href="acronym.xsl"/>
 <xsl:include href="acronymTerm.xsl"/>
 <xsl:include href="captionGroup.xsl"/>
-<xsl:include href="verbatimText.xsl"/> -->
+<xsl:include href="verbatimText.xsl"/>
 <!-- <xsl:include href="brDecisionRef.xsl"/>
 <xsl:include href="brDecisionPointRef.xsl"/>
 <xsl:include href="sourceDocRef.xsl"/> -->

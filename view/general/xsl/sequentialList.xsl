@@ -6,10 +6,8 @@
 
   <xsl:template match="sequentialList">
     <ol>
-      <xsl:for-each select="listItem">
-          <xsl:apply-templates />
-      </xsl:for-each>
-    </ol>
-  </xsl:template>
+      <xsl:apply-templates />
+    </ol>         
+  </xsl:template>  
 
 </xsl:stylesheet>

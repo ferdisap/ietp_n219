@@ -2,12 +2,12 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:include href="title.xsl"/>
-  <xsl:include href="listItem.xsl"/> 
+  <xsl:include href="attentionSequentialListItem.xsl"/> 
 
-  <xsl:template match="randomList">
-    <ul>
+  <xsl:template match="attentionSequentialList">
+    <ol>
       <xsl:apply-templates />
-    </ul>         
-  </xsl:template>  
+    </ol>
+  </xsl:template>
 
 </xsl:stylesheet>

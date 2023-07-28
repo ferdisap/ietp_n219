@@ -4,15 +4,19 @@ const Brdp = {
   BrList: {
     get parent() {return Brdp;},
     url: "view/brdp/style/xsl/brList.xsl",
-    xslDoc: async () => {
-      return await Brdp.createXML(Brdp.BrList.url);
+    xslDoc: null,
+    setXslDoc: async () => {
+      await Brdp.createXML(Brdp.BrList.url).then(v => this.xslDoc = v).then(x => console.log(this.xslDoc));
     },
-    htmlDoc: () => {
-      return Brdp.xmlToHtml(Brdp.brdpDoc, Brdp.BrList.xslDoc).firstElementChild
+    htmlDoc:null,
+    setHtmlDoc: () => {
+      console.log(Brdp.BrList.xslDoc);
+      this.htmlDoc = Brdp.xmlToHtml(Brdp.brdpDoc, Brdp.BrList.xslDoc).firstElementChild;
     },  
     async refresh(){
-      this.xslDoc = await this.xslDoc();
-      this.htmlDoc = await this.htmlDoc();
+      // this.xslDoc = await this.setXslDoc();
+      // this.htmlDoc = await this.setHtmlDoc();
+      this.setXslDoc().then(v => this.setHtmlDoc);
 
       // add Allstyle to this XSL
       await (this.parent.addAllXslStyle.bind(this))(); //pake await agar xsl tambahan tergabung ke xsl ini
@@ -107,6 +111,7 @@ const Brdp = {
   BrSearch: {    
     get parent() {return Brdp;},
     listener(el, evt) {
+      this.parent.BrDetail.detailOpen = [];
       if (evt.keyCode === 13) { // enter button
         evt.preventDefault();
         /** script baru */
@@ -278,6 +283,7 @@ const Brdp = {
    * @returns HTML Document - should use dom.firstChildElement or more.
    */
   xmlToHtml(xmlDoc, xslDoc){
+    console.log(this);
     let xsltProcessor = new XSLTProcessor();
     xsltProcessor.importStylesheet(xslDoc)
 
@@ -330,7 +336,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await Brdp.BrList.refresh();
     await Brdp.BrDetail.refresh();
 
-    if (Brdp.brdpDoc instanceof XMLDocument){
+    if (Brdp.brdpDoc instanceof XMLDocument && Brdp.BrList.xslDoc instanceof XMLDocument){
       resolve(true);    
     } else {
       reject(false);
