@@ -102,6 +102,72 @@ const Brdp = {
      */
     async getXmlDoc(brDecisionId) {
       return await this.parent.createXML(`dmodule/brdp/br_s1000d/decision/${brDecisionId}.xml`, 'GET');
+    },
+
+    async getListAllDecision(){
+      if (localStorage.allDecision != undefined){
+        return localStorage.allDecision;
+      }
+      let allDecisionArr = this.parent.brdpDoc.querySelectorAll("brDecision[brDecisionIdentNumber]");
+      let length = allDecisionArr.length - 10;
+      let lists = [];
+      let serialized;
+      allDecisionArr.forEach(async (el, i) => {
+        // if(i >= 5 && i < length){
+        //   return;
+        // } else if(i >= length){
+        //   console.log('foo');
+        let brDecisionIdentNumber = el.getAttribute("brDecisionIdentNumber");
+        if (brDecisionIdentNumber != null){
+          let doc = await this.getXmlDoc(brDecisionIdentNumber); // belum tentu result = doc, bisa jadi undefined karena filenya ga ada. Jadi akan ada error
+          if (doc == undefined){
+            return;
+          }
+          doc.firstElementChild.removeAttribute("xsi:noNamespaceSchemaLocation");
+          doc.firstElementChild.removeAttribute("xmlns:xlink");
+          doc.firstElementChild.removeAttribute("xmlns:rdf");
+          doc.firstElementChild.removeAttribute("xmlns:dc");
+          doc.firstElementChild.removeAttribute("xmlns:xsi");
+
+          lists.push(doc.firstElementChild.outerHTML);
+          if (i == length){
+            serialized = JSON.stringify(lists);
+            return localStorage.setItem("allDecision", serialized);
+          }        
+        }
+        // }
+      });
+      return serialized; // sudah di serialize to json
+    },
+
+    async attachDecisionToParentXmlDoc(){
+      let lists; 
+      const parser = new DOMParser();
+      
+      let serialized = await this.getListAllDecision();
+      lists = JSON.parse(serialized);
+      lists.forEach(outerHtml => {
+        let doc = parser.parseFromString(outerHtml, 'text/xml');
+        let brDecisionPointUniqueIdent = doc.firstElementChild.getAttribute('brDecisionIdentNumber');
+        if (brDecisionPointUniqueIdent == null){
+          return;
+        }
+        let xpath = `//brPara[@brDecisionPointUniqueIdent = '${brDecisionPointUniqueIdent}']/brDecision`;
+        let brDecision = this.parent.brdpDoc.evaluate(xpath,this.parent.brdpDoc);
+        brDecision = brDecision.iterateNext();    
+
+        setTimeout(() => {
+          // console.log(window.brDecision = brDecision.iterateNext());
+          console.log(brDecision);
+          brDecision.innerHTML = doc.firstElementChild.outerHTML;
+        }, 0);
+      });
+      return this.parent.brdpDoc;
+    },
+
+    async refresh(){
+      await this.getListAllDecision();
+      // return await this.attachDecisionToParentXmlDoc();
     }
   },
   BrSearch: {    
@@ -245,10 +311,11 @@ const Brdp = {
         if (xhr.status >= 200 && xhr.status < 300) {
             return resolve(xhr.responseXML)
         } else {
-            reject({
-                status: this.status,
-                statusText: xhr.statusText
-            });
+            reject(undefined);
+            // reject({
+            //     status: this.status,
+            //     statusText: xhr.statusText
+            // });
         }
       };
       xhr.onerror = () => {
@@ -335,10 +402,10 @@ document.addEventListener('DOMContentLoaded',  () => {
     Brdp.refresh()
     .then((v) => v ? Brdp.BrList.refresh() : false)
     .then((v) =>  v ? Brdp.BrDetail.refresh() : false)
+    .then((v) =>  v ? Brdp.BrDecision.refresh() : false)
     .then((v) =>  {
       if (v) {
         Brdp.renderHtml('BrList', Brdp.BrList.htmlDoc.firstElementChild);
       }
     })
 });
-
