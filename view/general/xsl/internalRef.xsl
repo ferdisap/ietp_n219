@@ -22,7 +22,7 @@
     <xsl:if test="$outputView"><xsl:attribute name="class">tooltip-trigger</xsl:attribute></xsl:if>
     
     <!-- calling template irrt (FIG. 01 TABLE. 01, etc) -->
-    <a><xsl:attribute name="href">#<xsl:value-of>internalRefId</xsl:value-of></xsl:attribute>
+    <a><xsl:attribute name="href">#<xsl:value-of select="@internalRefId"/></xsl:attribute>
       <xsl:call-template name="irtt"/>
       
       <!-- Tooltip target view -->
@@ -237,9 +237,9 @@
 
 <xsl:template name="multimediaTypePrefix">
   <xsl:choose>
-    <xsl:when test="//multimediaObject/@multimediaType = 3D">3D.</xsl:when>
-    <xsl:when test="//multimediaObject/@multimediaType = audio">Audio.</xsl:when>
-    <xsl:when test="//multimediaObject/@multimediaType = video">Video.</xsl:when>
+    <xsl:when test="//multimediaObject/@multimediaType = '3D'">3D.</xsl:when>
+    <xsl:when test="//multimediaObject/@multimediaType = 'audio'">Audio.</xsl:when>
+    <xsl:when test="//multimediaObject/@multimediaType = 'video'">Video.</xsl:when>
     <xsl:otherwise>Any.</xsl:otherwise>
   </xsl:choose>
 </xsl:template>
