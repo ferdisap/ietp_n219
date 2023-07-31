@@ -10,10 +10,10 @@
   <brDecisionText>
     <para>Identifier used are:
       <randomList>
-        <listItem><para>&#60;reqSupportEquips&#62; is used.</para></listItem>
-        <listItem><para>&#60;reqSupplies&#62; is not used.</para></listItem>
-        <listItem><para>&#60;reqSpares&#62; is not used.</para></listItem>
-        <listItem><para>&#60;workLocation&#62; is not used.</para></listItem>
+        <listItem><para>&#60;reqSupportEquips&#62; use </para></listItem>
+        <listItem><para>&#60;reqSupplies&#62; is used.</para></listItem>
+        <listItem><para>&#60;reqSpares&#62; is used.</para></listItem>
+        <listItem><para>&#60;workLocation&#62; is used.</para></listItem>
       </randomList>
     </para>
   </brDecisionText>

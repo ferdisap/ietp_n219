@@ -95,6 +95,7 @@
       <xsl:when test="@brStatus = 'brst01'"><span class="fw-bold text-warning">Unverified</span></xsl:when>
       <xsl:when test="@brStatus = 'brst02'"><span class="text-success">First verification</span></xsl:when>
       <xsl:when test="@brStatus = 'brst03'"><span class="text-success">Second verification</span></xsl:when>
+      <xsl:when test="@brStatus = 'brst10'"><span class="text-success">Not Applicable</span></xsl:when>
     </xsl:choose>
   </xsl:template>
 

@@ -1188,8 +1188,28 @@
             <brDecisionRef brDecisionIdentNumber="0001Z-00070"/>
             <brDecisionRef brDecisionIdentNumber="0001Z-00071"/>
             <objectPath allowedObjectFlag="1">//originator/@enterpriseCode='0001Z'</objectPath>
-            <objectValue>the object value must be same</objectValue>
+            <objectUse>The XPath result shall be true.</objectUse>
           </structureObjectRule>
+          <structureObjectRule id="sbr-003">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00014"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-00054"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-00558"/>
+            <objectPath allowedObjectFlag="1">not(//@caveat) and not(//commercialClassification) and not(//derivativeClassification)</objectPath>
+            <objectUse>The XPath result should be true. The attribute caveats must not be used in data module.</objectUse>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-004">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00020"/>
+            <objectPath allowedObjectFlag="1">//identAndStatusSection/dmAddress/dmIdent/languange/@countryIsoCode = 'GB' and //identAndStatusSection/dmAddress/dmIdent/languange/@languangeIsoCode = 'en'</objectPath>
+            <objectUse>The XPath result shall be true.</objectUse>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-005">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00095"/>
+            <objectPath allowedObjectFlag="1">not(//title/internalRef) and not(//title/dmRef) and not(//title/pmRef) </objectPath>
+            <objectUse>The XPath result shall be true. Element &#60;internalRef&#62; and &#60;dmRef&#62; and &#60;pmRef&#62; are not allowed.</objectUse>
+          </structureObjectRule>
+          
+
+
         </structureObjectRuleGroup>
       </contextRules>
 

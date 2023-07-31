@@ -3,7 +3,7 @@
  */
 const AllStyle = {
 
-  driver: 'session',
+  driver: 'local',
 
   xslDoc: undefined,
 
@@ -45,21 +45,24 @@ const AllStyle = {
   },
 
   get cache(){
+    if(this.xslDoc == undefined){
+      return false;
+    }
+    const s = new XMLSerializer();
+    const str = s.serializeToString(this.xslDoc);
+
     if(this.driver == 'session'){
-      if(this.xslDoc == undefined){
-        return false;
-      }
-      const s = new XMLSerializer();
-      const str = s.serializeToString(this.xslDoc);
-  
       sessionStorage.setItem('allStyle', str);
+      return true;
+    } else {
+      localStorage.setItem('allStyle', str);
       return true;
     }
 
   },
 
   get withDrawCached(){
-    if ((data = sessionStorage.allStyle) != undefined){
+    if ((data = sessionStorage.allStyle ? sessionStorage.allStyle : localStorage.allStyle) != undefined){
       const parser = new DOMParser();
       const doc = parser.parseFromString(data, "application/xml");
       return this.xslDoc = doc;      

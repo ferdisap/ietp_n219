@@ -1,6 +1,6 @@
 /**
  * need these method below:
  * GeneralValidation@letterCheck
- * GeneralValidation@enterpriseChecker
  * GeneralValidation@getErrorByComment
+ * GeneralValidation@elementAndAttributeChecker (using XPath from <objectUse> asparam and return as per @allowableObjectFlag)
  */

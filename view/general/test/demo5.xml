@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "demo5.xsl"?>  
+
+<!-- 02. Automatic generate number of eg. Para.1.2.2 -->
+<content>
+  Content node text
+  <levelledPara id="par-001">
+    <title>Par1</title>
+    <figure id="fig-tes1">
+      <title>Tes Figure 1</title>
+      <desc>none desc</desc>
+    </figure>
+    <figure id="fig-tes2">
+      <title>Tes Figure 2</title>
+      <graphic id="gra-002">Perf 1.0.0</graphic>
+      <graphic id="gra-001">Perf 2.0.0</graphic>
+    </figure>
+  </levelledPara>
+  <levelledPara id="par-002">  
+    <title>Par2</title>
+    <para>To identify power supply leads, refer to 
+      <internalRef internalRefId="fig-tes2" internalRefTargetType="irtt01">
+        Power supply lead identification
+      </internalRef>.
+    </para>
+    <para>To identify power supply leads, refer to 
+      <internalRef internalRefId="fig-tes1" internalRefTargetType="irtt02">
+        Power supply lead identification
+      </internalRef>.
+    </para>
+    <para>FooBar</para>
+    <levelledPara id="par-003">xx
+      <para>FOOPARA</para>
+      <levelledPara id="par-005">
+        <title>level 3 Title Par 1</title>
+      </levelledPara>
+      <title>Par21</title>
+      <para>Footex1</para>
+      <para>Footex2</para>
+    </levelledPara>
+    <levelledPara id="par-004">
+      <title>Par21</title>
+      <para>Footex1</para>
+      <para>Footex2</para>
+    </levelledPara>
+  </levelledPara>
+</content>
+
+
+<!-- 01. GET the position of Figure/ table/ etc -->
+<!-- <content>
+  <levelledPara>
+    <para>Par1</para>
+    <figure infoEntityIdent="ICN-XXX1" id="fig-tes1">
+      <title>Tes Figure 1</title>
+      <desc>none desc</desc>
+      <graphic />
+    </figure>
+    <figure infoEntityIdent="ICN-XXX2" id="fig-tes2">
+      <title>Tes Figure 2</title>
+      <graphic />
+    </figure>
+  </levelledPara>
+  <levelledPara>  
+    <para>To identify power supply leads, refer to 
+      <internalRef internalRefId="fig-tes2" internalRefTargetType="irtt01">
+        Power supply lead identification
+      </internalRef>.
+    </para>
+    <para>To identify power supply leads, refer to 
+      <internalRef internalRefId="fig-tes1" internalRefTargetType="irtt02">
+        Power supply lead identification
+      </internalRef>.
+    </para>
+    <para>FooBar</para>
+  </levelledPara>
+</content> -->
