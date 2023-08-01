@@ -25,7 +25,8 @@ const Brdp = {
     xpath: (brDecisionId) => {
       return `//brPara/brDecision[@brDecisionIdentNumber='${brDecisionId}']/parent::*`
     },
-    async xslDoc(){
+    xslDoc: null,
+    async setXslDoc(){
       return await this.parent.createXML(this.url);
     },
     detailOpen: [],
@@ -86,7 +87,7 @@ const Brdp = {
       this.trMouseOver = el;
     },    
     async refresh(){
-      this.xslDoc = await this.xslDoc();
+      this.xslDoc = await this.setXslDoc();
       // add Allstyle to this XSL
       await (this.parent.addAllXslStyle.bind(this))(); //pake await agar xsl tambahan tergabung ke xsl ini
       return true;
@@ -103,71 +104,65 @@ const Brdp = {
     async getXmlDoc(brDecisionId) {
       return await this.parent.createXML(`dmodule/brdp/br_s1000d/decision/${brDecisionId}.xml`, 'GET');
     },
-
+    requestToServer: false,
     async getListAllDecision(){
+      if (this.requestToServer == true){
+        localStorage.removeItem('allDecision');
+      }
       if (localStorage.allDecision != undefined){
         return localStorage.allDecision;
       }
       let allDecisionArr = this.parent.brdpDoc.querySelectorAll("brDecision[brDecisionIdentNumber]");
-      let length = allDecisionArr.length - 10;
       let lists = [];
       let serialized;
-      allDecisionArr.forEach(async (el, i) => {
-        // if(i >= 5 && i < length){
-        //   return;
-        // } else if(i >= length){
-        //   console.log('foo');
+      await allDecisionArr.forEach(async (el, i) => {
         let brDecisionIdentNumber = el.getAttribute("brDecisionIdentNumber");
-        if (brDecisionIdentNumber != null){
-          let doc = await this.getXmlDoc(brDecisionIdentNumber); // belum tentu result = doc, bisa jadi undefined karena filenya ga ada. Jadi akan ada error
-          if (doc == undefined){
-            return;
-          }
-          doc.firstElementChild.removeAttribute("xsi:noNamespaceSchemaLocation");
-          doc.firstElementChild.removeAttribute("xmlns:xlink");
-          doc.firstElementChild.removeAttribute("xmlns:rdf");
-          doc.firstElementChild.removeAttribute("xmlns:dc");
-          doc.firstElementChild.removeAttribute("xmlns:xsi");
-
-          lists.push(doc.firstElementChild.outerHTML);
-          if (i == length){
-            serialized = JSON.stringify(lists);
-            return localStorage.setItem("allDecision", serialized);
-          }        
+        let doc = await this.getXmlDoc(brDecisionIdentNumber); 
+        doc = this.removerAttr(doc);
+        lists.push(doc.firstElementChild.outerHTML);
+        if(i == allDecisionArr.length-1){
+          serialized = JSON.stringify(lists);
+          localStorage.setItem("allDecision", serialized);
+          return serialized;
         }
-        // }
       });
+      this.requestToServer = false;
       return serialized; // sudah di serialize to json
     },
 
+    removerAttr(doc){
+      doc.firstElementChild.removeAttribute("xsi:noNamespaceSchemaLocation");
+      doc.firstElementChild.removeAttribute("xmlns:xlink");
+      doc.firstElementChild.removeAttribute("xmlns:rdf");
+      doc.firstElementChild.removeAttribute("xmlns:dc");
+      doc.firstElementChild.removeAttribute("xmlns:xsi");
+      return doc;
+    },
+
     async attachDecisionToParentXmlDoc(){
-      let lists; 
+      let serialized = await this.getListAllDecision(); // jika null akan mengambil semua Litst
+      let lists = JSON.parse(serialized);
       const parser = new DOMParser();
       
-      let serialized = await this.getListAllDecision();
-      lists = JSON.parse(serialized);
-      lists.forEach(outerHtml => {
+      await lists.forEach(async (outerHtml) => {
         let doc = parser.parseFromString(outerHtml, 'text/xml');
         let brDecisionPointUniqueIdent = doc.firstElementChild.getAttribute('brDecisionIdentNumber');
         if (brDecisionPointUniqueIdent == null){
           return;
         }
         let xpath = `//brPara[@brDecisionPointUniqueIdent = '${brDecisionPointUniqueIdent}']/brDecision`;
-        let brDecision = this.parent.brdpDoc.evaluate(xpath,this.parent.brdpDoc);
-        brDecision = brDecision.iterateNext();    
-
-        setTimeout(() => {
-          // console.log(window.brDecision = brDecision.iterateNext());
-          console.log(brDecision);
-          brDecision.innerHTML = doc.firstElementChild.outerHTML;
-        }, 0);
+        let brDecision = await this.parent.brdpDoc.evaluate(xpath,this.parent.brdpDoc).iterateNext();
+        brDecision.innerHTML = doc.firstElementChild.innerHTML;          
       });
       return this.parent.brdpDoc;
     },
 
-    async refresh(){
+    async refresh(requestToServer = false){
+      if(requestToServer){
+        this.requestToServer = true;
+      }
       await this.getListAllDecision();
-      // return await this.attachDecisionToParentXmlDoc();
+      return await this.attachDecisionToParentXmlDoc();
     }
   },
   BrSearch: {    
@@ -200,10 +195,9 @@ const Brdp = {
       let brDataModule = document.implementation.createDocument(null, 'dmodule');
       brDataModule.firstElementChild.innerHTML = db.firstElementChild.innerHTML;
   
-      // console.log('brDataModule',brDataModule);
-  
       // 1. prepare array berisi XPath (filter) berurutan
       let step_xpaths = this.getXPaths(searchInput);
+      console.log(step_xpaths);
   
       // 2. untuk setiap item dalam urutan (index 1 adalah filter utama)
       for (let i = 0; i < step_xpaths.length; i++) {
@@ -242,6 +236,15 @@ const Brdp = {
       let xpath_ident = `//@brDecisionPointUniqueIdent[contains(.,'${text}')]/ancestor::brPara`;
       let xpath_title = `//brDecisionPointContent/title[contains(.,'${text}')]/ancestor::brPara`;
       let xpath_category = `//@brCategoryNumber[contains(.,'${text}')]/ancestor::brPara | //brCategory[contains(.,'${text}')]/ancestor::brPara`;
+      let xpath_decision = `//brDecision[contains(.,'${text}')]/ancestor::brPara | //brDecision/@brDecisionIdentNumber[contains(.,'${text}')]/ancestor::brPara`;
+      let xpath_audit = `//brAudit[contains(.,'${text}')]/ancestor::brPara`;
+      let xpath_all = `//*[contains(.,'${text}')]/ancestor::brPara | //@*[contains(.,'${text}')]/ancestor::brPara`;
+
+      /**
+       * INCASESENSITIVE example
+       * tambahkan translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') sebagai parameter[0] contains();
+       * let xpath_decision = `//brDecision/descendant::text()[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'the')]/ancestor::brPara | //brDecision/@brDecisionIdentNumber[contains(.,'${text}')]/ancestor::brPara`;
+       */
   
       switch (filterBy) {
         case 'ident':
@@ -250,8 +253,12 @@ const Brdp = {
           return xpath_title;
         case 'category':
           return xpath_category;
+        case 'decision':
+          return xpath_decision;
+        case 'audit':
+          return xpath_audit;
         case 'all':
-          return xpath_ident + ' | ' + xpath_title + ' | ' + xpath_category;
+          return xpath_all;
         default:
           return '';
       }
@@ -335,11 +342,8 @@ const Brdp = {
    * @returns 
    */
   renderHtml(idContainer, node){
-    console.log(window.nd = node);
     let div = document.createElement('div');
     div.innerHTML = node.outerHTML;
-
-    console.log(window.div = div);
 
     return this.showContent(idContainer, div);
   },
@@ -397,15 +401,18 @@ const Brdp = {
   },
 }
 
-document.addEventListener('DOMContentLoaded',  () => {
-
-    Brdp.refresh()
-    .then((v) => v ? Brdp.BrList.refresh() : false)
-    .then((v) =>  v ? Brdp.BrDetail.refresh() : false)
-    .then((v) =>  v ? Brdp.BrDecision.refresh() : false)
-    .then((v) =>  {
-      if (v) {
-        Brdp.renderHtml('BrList', Brdp.BrList.htmlDoc.firstElementChild);
-      }
-    })
+function refresh(){
+  Brdp.refresh()
+  .then((v) => v ? Brdp.BrList.refresh() : false)
+  .then((v) =>  v ? Brdp.BrDetail.refresh() : false)
+  .then((v) =>  v ? Brdp.BrDecision.refresh() : false)
+  .then((v) =>  {
+    if (v) {
+      Brdp.renderHtml('BrList', Brdp.BrList.htmlDoc.firstElementChild);
+    }
+  })
+}
+document.addEventListener('DOMContentLoaded', ()=>{
+  refresh();
 });
+
