@@ -8,21 +8,21 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>attribute "internalRefTargetType" value used:
+    <para><verbatimText verbatimStyle="vs13">internalRefTargetType</verbatimText> value used:
       <randomList>
-        <listItem><para>irtt01 (Figure)</para></listItem>
-        <listItem><para>irtt02 (Table)</para></listItem>
-        <listItem><para>irtt03 (Multimedia)</para></listItem>
-        <listItem><para>irtt05 (Support Equipment)</para></listItem>
-        <listItem><para>irtt07 (Paragraphs)</para></listItem>
-        <listItem><para>irtt08 (Step)</para></listItem>
-        <listItem><para>irtt09 (Graphics)</para></listItem>
-        <listItem><para>irtt10 (Multimedia Object)</para></listItem>
-        <listItem><para>irtt11 (Hotspot)</para></listItem>
-        <listItem><para>irtt12 (Parameter)</para></listItem>
-        <listItem><para>irtt13 (Zone)</para></listItem>
-        <listItem><para>irtt15 (SB material set/equipment/supply/spare(removed))</para></listItem>
-        <listItem><para>irtt16 (Access Point)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">irtt01</verbatimText> (Figure)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">irtt02</verbatimText> (Table)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">irtt03</verbatimText> (Multimedia)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">irtt05</verbatimText> (Support Equipment)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">irtt07</verbatimText> (Paragraphs)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">irtt08</verbatimText> (Step)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">irtt09</verbatimText> (Graphics)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">irtt10</verbatimText> (Multimedia Object)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">irtt11</verbatimText> (Hotspot)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">irtt12</verbatimText> (Parameter)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">irtt13</verbatimText> (Zone)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">irtt15</verbatimText> (SB material set/equipment/supply/spare(removed))</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">irtt16</verbatimText> (Access Point)</para></listItem>
       </randomList>
     </para>
   </brDecisionText>

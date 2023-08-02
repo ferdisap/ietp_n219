@@ -10,7 +10,7 @@ const AllStyle = {
   async getListAllGeneralStyle(refresh = false){
 
     let data = this.withDrawCached;
-    console.log(data);
+    // console.log(data);
 
     if (refresh) {
       data = false

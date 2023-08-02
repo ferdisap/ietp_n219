@@ -2,47 +2,47 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:template match="dmodule">
     <div>
-      <div class="container-lg mt-3" style="width:90%; height:75vh; overflow:auto">
+      <div class="container-lg mt-3" style="display:flex;width:90%;height:65vh;justify-content: center;">
         <table id="brdpList-table">
             <thead>
               <tr>
-                <th>Ident</th>
-                <th>Title</th>
-                <th>Category</th>
-                <th>Audit</th>
-                <th>Decision</th>
+                <th scope="col">Ident</th>
+                <th scope="col">Title</th>
+                <th scope="col">Category</th>
+                <th scope="col">Audit</th>
+                <th scope="col">Decision</th>
               </tr>
               <tr>
-                <td>
+                <th>
                   <div class="input-group">
                     <input type="number" class="filterSort input-group-text p-0" style="width: 30px" for="ident" id="" max="5" min="1" value="1"/>
                     <input type="text" class="form-control" filterBy="ident" placeholder="search ident.." onkeypress="Brdp.BrSearch.listener(this,event)"/>
                   </div>
-                </td>
-                <td>
+                </th>
+                <th>
                   <div class="input-group">
                     <input type="number" class="filterSort input-group-text p-0" style="width: 30px" for="title" id="" max="5" min="1" value="2"/>
                     <input type="text" class="form-control" filterBy="title" placeholder="search title.." onkeypress="Brdp.BrSearch.listener(this,event)"/>
                   </div>
-                </td>
-                <td>
+                </th>
+                <th>
                   <div class="input-group">
                     <input type="number" class="filterSort input-group-text p-0" style="width: 30px" for="category" id="" max="5" min="1" value="3"/>
                     <input type="text" class="form-control" filterBy="category" placeholder="search category.." onkeypress="Brdp.BrSearch.listener(this,event)"/>
                   </div>
-                </td>
-                <td>
+                </th>
+                <th>
                   <div class="input-group">
                     <input type="number" class="filterSort input-group-text p-0" style="width: 30px" for="audit" id="" max="5" min="1" value="4"/>
                     <input type="text" class="form-control" filterBy="audit" placeholder="search audit.." onkeypress="Brdp.BrSearch.listener(this,event)"/>
                   </div>
-                </td>
-                <td>
+                </th>
+                <th>
                   <div class="input-group">
                     <input type="number" class="filterSort input-group-text p-0" style="width: 30px" for="decision" id="" max="5" min="1" value="5"/>
                     <input type="text" class="form-control" filterBy="decision" placeholder="search decision.." onkeypress="Brdp.BrSearch.listener(this,event)"/>
                   </div>
-                </td>
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -61,12 +61,12 @@
       <xsl:attribute name="onmouseover">Brdp.BrDetail.changeBgColor(this)</xsl:attribute>
       <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
       <xsl:attribute name="onclick">Brdp.BrDetail.openDetail('<xsl:value-of select="@brDecisionPointUniqueIdent"/>','<xsl:value-of select="./brDecision/@brDecisionIdentNumber"/>','<xsl:value-of select="@id"/>',this)</xsl:attribute>
-      <td>
+      <th scope="row">
           <a>
             <xsl:attribute name="href">javascript:void(0)</xsl:attribute>
             <xsl:value-of select="@brDecisionPointUniqueIdent"/>
           </a>
-      </td>
+      </th>
       <td>
         <xsl:value-of select="brDecisionPointContent/title"/>
       </td>

@@ -1,85 +1,79 @@
 table {
-  table-layout: fixed;
-  width:auto;
-  border-collapse: separate;
-  border-spacing: 0;
-}
-th, td {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  vertical-align: text-top;
-  margin-bottom: 10px;
+  border-collapse: collapse;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  height: inherit;
 }
 
-th:nth-child(1){
-  width: 100px;
-}
-th:nth-child(2){
-  min-width: 150px;
-  max-width: 300px;
-}
-th:nth-child(3){
-  min-width: 100px;
-}
-th:nth-child(4){
-  min-width: 150px;
-}
-td:first-child{
-  white-space: nowrap;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-td:nth-child(3), td:nth-child(4), td:nth-child(5){
-  text-align:center;
-}
-
-thead > tr > th, thead > tr > td {
-  text-align: center;
-  background-color: rgb(178, 241, 252);
-  height: 2.5rem;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-thead > tr > td {
-  border-top: 1px solid black;
-  border-bottom: 3px solid black;
-  background-color: white;
-  height: 3rem;
-  vertical-align: middle;
-}
 thead {
-  position: sticky;
-  top: 0;
+  display: block;
 }
 
-tr{
-  height: 2rem!important;
+tbody {
+  display: block;
+  width: inherit;
+  overflow: auto;
+  height: inherit;
 }
-tbody td:nth-child(5) {
+
+tbody th, tbody td:last-child {
   white-space: nowrap;
 }
-.brdp_detail{
-  border: 1px solid black;
-  width: 100%;
-  height: 100px;
+
+td, th {
+  border: 1px solid rgb(190, 190, 190);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-li > p {
-  margin: 0;;
+th[scope='col'] {
+  background-color: #696969;
+  color: #fff;
+}
+
+th[scope='row'] {
+  background-color: #d7d9f2;
+}
+
+th:nth-child(1), th:nth-child(5){
+  width: 150px !important;
+  text-align: center;
+}
+th:nth-child(2), tbody > tr > td:nth-child(2) {
+  width: 400px !important;
+}
+th:nth-child(3), tbody > tr > td:nth-child(3) {
+  width: 130px !important;
+  text-align: center;
+}
+th:nth-child(4), tbody > tr > td:nth-child(4) {
+  width: 170px !important;
+  text-align: center;
+}
+
+
+li>p {
+  margin: 0;
 }
 
 .mt-minus-1 {
   margin-top: -0.25rem !important;
 }
+
 .mt-minus-2 {
   margin-top: -0.5rem !important;
 }
+
 .mt-minus-3 {
   margin-top: -1rem !important;
 }
+
 .mt-minus-4 {
   margin-top: -1.5rem !important;
 }
+
 .mt-minus-5 {
   margin-top: -3rem !important;
 }

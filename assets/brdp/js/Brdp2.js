@@ -401,18 +401,3 @@ const Brdp = {
   },
 }
 
-function refresh(){
-  Brdp.refresh()
-  .then((v) => v ? Brdp.BrList.refresh() : false)
-  .then((v) =>  v ? Brdp.BrDetail.refresh() : false)
-  .then((v) =>  v ? Brdp.BrDecision.refresh() : false)
-  .then((v) =>  {
-    if (v) {
-      Brdp.renderHtml('BrList', Brdp.BrList.htmlDoc.firstElementChild);
-    }
-  })
-}
-document.addEventListener('DOMContentLoaded', ()=>{
-  refresh();
-});
-

@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>Yes, th element &#60;refs&#62; is used. Use the lexical order when presented in "Table X References".</para>
+    <para>Yes, the element <verbatimText verbatimStyle="vs12">refs</verbatimText> is used. Use the lexical order when presented in "Table X References".</para>
   </brDecisionText>
   
 </brDecision>

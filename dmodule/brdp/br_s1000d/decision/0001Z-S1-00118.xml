@@ -8,7 +8,13 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>When there needs a title (eg. levelled paragraph, table, figure), the element &#60;title&#62; shall be used. But when utilizing child elements of the element &#60;proceduralStep&#62; to write procedural step, if the context of the content is title, use the element &#60;title&#62;, otherwise use the element &#60;para&#62;.</para>
+    <para>
+      <randomList>
+        <listItem>
+          <para><verbatimText verbatimStyle="vs12">title</verbatimText> shall not be used as child of <verbatimText verbatimStyle="vs12">randomList</verbatimText>, and <verbatimText verbatimStyle="vs12">attentionSequentialList</verbatimText>, <verbatimText verbatimStyle="vs12">sequentialList</verbatimText></para>
+        </listItem>
+      </randomList>
+    </para>
   </brDecisionText>
   
 </brDecision>

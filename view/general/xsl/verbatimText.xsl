@@ -13,17 +13,17 @@
 
       <!-- XML/SGML element name -->
       <xsl:when test="@verbatimStyle = 'vs12'">
-        <code>&#60;<xsl:apply-templates/>&#62;</code>
+        <code class="xml-elementName">&#60;<xsl:apply-templates/>&#62;</code>
       </xsl:when>
 
       <!-- XML/SGML attribute name -->
       <xsl:when test="@verbatimStyle = 'vs13'">
-        <span class="fs-05">attribute</span><code><xsl:apply-templates/></code>
+        <code class="xml-attributeName"><xsl:apply-templates/></code>
       </xsl:when>
 
       <!-- XML/SGML attribute value -->
       <xsl:when test="@verbatimStyle = 'vs14'">
-        <span class="fs-05">value</span> <code><xsl:apply-templates/></code>
+        <code class="xml-attributeValue"><xsl:apply-templates/></code>
       </xsl:when>
 
       <!-- class name -->

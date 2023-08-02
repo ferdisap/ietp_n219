@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>No, attribute cautionType currently is not needed to use.</para>
+    <para>No, <verbatimText verbatimStyle="vs13">cautionType</verbatimText> is not needed to use.</para>
   </brDecisionText>
   
 </brDecision>

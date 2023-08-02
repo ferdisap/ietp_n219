@@ -1207,6 +1207,32 @@
             <objectPath allowedObjectFlag="1">not(//title/internalRef) and not(//title/dmRef) and not(//title/pmRef) </objectPath>
             <objectUse>The XPath result shall be true. Element &#60;internalRef&#62; and &#60;dmRef&#62; and &#60;pmRef&#62; are not allowed.</objectUse>
           </structureObjectRule>
+          <structureObjectRule id="sbr-006">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00032"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-00033"/>
+            <objectPath allowedObjectFlag="1">not(//warning/@vitalWarningFlag) | not(//warning/@warningType)</objectPath>
+            <objectUse>The XPath result shall be true. attribute vitalWarningFlag and  warningType is not allowed.</objectUse>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-007">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00034"/>            
+            <objectPath allowedObjectFlag="1">not(//caution/@cautionType)</objectPath>
+            <objectUse>The XPath result shall be true. attribute cautionType is not allowed.</objectUse>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-008">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00035"/>            
+            <objectPath allowedObjectFlag="1">not(//note/@noteType)</objectPath>
+            <objectUse>The XPath result shall be true. attribute noteType is not allowed.</objectUse>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-009">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00090"/>            
+            <objectPath allowedObjectFlag="0">//issueInfo[@inWork != '00']/ancestor::dmodule//reasonForUpdate</objectPath>
+            <objectUse>The XPath result shall be 'not match'. Element &#60;reasonForUpdate&#62; is not allowed during production proccess (@inwork != 00).</objectUse>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-010">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00118"/>            
+            <objectPath allowedObjectFlag="0">//title/parent::randomList | //title/parent::sequentialList | //title/parent::attentionSequentialList</objectPath>
+            <objectUse>The XPath result shall be 'not match'. Element &#60;title&#62; is not allowed.</objectUse>
+          </structureObjectRule>
           
 
 
