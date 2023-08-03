@@ -6,9 +6,10 @@
   <xsl:include href="behavior.xsl"/>
 
   <xsl:template match="pmRef">
-    <span>
+    Refer to&#160;<a>
+      <xsl:attribute name="href">#</xsl:attribute>
       <xsl:apply-templates/>
-    </span>
+    </a>
   </xsl:template>
 
 </xsl:stylesheet>

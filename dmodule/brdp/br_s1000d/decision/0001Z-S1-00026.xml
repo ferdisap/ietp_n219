@@ -8,23 +8,23 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>Use the highlight text by <verbatimText verbatimStyle="vs14">emphasisType</verbatimText>.</para>
+    <para>Use the highlight text by <verbatimText verbatimStyle="vs13">emphasisType</verbatimText>.</para>
     <para>Below following value of the attribute:
       <randomList>
         <listItem>
-          <para>em01 - bold</para>
+          <para><verbatimText verbatimStyle="vs14">em01</verbatimText>&#160;-&#160;bold</para>
         </listItem>
         <listItem>
-          <para>em02 - italic</para>
+          <para><verbatimText verbatimStyle="vs14">em02</verbatimText>&#160;-&#160;italic</para>
         </listItem>
         <listItem>
-          <para>em03 - Underline</para>
+          <para><verbatimText verbatimStyle="vs14">em03</verbatimText>&#160;-&#160;Underline</para>
         </listItem>
         <listItem>
-          <para>em04 - NOT USED</para>
+          <para><verbatimText verbatimStyle="vs14">em04</verbatimText>&#160;-&#160;NOT USED</para>
         </listItem>
         <listItem>
-          <para>em05 - Strikethrough (not to be used to mark deleted text)</para>
+          <para><verbatimText verbatimStyle="vs14">em05</verbatimText>&#160;-&#160;Strikethrough (not to be used to mark deleted text)</para>
         </listItem>
       </randomList>
     </para>

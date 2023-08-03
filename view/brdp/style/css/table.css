@@ -3,6 +3,7 @@ table {
   letter-spacing: 1px;
   font-size: 0.8rem;
   height: inherit;
+  width: 1000px;
 }
 
 thead {
@@ -76,4 +77,8 @@ li>p {
 
 .mt-minus-5 {
   margin-top: -3rem !important;
+}
+
+.flex-inherit{
+  flex: inherit !important;
 }

@@ -167,13 +167,19 @@ const Brdp = {
   },
   BrSearch: {    
     get parent() {return Brdp;},
-    listener(el, evt) {
+    listener(evt) {
+      console.log(window.evt = evt)
       this.parent.BrDetail.detailOpen = [];
-      if (evt.keyCode === 13) { // enter button
+      if (evt.keyCode === 13 || evt.type == 'click') { // enter button
         evt.preventDefault();
+        if (!this.applSchemaXPath){
+          this.setApplSchema(document.querySelectorAll("#applSchema input"));
+        }
+
         /** script baru */
         let searchFilterInput = document.querySelectorAll("input[filterBy]");
         let searchInput = [[searchFilterInput[0]]];
+        // let searchInput = searchFilterInput[0].value != '' ? [[searchFilterInput[0]]] : []; // ngga pakai ini agar bisa pilih applSchema
         let fb = document.querySelectorAll(`.filterSort`);
         [1,2,3,4,5].forEach(no => {
           let subSearchInput = [];
@@ -188,6 +194,18 @@ const Brdp = {
         });
         this.runEngine(searchInput);
       }
+    },
+    useApplSchema: false,
+    setApplSchema(cheklistAll = []){
+      let additionXPath = []; // hasilnya [".//@comrepXsd='1'", ".//@commentXsd='1'"]
+      cheklistAll.forEach(el => {
+        if (el.checked){
+          let xpath = `.//@${el.value}='1'`;
+          additionXPath.push(xpath);
+        }
+      });
+      this.applSchemaXPath =  additionXPath.join(" and ");
+      return this.applSchemaXPath;
     },
     async runEngine(searchInput = []) {
       let db = this.parent.brdpDoc;
@@ -226,19 +244,35 @@ const Brdp = {
       for (let i = 0; i < searchInput.length; i++) {
         let subXPaths = [];
         searchInput[i].forEach(el => {
-          subXPaths.push(this.setXpath(el.getAttribute('filterBy'), el.value));
+          // separate each input value as per ";"
+          /** Script Baru */
+          let strArr = el.value.split(";");
+          strArr.forEach(str => {
+            str = str.trimStart();
+            str = str.trimEnd();
+            subXPaths.push(this.setXpath(el.getAttribute('filterBy'), str));
+          });
+          // subXPaths.push(this.setXpath(el.getAttribute('filterBy'), el.value));
+          /** end of Script Baru */
         });
         xpaths.push(subXPaths.join(' | '));
       }
       return xpaths;
     },
+    
     setXpath(filterBy, text) {
       let xpath_ident = `//@brDecisionPointUniqueIdent[contains(.,'${text}')]/ancestor::brPara`;
       let xpath_title = `//brDecisionPointContent/title[contains(.,'${text}')]/ancestor::brPara`;
       let xpath_category = `//@brCategoryNumber[contains(.,'${text}')]/ancestor::brPara | //brCategory[contains(.,'${text}')]/ancestor::brPara`;
       let xpath_decision = `//brDecision[contains(.,'${text}')]/ancestor::brPara | //brDecision/@brDecisionIdentNumber[contains(.,'${text}')]/ancestor::brPara`;
       let xpath_audit = `//brAudit[contains(.,'${text}')]/ancestor::brPara`;
-      let xpath_all = `//*[contains(.,'${text}')]/ancestor::brPara | //@*[contains(.,'${text}')]/ancestor::brPara`;
+
+      let xpath_all;
+      if (this.useApplSchema){
+        xpath_all = `//*[contains(.,'${text}')]/ancestor::brPara[${this.applSchemaXPath}] | //@*[contains(.,'${text}')]/ancestor::brPara[${this.applSchemaXPath}]`;
+      } else {
+        xpath_all = `//*[contains(.,'${text}')]/ancestor::brPara | //@*[contains(.,'${text}')]/ancestor::brPara`;
+      }
 
       /**
        * INCASESENSITIVE example
@@ -299,7 +333,15 @@ const Brdp = {
       // menambahkan informasi total jumlah pencarian.
       document.getElementById('totalSearchResult').innerHTML = nodes.length + " result(s) found.";
     },
-    
+    select: 'apart',
+    selectDeselectAll(btn){
+      let s = this.select == 'all' ? true : false;
+      document.querySelectorAll("#applSchema input").forEach(el => {
+        el.checked = s;
+      });
+      btn.innerText = s == true ? 'deselect all' : ' select all';
+      this.select = this.select == 'all' ? 'apart' : 'all';
+    },    
   },
 
   url: "dmodule/brdp/br_s1000d/DMC-N219-A-00-00-0000-00A-024A-D_001-00_EN-US.xml",

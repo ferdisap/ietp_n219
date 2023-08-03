@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-  <para>Figure Caption style:
+  <!-- <para>Figure Caption style:
     <sequentialList>
       <listItem><para>fill: white (#111111)</para></listItem>
       <listItem><para>font: Calibri</para></listItem>
@@ -16,7 +16,7 @@
       <listItem><para>fontStyle: Regular</para></listItem>
       <listItem><para>fontColor: black (#000000)</para></listItem>
     </sequentialList>
-  </para>
+  </para> -->
   <para>Warning/Caution Annunciator Caption style:
     <sequentialList>
       <listItem><para>font: Calibri</para></listItem>

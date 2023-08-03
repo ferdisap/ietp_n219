@@ -227,7 +227,7 @@
 
     <xsl:otherwise>
       <xsl:comment>ERROR: the attribute <xsl:value-of select="@internalRefTargetType"/>&#160; doesn't exist.</xsl:comment>
-        <xsl:message>ERROR: the attribute <xsl:value-of select="@internalRefTargetType"/>&#160; doesn't exist.</xsl:message>
+      <xsl:message>ERROR: the attribute <xsl:value-of select="@internalRefTargetType"/>&#160; doesn't exist.</xsl:message>
     </xsl:otherwise>
   </xsl:choose>    
 </xsl:template>

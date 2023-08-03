@@ -218,7 +218,7 @@
   </xsl:template>
 
   <xsl:template match="brDecision">
-    <div id="brDecision" class="container w-100 my-3">
+    <div id="brDecision" class="container w-100 my-3 text-wrap">
       <h3>BR Decision</h3>
       <div class="ms-3">
         <xsl:apply-templates select="brDecisionText"/>

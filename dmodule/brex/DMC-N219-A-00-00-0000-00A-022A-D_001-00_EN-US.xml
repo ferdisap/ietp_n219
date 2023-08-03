@@ -1233,15 +1233,30 @@
             <objectPath allowedObjectFlag="0">//title/parent::randomList | //title/parent::sequentialList | //title/parent::attentionSequentialList</objectPath>
             <objectUse>The XPath result shall be 'not match'. Element &#60;title&#62; is not allowed.</objectUse>
           </structureObjectRule>
+          <structureObjectRule id="sbr-011">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00026"/>            
+            <objectPath allowedObjectFlag="2">//emphasis/@emphasisType</objectPath>
+            <objectUse>If the XPath result is 'match', the value shall be in accordance with valueAllowed.</objectUse>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="em01">bold</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="em02">italic</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="em03">underline</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="em05">strikethrough</objectValue>
+          </structureObjectRule>
           <structureObjectRule id="sbr-012">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00013"/>            
+            <brDecisionRef brDecisionIdentNumber="0001Z-00101"/>            
             <objectPath allowedObjectFlag="1">//dmStatus/@securityClassification</objectPath>
             <objectUse>The XPath result shall be 'match'. Attribute &#60;securityClassification&#62; shall be followed the valueAllowed.</objectUse>
-            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="01">Value means unclassified data module</objectValue>
-            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="02">Value means restricted data module</objectValue>
-            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="03">Value means confidential data module</objectValue>
-            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="04">Value means secret data module</objectValue>
-            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="05">Value means top secrret data module</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="01">unclassified</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="02">restricted</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="03">confidential</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="04">secret</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="05">top secrret</objectValue>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-013">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00101"/>            
+            <objectPath allowedObjectFlag="1">//internalRef/@internalRefId</objectPath>
+            <objectUse>The XPath result shall be as match as the valueAllowed pattern.</objectUse>
+            <objectValue valueTailoring="closed" valueForm="pattern" valueAllowed="fig|tab|mma|seq|par|stp|gra|mmo|hot|pme|zon|mat|msl|acp|ftn">unclassified</objectValue>
           </structureObjectRule>
           
 
@@ -1251,9 +1266,17 @@
 
 
       <nonContextRules>
-        <nonContextRule id="sbr-011">
+        <nonContextRule id="sbr-511">
           <brDecisionRef brDecisionIdentNumber="0001Z-00003"/>
           <simplePara>Each of data module shall use S1000D issue 5.0. Check that every single schema used comes from http://www.s1000d.org/S1000D_5-0/xml_schema_flat/</simplePara>
+        </nonContextRule>
+        <nonContextRule id="sbr-513">
+          <brDecisionRef brDecisionIdentNumber="0001Z-00022"/>
+          <simplePara>Each of data module shall use OxFord Dictionary.</simplePara>
+        </nonContextRule>
+        <nonContextRule id="sbr-514">
+          <brDecisionRef brDecisionIdentNumber="0001Z-00107"/>
+          <simplePara>The prefix words is attached in stylesheet (XSLT) file.</simplePara>
         </nonContextRule>
         <!-- <nonContextRule>
           <simplePara>CSDB synchronization between partner companies must occur last Sunday of each month.</simplePara>
