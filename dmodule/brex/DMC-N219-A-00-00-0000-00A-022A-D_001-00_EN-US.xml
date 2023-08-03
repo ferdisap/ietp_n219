@@ -1233,6 +1233,16 @@
             <objectPath allowedObjectFlag="0">//title/parent::randomList | //title/parent::sequentialList | //title/parent::attentionSequentialList</objectPath>
             <objectUse>The XPath result shall be 'not match'. Element &#60;title&#62; is not allowed.</objectUse>
           </structureObjectRule>
+          <structureObjectRule id="sbr-012">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00013"/>            
+            <objectPath allowedObjectFlag="1">//dmStatus/@securityClassification</objectPath>
+            <objectUse>The XPath result shall be 'match'. Attribute &#60;securityClassification&#62; shall be followed the valueAllowed.</objectUse>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="01">Value means unclassified data module</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="02">Value means restricted data module</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="03">Value means confidential data module</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="04">Value means secret data module</objectValue>
+            <objectValue valueTailoring="closed" valueForm="single" valueAllowed="05">Value means top secrret data module</objectValue>
+          </structureObjectRule>
           
 
 
@@ -1241,9 +1251,13 @@
 
 
       <nonContextRules>
-        <nonContextRule>
-          <simplePara>CSDB synchronization between partner companies must occur last Sunday of each month.</simplePara>
+        <nonContextRule id="sbr-011">
+          <brDecisionRef brDecisionIdentNumber="0001Z-00003"/>
+          <simplePara>Each of data module shall use S1000D issue 5.0. Check that every single schema used comes from http://www.s1000d.org/S1000D_5-0/xml_schema_flat/</simplePara>
         </nonContextRule>
+        <!-- <nonContextRule>
+          <simplePara>CSDB synchronization between partner companies must occur last Sunday of each month.</simplePara>
+        </nonContextRule> -->
       </nonContextRules>
     </brex>
   </content>

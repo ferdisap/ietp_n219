@@ -315,7 +315,17 @@
 					<brDecision brDecisionIdentNumber="0001Z-S1-00003"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>The validator is done by the php <verbatimText verbatimStyle="vs28">Csdb</verbatimText><verbatimText verbatimStyle="vs30">XsdSchemaValidator</verbatimText>.</para>
+              <para>Refer to: 
+                <dmRef referredFragment="sbr-011">
+                  <dmRefIdent>
+                    <dmCode modelIdentCode="N219" systemDiffCode="A"
+                            systemCode="00" subSystemCode="0" subSubSystemCode="0"
+                            assyCode="00" disassyCode="00" disassyCodeVariant="A"
+                            infoCode="022" infoCodeVariant="A" itemLocationCode="D" />
+                    <issueInfo issueNumber="000" inWork="01"/>
+                  </dmRefIdent>
+                </dmRef>
+              </para>
             </brAction>
             <brCurrentStatus brStatus="brst01"/>
           </brAudit>
@@ -880,9 +890,18 @@
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00013"/>
           <brAudit>
-            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00013"/>
-            <brDecisionRef brDecisionIdentNumber="0001Z-S2-00002"/>
             <brAction brActionOwner="0001Z">
+              <para>Refer to: 
+                <dmRef referredFragment="sbr-012">
+                  <dmRefIdent>
+                    <dmCode modelIdentCode="N219" systemDiffCode="A"
+                            systemCode="00" subSystemCode="0" subSubSystemCode="0"
+                            assyCode="00" disassyCode="00" disassyCodeVariant="A"
+                            infoCode="022" infoCodeVariant="A" itemLocationCode="D" />
+                    <issueInfo issueNumber="000" inWork="01"/>
+                  </dmRefIdent>
+                </dmRef>
+              </para>
               <para>Those value decided will be applied to the style in <verbatimText verbatimStyle="vs02">security.xsl</verbatimText> and checked the error result by JavaScript <verbatimText verbatimStyle="vs28">GeneralValidation</verbatimText><verbatimText verbatimStyle="vs30">getErrorByComment</verbatimText>.</para>
             </brAction>
             <brCurrentStatus brStatus="brst01">
