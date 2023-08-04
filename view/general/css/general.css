@@ -1,8 +1,10 @@
 :root {
   --custom-color-green1- : #007936;
   --custom-color-red1- : #d30038;
+  --custom-color-amber1-: #FFC107;
 }
 
+/** MARGIN digonakan di XSL */
 .mt-minus-1 {
   margin-top: -0.25rem !important;
 }
@@ -19,7 +21,7 @@
   margin-top: -3rem !important;
 }
 
-/** FONT */
+/** FONT digunakan di XSL*/
 .fs-05 {
   font-size:0.5rem !important;
 }
@@ -31,5 +33,65 @@ code.xml-attributeValue {
 }
 code.xml-elementName {
   color: var(--custom-color-green1-) !important;
+}
+
+/** CONTAINER-ALIGNMENT digunakan di XSL*/
+.start-25 {
+  right: 25% !important;
+}
+
+/** BACKGROUND COLOR  */
+.bg-green {
+  background-color: green !important;
+}
+.bg-amber {
+  background-color: var(--custom-color-amber1-) !important;
+}
+.bg-yellow {
+  background-color: yellow !important;
+}
+.bg-red {
+  background-color: red !important;
+}
+.bg-white {
+  background-color: white !important;
+}
+.bg-grey {
+  background-color: grey !important;
+}
+.bg-black {
+  background-color: black !important;
+}
+.bg-yellow-txt-black {
+  background-color: yellow !important;
+  color: black !important;
+}
+.bg-red-txt-black {
+  background-color: red !important;
+  color: black !important;
+}
+.bg-red-txt-white {
+  background-color: red !important;
+  color: white !important;
+}
+.bg-black-txt-yellow {
+  background-color: black !important;
+  color: yellow !important;
+}
+.bg-black-txt-white {
+  background-color: black !important;
+  color: white !important;
+}
+.bg-black-txt-red {
+  background-color: black !important;
+  color: red !important;
+}
+.bg-black-txt-green {
+  background-color: black !important;
+  color: green !important;
+}
+.bg-black-txt-amber {
+  background-color: black !important;
+  color:  var(--custom-color-amber1-)!important;
 }
 

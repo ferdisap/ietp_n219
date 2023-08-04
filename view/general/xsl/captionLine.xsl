@@ -5,6 +5,7 @@
 
   <xsl:template match="captionLine">
     <span>
+      <xsl:attribute name="class">text-nowrap&#32;fw-bold</xsl:attribute>
       <xsl:apply-templates/>
     </span>
   </xsl:template>

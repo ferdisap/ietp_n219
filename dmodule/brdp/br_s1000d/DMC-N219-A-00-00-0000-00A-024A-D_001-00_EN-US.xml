@@ -3729,6 +3729,12 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00559"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>The audit shall be done by <verbatimText verbatimStyle="vs02">captionGroup.xsl</verbatimText> and <verbatimText verbatimStyle="vs02">caption.xsl</verbatimText></para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01" />
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00117" id="brp-s1-00117">
 					<brRelatedTo>

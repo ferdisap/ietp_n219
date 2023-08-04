@@ -16,31 +16,31 @@
                 <th>
                   <div class="input-group">
                     <input type="number" class="filterSort input-group-text p-0" style="width: 30px" for="ident" id="" max="5" min="1" value="1"/>
-                    <input type="text" class="form-control" filterBy="ident" placeholder="search ident.." onkeypress="Brdp.BrSearch.listener(this,event)"/>
+                    <input type="text" class="form-control" filterBy="ident" placeholder="search ident.." onkeypress="Brdp.BrSearch.listener(event)"/>
                   </div>
                 </th>
                 <th>
                   <div class="input-group">
                     <input type="number" class="filterSort input-group-text p-0" style="width: 30px" for="title" id="" max="5" min="1" value="2"/>
-                    <input type="text" class="form-control" filterBy="title" placeholder="search title.." onkeypress="Brdp.BrSearch.listener(this,event)"/>
+                    <input type="text" class="form-control" filterBy="title" placeholder="search title.." onkeypress="Brdp.BrSearch.listener(event)"/>
                   </div>
                 </th>
                 <th>
                   <div class="input-group">
                     <input type="number" class="filterSort input-group-text p-0" style="width: 30px" for="category" id="" max="5" min="1" value="3"/>
-                    <input type="text" class="form-control" filterBy="category" placeholder="search category.." onkeypress="Brdp.BrSearch.listener(this,event)"/>
+                    <input type="text" class="form-control" filterBy="category" placeholder="search category.." onkeypress="Brdp.BrSearch.listener(event)"/>
                   </div>
                 </th>
                 <th>
                   <div class="input-group">
                     <input type="number" class="filterSort input-group-text p-0" style="width: 30px" for="audit" id="" max="5" min="1" value="4"/>
-                    <input type="text" class="form-control" filterBy="audit" placeholder="search audit.." onkeypress="Brdp.BrSearch.listener(this,event)"/>
+                    <input type="text" class="form-control" filterBy="audit" placeholder="search audit.." onkeypress="Brdp.BrSearch.listener(event)"/>
                   </div>
                 </th>
                 <th>
                   <div class="input-group">
                     <input type="number" class="filterSort input-group-text p-0" style="width: 30px" for="decision" id="" max="5" min="1" value="5"/>
-                    <input type="text" class="form-control" filterBy="decision" placeholder="search decision.." onkeypress="Brdp.BrSearch.listener(this,event)"/>
+                    <input type="text" class="form-control" filterBy="decision" placeholder="search decision.." onkeypress="Brdp.BrSearch.listener(event)"/>
                   </div>
                 </th>
               </tr>

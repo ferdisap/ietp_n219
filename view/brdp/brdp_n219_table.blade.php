@@ -155,18 +155,7 @@
     .then((v) =>  {
       if (v) {
         Brdp.renderHtml('BrList', Brdp.BrList.htmlDoc.firstElementChild);
-        
-        // setting table width // TIDAK DIPAKAI karena pakai fixed value width
-        // let tbody_tr1_children = document.querySelector('tbody > tr').childNodes;
-        // let thead_tr1_children = document.querySelector('thead > tr:nth-child(1)').childNodes;
-        // let thead_tr2_children = document.querySelector('thead > tr:nth-child(2)').childNodes;
-
-        // for (let i = 0; i < thead_tr1_children.length; i++) {
-        //   thead_tr1_children[i].style.width = tbody_tr1_children[i].offsetWidth + "px";
-        // }
-        // for (let i = 0; i < thead_tr2_children.length; i++) {
-        //   thead_tr2_children[i].style.width = tbody_tr1_children[i].offsetWidth + "px";
-        // }
+        document.querySelector(window.location.hash).scrollIntoView(true);
       }
     })
   }
