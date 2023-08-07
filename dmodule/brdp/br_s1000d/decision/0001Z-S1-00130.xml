@@ -8,7 +8,8 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The attribute multimediaType values allowed are "3D", "audio", "video".</para>
+    <para>The attribute multimediaType values allowed are "3D", "audio", "video", and "other".</para>
+    <para>The "other" means the multimedia object can be various, such as GIF file which is not categorized in 3D, audio and video.</para>
   </brDecisionText>
   
 </brDecision>

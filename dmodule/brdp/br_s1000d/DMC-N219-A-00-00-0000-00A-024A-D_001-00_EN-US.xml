@@ -128,7 +128,7 @@
 					<brDecision brDecisionIdentNumber="0001Z-S1-00001"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para> Refer to 
+              <para> 
                 <dmRef referredFragment="sbr-001">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -188,7 +188,7 @@
 					<brDecision brDecisionIdentNumber="0001Z-S1-00002"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>Refer to: 
+              <para>
                 <dmRef referredFragment="sbr-002">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
@@ -315,7 +315,7 @@
 					<brDecision brDecisionIdentNumber="0001Z-S1-00003"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>Refer to: 
+              <para>
                 <dmRef referredFragment="sbr-511">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -891,7 +891,7 @@
 					<brDecision brDecisionIdentNumber="0001Z-S1-00013"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>Refer to: 
+              <para>
                 <dmRef referredFragment="sbr-012">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -952,7 +952,7 @@
 					<brDecision brDecisionIdentNumber="0001Z-S1-00014"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>Refer to: 
+              <para>
                 <dmRef referredFragment="sbr-003">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -1206,7 +1206,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00020"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>Refer to: 
+              <para>
                 <dmRef referredFragment="sbr-004">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
@@ -1306,7 +1306,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00022"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>Refer to: 
+              <para>
                 <dmRef referredFragment="sbr-513">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
@@ -1501,7 +1501,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00026"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>Refer to: 
+              <para>
                 <dmRef referredFragment="sbr-011">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
@@ -1947,7 +1947,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00032"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-               <para>Refer to: 
+               <para>
                 <dmRef referredFragment="sbr-006">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -2004,7 +2004,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00033"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-               <para>Refer to: 
+               <para>
                 <dmRef referredFragment="sbr-006">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -2061,7 +2061,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00034"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-               <para>Refer to: 
+               <para>
                 <dmRef referredFragment="sbr-007">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -2118,7 +2118,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00035"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-               <para>Refer to: 
+               <para>
                 <dmRef referredFragment="sbr-008">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -2539,7 +2539,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00054"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>Refer to: 
+              <para>
                 <dmRef referredFragment="sbr-003">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -2645,7 +2645,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00558"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>Refer to: 
+              <para>
                 <dmRef referredFragment="sbr-003">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -2797,7 +2797,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00070"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>Refer to: 
+              <para>
                 <dmRef referredFragment="sbr-002">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
@@ -2855,7 +2855,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00071"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>Refer to: 
+              <para>
                 <dmRef referredFragment="sbr-002">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
@@ -2991,7 +2991,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00090"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-               <para>Refer to: 
+               <para>
                 <dmRef referredFragment="sbr-009">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -3204,7 +3204,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00095"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-              <para>Refer to: 
+              <para>
                 <dmRef referredFragment="sbr-005">
                   <dmRefIdent>
                     <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -3566,7 +3566,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00101"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-                <para>Refer to 
+                <para>
                     <dmRef referredFragment="sbr-013">
                       <dmRefIdent>
                         <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -3670,8 +3670,8 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00107"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-                <para>Refer to 
-                    <dmRef referredFragment="sbr-000">
+                <para>
+                    <dmRef referredFragment="sbr-514">
                       <dmRefIdent>
                         <dmCode modelIdentCode="N219" systemDiffCode="A"
                                 systemCode="00" subSystemCode="0" subSubSystemCode="0"
@@ -3815,7 +3815,7 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00118"/>
           <brAudit>
             <brAction brActionOwner="0001Z">
-                <para>Refer to 
+                <para>
                     <dmRef referredFragment="sbr-010">
                       <dmRefIdent>
                         <dmCode modelIdentCode="N219" systemDiffCode="A"
@@ -3973,9 +3973,10 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="0001Z-S1-00121">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="0001Z-S1-00121"/>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00122" id="brp-s1-00122">
 					<brRelatedTo>
@@ -4015,9 +4016,10 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="0001Z-S1-00122">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="0001Z-S1-00122"/>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00123" id="brp-s1-00123">
 					<brRelatedTo>
@@ -4058,6 +4060,9 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00123"/>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00128" id="brp-s1-00128">
 					<brRelatedTo>
@@ -4117,6 +4122,9 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00128"/>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00129" id="brp-s1-00129">
 					<brRelatedTo>
@@ -4161,9 +4169,10 @@ is managed by both the creator and the customer.</para>
 							</brDecisionPointValue>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
-					<brDecision brDecisionIdentNumber="0001Z-S1-00129">
-						<brDecisionPending/>
-					</brDecision>
+					<brDecision brDecisionIdentNumber="0001Z-S1-00129"/>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00130" id="brp-s1-00130">
 					<brRelatedTo>
@@ -4208,6 +4217,9 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00130"/>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00131" id="brp-s1-00131">
 					<brRelatedTo>
@@ -4260,6 +4272,9 @@ is managed by both the creator and the customer.</para>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00131">
 						<brDecisionPending/>
 					</brDecision>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00132" id="brp-s1-00132">
 					<brRelatedTo>
@@ -4318,6 +4333,12 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00132"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>Those action audit is done by stylesheet <verbatimText verbatimStyle="vs02">internalRef.xsl</verbatimText>.</para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00133" id="brp-s1-00133">
 					<brRelatedTo>
@@ -4364,6 +4385,9 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00133"/>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00134" id="brp-s1-00134">
 					<brRelatedTo>
@@ -4410,6 +4434,9 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00134"/>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00135" id="brp-s1-00135">
 					<brRelatedTo>
@@ -4450,6 +4477,46 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00135"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para> 
+                  <dmRef referredFragment="sbr-014">
+                    <dmRefIdent>
+                      <dmCode modelIdentCode="N219" systemDiffCode="A"
+                              systemCode="00" subSystemCode="0" subSubSystemCode="0"
+                              assyCode="00" disassyCode="00" disassyCodeVariant="A"
+                              infoCode="022" infoCodeVariant="A" itemLocationCode="D" />
+                      <issueInfo issueNumber="000" inWork="01"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                          <techName>N219</techName>
+                          <infoName>Business rules exchange index</infoName>
+                      </dmTitle>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              <para> 
+                  <dmRef referredFragment="sbr-015">
+                    <dmRefIdent>
+                      <dmCode modelIdentCode="N219" systemDiffCode="A"
+                              systemCode="00" subSystemCode="0" subSubSystemCode="0"
+                              assyCode="00" disassyCode="00" disassyCodeVariant="A"
+                              infoCode="022" infoCodeVariant="A" itemLocationCode="D" />
+                      <issueInfo issueNumber="000" inWork="01"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                          <techName>N219</techName>
+                          <infoName>Business rules exchange index</infoName>
+                      </dmTitle>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              <para>Those audit action shall be done by Javascript <verbatimText verbatimStyle="vs28">GeneralValidation</verbatimText><verbatimText verbatimStyle="vs30">elementAndAttributeChecker</verbatimText>.</para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00136" id="brp-s1-00136">
 					<brRelatedTo>
@@ -4490,6 +4557,9 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00136"/>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00137" id="brp-s1-00137">
 					<brRelatedTo>
@@ -4530,6 +4600,9 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00137"/>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00138" id="brp-s1-00138">
 					<brRelatedTo>
@@ -4570,6 +4643,9 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00138"/>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00139" id="brp-s1-00139">
 					<brRelatedTo>
@@ -4610,6 +4686,9 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00139"/>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00140" id="brp-s1-00140">
 					<brRelatedTo>
@@ -4650,6 +4729,29 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00140"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para> Refer to 
+                  <dmRef referredFragment="sbr-016">
+                    <dmRefIdent>
+                      <dmCode modelIdentCode="N219" systemDiffCode="A"
+                              systemCode="00" subSystemCode="0" subSubSystemCode="0"
+                              assyCode="00" disassyCode="00" disassyCodeVariant="A"
+                              infoCode="022" infoCodeVariant="A" itemLocationCode="D" />
+                      <issueInfo issueNumber="000" inWork="01"/>
+                    </dmRefIdent>
+                    <dmRefAddressItems>
+                      <dmTitle>
+                          <techName>N219</techName>
+                          <infoName>Business rules exchange index</infoName>
+                      </dmTitle>
+                    </dmRefAddressItems>
+                  </dmRef>
+                </para>
+              <para>Those audit action shall be done by Javascript <verbatimText verbatimStyle="vs28">GeneralValidation</verbatimText><verbatimText verbatimStyle="vs30">elementAndAttributeChecker</verbatimText>.</para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00141" id="brp-s1-00141">
 					<brRelatedTo>
@@ -19993,7 +20095,7 @@ is managed by both the creator and the customer.</para>
             <brDecision brDecisionIdentNumber="0001Z-S2-00002"/>
             <brAudit>
               <brAction brActionOwner="0001Z">
-                <para> Refer to 
+                <para> 
                     <dmRef referredFragment="sbr-00">
                       <dmRefIdent>
                         <dmCode modelIdentCode="N219" systemDiffCode="A"
