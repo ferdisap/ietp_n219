@@ -1270,9 +1270,116 @@
             <brDecisionRef brDecisionIdentNumber="0001Z-00140"/>            
             <objectPath allowedObjectFlag="2">//productItem/@productItemName</objectPath>
           </structureObjectRule>
+          <structureObjectRule id="sbr-017">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00141"/>            
+            <objectPath allowedObjectFlag="2">//productItem/@productItemType</objectPath>
+            <objectValue valueForm="single" valueAllowed="pi01">Frame</objectValue>
+            <objectValue valueForm="single" valueAllowed="pi02">Rib</objectValue>
+            <objectValue valueForm="single" valueAllowed="pi02">Stringer</objectValue>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-018">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00142"/>
+            <objectPath allowedObjectFlag="0">//taskDuration</objectPath>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-019">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00143"/>
+            <objectPath allowedObjectFlag="0">//reqCondCircuitBreaker</objectPath>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-020">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00144"/>
+            <objectPath allowedObjectFlag="0">//reqPersons</objectPath>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-021">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00145"/>
+            <objectPath allowedObjectFlag="0">//@personCategoryCode</objectPath>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-022">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00146"/>
+            <objectPath allowedObjectFlag="0">//trade</objectPath>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-023">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00147"/>
+            <objectPath allowedObjectFlag="0">//reqTechInfoGroup</objectPath>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-024">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <objectPath allowedObjectFlag="0">//supportEquipDescr | //supplyDescr | //spareDescr</objectPath>
+          </structureObjectRule>
+          <!-- <structureObjectRule id="sbr-024">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <objectPath allowedObjectFlag="1">//supportEquipDescr/@materialUsage</objectPath>
+            <objectValue valueForm="single" valueAllowed="mu05">Material set</objectValue>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-025">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <objectPath allowedObjectFlag="1">//supplyDescr/@materialUsage</objectPath>
+            <objectValue valueForm="single" valueAllowed="mu05">Material set</objectValue>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-026">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <objectPath allowedObjectFlag="0">//supplyDescr/@materialUsage</objectPath>
+            <objectValue valueForm="single" valueAllowed="mu01">Discarded</objectValue>
+            <objectValue valueForm="single" valueAllowed="mu03">Material set</objectValue>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-027">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <objectPath allowedObjectFlag="1">//supplyDescr[//@xsi:noNamespaceSchemaLocation/contains(., 'sb.xsd')]/@materialUsage</objectPath>
+            <objectValue valueForm="single" valueAllowed="mu02">Retained</objectValue>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-028">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <objectPath allowedObjectFlag="1">//spareDescr/@materialUsage</objectPath>
+            <objectValue valueForm="single" valueAllowed="mu05">Material set</objectValue>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-029">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <objectPath allowedObjectFlag="1">//spareDescr//supplyDescr[//@xsi:noNamespaceSchemaLocation/contains(., 'sb.xsd')]/@materialUsage@materialUsage</objectPath>
+            <objectValue valueForm="single" valueAllowed="mu01">Discarded</objectValue>
+            <objectValue valueForm="single" valueAllowed="mu02">Retained</objectValue>
+          </structureObjectRule> -->
+          <structureObjectRule id="sbr-025">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00158"/>
+            <objectPath allowedObjectFlag="2">//circuitBreakerRef/@circuitBreakerRef</objectPath>
+            <objectValue valueForm="single" valueAllowed="open"/>
+            <objectValue valueForm="single" valueAllowed="close"/>
+            <objectValue valueForm="single" valueAllowed="verify-open"/>
+            <objectValue valueForm="single" valueAllowed="verify-close"/>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-026">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00159"/>
+            <objectPath allowedObjectFlag="0">//circuitBreakerRef/@checksum</objectPath>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-027">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00160"/>
+            <objectPath allowedObjectFlag="2">//inlineSignificantData</objectPath>
+          </structureObjectRule>
           
 
 
+        </structureObjectRuleGroup>
+      </contextRules>
+      <contextRules rulesContext="process.xsd">
+        <structureObjectRuleGroup>          
+          <structureObjectRule id="sbr-proccessXsd-001">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <objectPath allowedObjectFlag="1">//procedure/closeRqmts</objectPath>
+          </structureObjectRule>
+        </structureObjectRuleGroup>
+      </contextRules>
+      <contextRules rulesContext="fault.xsd">
+        <structureObjectRuleGroup>          
+          <structureObjectRule id="sbr-faultXsd-001">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <objectPath allowedObjectFlag="1">//isolationProcedure/closeRqmts</objectPath>
+          </structureObjectRule>
+        </structureObjectRuleGroup>
+      </contextRules>
+      <contextRules rulesContext="process.xsd">
+        <structureObjectRuleGroup>          
+          <structureObjectRule id="sbr-processXsd-001">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <objectPath allowedObjectFlag="1">//process/closeRqmts</objectPath>
+          </structureObjectRule>
         </structureObjectRuleGroup>
       </contextRules>
 
@@ -1290,6 +1397,10 @@
         <nonContextRule id="sbr-514">
           <brDecisionRef brDecisionIdentNumber="0001Z-00107"/>
           <simplePara>The prefix words is attached in stylesheet (XSLT) file.</simplePara>
+        </nonContextRule>
+        <nonContextRule id="sbr-515">
+          <brDecisionRef brDecisionIdentNumber="0001Z-00149"/>
+          <simplePara>The information of the items that are identified as general/special/support tools or equipment shall be included in element &#160;reqSupportEquips&#162; and its child elements..</simplePara>
         </nonContextRule>
         <!-- <nonContextRule>
           <simplePara>CSDB synchronization between partner companies must occur last Sunday of each month.</simplePara>

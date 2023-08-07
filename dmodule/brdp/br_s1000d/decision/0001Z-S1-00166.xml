@@ -8,8 +8,16 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>Element &#60;zoneRef&#62; shall be used.</para>
-    <para>Whenever used in proceedXsd, make the value match with element &#60;zoneRef&#62; inside element &#60;preliminaryRqmts&#62; as described in BRDP-S1-00134</para>
+    <para>Element <verbatimText verbatimStyle="vs12">zoneRef</verbatimText> shall be used.</para>
+    <para>Whenever used in proceedXsd, make the value match with element <verbatimText verbatimStyle="vs12">zoneRef</verbatimText> inside element <verbatimText verbatimStyle="vs12">preliminaryRqmts</verbatimText> as described in, 
+     <dmRef referredFragment="brp-s1-00134">
+        <dmRefIdent>
+          <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0"
+            subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A"
+            infoCode="024" infoCodeVariant="A" itemLocationCode="D" />
+          <issueInfo issueNumber="000" inWork="01" />
+        </dmRefIdent>
+      </dmRef>.</para>
   </brDecisionText>
   
 </brDecision>

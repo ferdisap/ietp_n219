@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The information of the items that are identified as general/special/support tools or equipment shall be included in element &#60;reqSupportEquips&#62; and its child elements.</para>
+    <para>The information of the items that are identified as general/special/support tools or equipment shall be included in element <verbatimText verbatimStyle="vs12">reqSupportEquips</verbatimText> and its child elements.</para>
   </brDecisionText>
   
 </brDecision>

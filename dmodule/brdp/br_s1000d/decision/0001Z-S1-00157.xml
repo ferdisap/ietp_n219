@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>To provide follow up maintenance information, the element &#60;closeRqmts&#62; shall be used.</para>
+    <para>To provide follow up maintenance information, the element <verbatimText verbatimStyle="vs12">closeRqmts</verbatimText> shall be used.</para>
   </brDecisionText>
   
 </brDecision>

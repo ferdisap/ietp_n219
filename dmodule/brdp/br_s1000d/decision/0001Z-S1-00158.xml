@@ -9,7 +9,7 @@
 
   <brDecisionText>
     <para>
-      yes, the attribute circuitBreakerAction is used.
+      yes, the attribute <verbatimText verbatimStyle="vs13">circuitBreakerAction</verbatimText> is used.
       <randomList>
         <listItem><para>"open" -  the action to open.</para></listItem>
         <listItem><para>"close" -  the action to close.</para></listItem>

@@ -8,10 +8,10 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>Yes, significant data will be marked up by the element &#60;inlineSignificantData&#62;.</para>
-    <para>attribute significantParaDataType value are:
+    <para>Yes, significant data will be marked up by the element <verbatimText verbatimStyle="vs12">inlineSignificantData</verbatimText>.</para>
+    <para>attribute <verbatimText verbatimStyle="vs13">significantParaDataType</verbatimText> value are:
       <randomList>
-        <listItem><para>"psd03" - lubricant</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">psd03</verbatimText> - lubricant</para></listItem>
       </randomList>
     </para>
     <para>More values are decided later.</para>

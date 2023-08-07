@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>Not used. Currently the element &#60;taskDuration&#62; is not used.</para>
+    <para>Not used. Currently the element <verbatimText verbatimStyle="vs12">taskDuration</verbatimText> is not used.</para>
   </brDecisionText>
   
 </brDecision>

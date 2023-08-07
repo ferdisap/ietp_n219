@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>Attribute "targetTitle" is used when there are requirement to display title of referenced target within tooltip, input title of reference target in the attribute xlink:title</para>
+    <para>Attribute <verbatimText verbatimStyle="vs13">targetTitle</verbatimText> is used when there are requirement to display title of referenced target within tooltip, input title of reference target in the attribute xlink:title</para>
   </brDecisionText>
   
 </brDecision>

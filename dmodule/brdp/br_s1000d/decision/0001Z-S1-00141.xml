@@ -10,9 +10,9 @@
   <brDecisionText>
     <para>The value of attribute productItemType are:
       <randomList>
-        <listItem><para>pi01 (Frame)</para></listItem>
-        <listItem><para>pi02 (Rib)</para></listItem>
-        <listItem><para>pi03 (Stringer)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs13">pi01</verbatimText> (Frame)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs13">pi02</verbatimText> (Rib)</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs13">pi03</verbatimText> (Stringer)</para></listItem>
       </randomList>
     </para>
   </brDecisionText>
