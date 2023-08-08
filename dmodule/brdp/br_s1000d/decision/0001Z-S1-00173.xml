@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The attribute footnoteMark value is only "num".</para>
+    <para>The attribute <verbatimText verbatimStyle="vs13">footnoteMark</verbatimText> value can contain 'num' or 'alpha'.</para>
   </brDecisionText>
   
 </brDecision>

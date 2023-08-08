@@ -1353,27 +1353,28 @@
             <brDecisionRef brDecisionIdentNumber="0001Z-00160"/>
             <objectPath allowedObjectFlag="2">//inlineSignificantData</objectPath>
           </structureObjectRule>
-          
-
-
-        </structureObjectRuleGroup>
-      </contextRules>
-      <contextRules rulesContext="process.xsd">
-        <structureObjectRuleGroup>          
-          <structureObjectRule id="sbr-proccessXsd-001">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
-            <objectPath allowedObjectFlag="1">//procedure/closeRqmts</objectPath>
+          <structureObjectRule id="sbr-028">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00169"/>
+            <objectPath allowedObjectFlag="0">//indexFlag</objectPath>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-029">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00171"/>
+            <objectPath allowedObjectFlag="2">//symbol</objectPath>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-030">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00172"/>
+            <objectPath allowedObjectFlag="0">//footnote/ancestor::footnote</objectPath>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-031">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00173"/>
+            <objectPath allowedObjectFlag="2">//footnote/@footnoteMark</objectPath>
+            <objectValue valueForm="single" valueAllowed="num">number</objectValue>
+            <objectValue valueForm="single" valueAllowed="sym">asterisk</objectValue>
           </structureObjectRule>
         </structureObjectRuleGroup>
       </contextRules>
-      <contextRules rulesContext="fault.xsd">
-        <structureObjectRuleGroup>          
-          <structureObjectRule id="sbr-faultXsd-001">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
-            <objectPath allowedObjectFlag="1">//isolationProcedure/closeRqmts</objectPath>
-          </structureObjectRule>
-        </structureObjectRuleGroup>
-      </contextRules>
+
+      <!-- processXsd -->
       <contextRules rulesContext="process.xsd">
         <structureObjectRuleGroup>          
           <structureObjectRule id="sbr-processXsd-001">
@@ -1383,6 +1384,15 @@
         </structureObjectRuleGroup>
       </contextRules>
 
+      <!-- faultXsd -->
+      <contextRules rulesContext="fault.xsd">
+        <structureObjectRuleGroup>          
+          <structureObjectRule id="sbr-faultXsd-001">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <objectPath allowedObjectFlag="1">//isolationProcedure/closeRqmts</objectPath>
+          </structureObjectRule>
+        </structureObjectRuleGroup>
+      </contextRules>
 
       <!-- NON Context Rule -->
       <nonContextRules>
@@ -1401,6 +1411,15 @@
         <nonContextRule id="sbr-515">
           <brDecisionRef brDecisionIdentNumber="0001Z-00149"/>
           <simplePara>The information of the items that are identified as general/special/support tools or equipment shall be included in element &#160;reqSupportEquips&#162; and its child elements..</simplePara>
+        </nonContextRule>
+        <nonContextRule id="sbr-516">
+          <brDecisionRef brDecisionIdentNumber="0001Z-00166"/>
+          <brDecisionRef brDecisionIdentNumber="0001Z-00167"/>
+          <simplePara>Make sure each "internal references" is same with "preliminary requirements". </simplePara>
+        </nonContextRule>
+        <nonContextRule id="sbr-517">
+          <brDecisionRef brDecisionIdentNumber="0001Z-00560"/>
+          <simplePara>The OEM renamed part numbers can be used instead of part numbers allocated by the part design authority.</simplePara>
         </nonContextRule>
         <!-- <nonContextRule>
           <simplePara>CSDB synchronization between partner companies must occur last Sunday of each month.</simplePara>

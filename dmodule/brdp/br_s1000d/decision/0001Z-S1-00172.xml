@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-      <para>Element &#60;footnote&#62; shall be used. The footnotes shall be regular text and tables.
+      <para>Element <verbatimText verbatimStyle="vs12">footnote</verbatimText> shall be used. The footnotes shall be regular text and tables.
         <randomList>
           <listItem>
             <para>Footnotes is not used for references and or cross-references.</para>

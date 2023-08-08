@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "demo8.xsl"?>
+
+<description>
+  <para>This paragraph includes the same footnote<footnoteRef internalRefId="ftn-002"/>
+    <!-- given in the previous paragraph -->
+  </para>
+  
+  <para>
+    <!-- This paragraph includes a footnote. I would like to further define a footnote -->
+    <footnote id="ftn-001" footnoteMark="sym">
+      <para>Satu A footnote is used to further define information and it is printed at the bottom of the page</para>
+    </footnote> 
+    <footnote id="ftn-002" footnoteMark="sym">
+      <para>Dua A footnote is used to further define information and it is printed at the bottom of the page</para>
+    </footnote> 
+    <footnote id="ftn-003">
+      <para>Tiga A footnote is used to further define information and it is printed at the bottom of the page</para>
+    </footnote> 
+    <footnote id="ftn-004" footnoteMark="num">
+      <para>Empat A footnote is used to further define information and it is printed at the bottom of the page</para>
+    </footnote> 
+    <!-- and where the footnote is printed.  -->
+  </para>
+</description>

@@ -5989,6 +5989,25 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00166"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>
+                <dmRef referredFragment="sbr-516">
+                  <dmRefIdent>
+                    <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+                    <issueInfo issueNumber="000" inWork="01"/>
+                  </dmRefIdent>
+                  <dmRefAddressItems>
+                    <dmTitle>
+                      <techName>N219</techName>
+                      <infoName>Business rules exchange index</infoName>
+                    </dmTitle>
+                  </dmRefAddressItems>
+                </dmRef>
+              </para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"></brCurrentStatus>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00167" id="brp-s1-00167">
 					<brRelatedTo>
@@ -6035,6 +6054,25 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00167"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>
+                <dmRef referredFragment="sbr-516">
+                  <dmRefIdent>
+                    <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+                    <issueInfo issueNumber="000" inWork="01"/>
+                  </dmRefIdent>
+                  <dmRefAddressItems>
+                    <dmTitle>
+                      <techName>N219</techName>
+                      <infoName>Business rules exchange index</infoName>
+                    </dmTitle>
+                  </dmRefAddressItems>
+                </dmRef>
+              </para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"></brCurrentStatus>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00169" id="brp-s1-00169">
 					<brRelatedTo>
@@ -6075,6 +6113,26 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00169"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>
+                <dmRef referredFragment="sbr-028">
+                  <dmRefIdent>
+                    <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+                    <issueInfo issueNumber="000" inWork="01"/>
+                  </dmRefIdent>
+                  <dmRefAddressItems>
+                    <dmTitle>
+                      <techName>N219</techName>
+                      <infoName>Business rules exchange index</infoName>
+                    </dmTitle>
+                  </dmRefAddressItems>
+                </dmRef>
+              </para>
+              <para>Use JavaScript <verbatimText verbatimStyle="vs28">GeneralValidation</verbatimText><verbatimText verbatimStyle="vs30">elementAndAttributeChecker</verbatimText>.</para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"></brCurrentStatus>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00171" id="brp-s1-00171">
 					<brRelatedTo>
@@ -6115,6 +6173,26 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00171"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>
+                <dmRef referredFragment="sbr-029">
+                  <dmRefIdent>
+                    <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+                    <issueInfo issueNumber="000" inWork="01"/>
+                  </dmRefIdent>
+                  <dmRefAddressItems>
+                    <dmTitle>
+                      <techName>N219</techName>
+                      <infoName>Business rules exchange index</infoName>
+                    </dmTitle>
+                  </dmRefAddressItems>
+                </dmRef>
+              </para>
+              <para>Use JavaScript <verbatimText verbatimStyle="vs28">GeneralValidation</verbatimText><verbatimText verbatimStyle="vs30">elementAndAttributeChecker</verbatimText>.</para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"></brCurrentStatus>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00172" id="brp-s1-00172">
 					<brRelatedTo>
@@ -6155,6 +6233,27 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00172"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>
+                <dmRef referredFragment="sbr-030">
+                  <dmRefIdent>
+                    <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+                    <issueInfo issueNumber="000" inWork="01"/>
+                  </dmRefIdent>
+                  <dmRefAddressItems>
+                    <dmTitle>
+                      <techName>N219</techName>
+                      <infoName>Business rules exchange index</infoName>
+                    </dmTitle>
+                  </dmRefAddressItems>
+                </dmRef>
+              </para>
+              <para>The audit shall be done by JavaScript <verbatimText verbatimStyle="vs28">GeneralValidation</verbatimText><verbatimText verbatimStyle="vs30">elementAndAttributeChecker</verbatimText>.</para>
+              <para>The audit shall be done by <verbatimText verbatimStyle="vs02">footnote.xsl</verbatimText></para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"></brCurrentStatus>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00173" id="brp-s1-00173">
 					<brRelatedTo>
@@ -6208,6 +6307,30 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00173"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+                <para>
+                    <dmRef referredFragment="sbr-031">
+                      <dmRefIdent>
+                        <dmCode modelIdentCode="N219" systemDiffCode="A"
+                                systemCode="00" subSystemCode="0" subSubSystemCode="0"
+                                assyCode="00" disassyCode="00" disassyCodeVariant="A"
+                                infoCode="022" infoCodeVariant="A" itemLocationCode="D" />
+                        <issueInfo issueNumber="000" inWork="01"/>
+                      </dmRefIdent>
+                      <dmRefAddressItems>
+                        <dmTitle>
+                            <techName>N219</techName>
+                            <infoName>Business rules exchange index</infoName>
+                        </dmTitle>
+                      </dmRefAddressItems>
+                    </dmRef>
+                </para>
+                <para>The audit is carried out by JavaScript <verbatimText verbatimStyle="vs28">GeneralValidation</verbatimText><verbatimText verbatimStyle="vs30">elementAndAttributeChecker</verbatimText>.</para>
+                <para>The audit shall be done by <verbatimText verbatimStyle="vs02">footnote.xsl</verbatimText></para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00560" id="brp-s1-00560">
 					<brRelatedTo>
@@ -6245,6 +6368,28 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00560"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+                <para>
+                    <dmRef referredFragment="sbr-517">
+                      <dmRefIdent>
+                        <dmCode modelIdentCode="N219" systemDiffCode="A"
+                                systemCode="00" subSystemCode="0" subSubSystemCode="0"
+                                assyCode="00" disassyCode="00" disassyCodeVariant="A"
+                                infoCode="022" infoCodeVariant="A" itemLocationCode="D" />
+                        <issueInfo issueNumber="000" inWork="01"/>
+                      </dmRefIdent>
+                      <dmRefAddressItems>
+                        <dmTitle>
+                            <techName>N219</techName>
+                            <infoName>Business rules exchange index</infoName>
+                        </dmTitle>
+                      </dmRefAddressItems>
+                    </dmRef>
+                </para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00177" id="brp-s1-00177">
 					<brRelatedTo>
