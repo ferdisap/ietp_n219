@@ -6444,6 +6444,28 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00177"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+                <para>
+                    <dmRef referredFragment="sbr-032">
+                      <dmRefIdent>
+                        <dmCode modelIdentCode="N219" systemDiffCode="A"
+                                systemCode="00" subSystemCode="0" subSubSystemCode="0"
+                                assyCode="00" disassyCode="00" disassyCodeVariant="A"
+                                infoCode="022" infoCodeVariant="A" itemLocationCode="D" />
+                        <issueInfo issueNumber="000" inWork="01"/>
+                      </dmRefIdent>
+                      <dmRefAddressItems>
+                        <dmTitle>
+                            <techName>N219</techName>
+                            <infoName>Business rules exchange index</infoName>
+                        </dmTitle>
+                      </dmRefAddressItems>
+                    </dmRef>
+                </para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00178" id="brp-s1-00178">
 					<brRelatedTo>
@@ -6497,6 +6519,22 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00178"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+                <para> This rule is not applicable, 
+                    <dmRef referredFragment="brp-s1-00177">
+                      <dmRefIdent>
+                        <dmCode modelIdentCode="N219" systemDiffCode="A"
+                                systemCode="00" subSystemCode="0" subSubSystemCode="0"
+                                assyCode="00" disassyCode="00" disassyCodeVariant="A"
+                                infoCode="024" infoCodeVariant="A" itemLocationCode="D" />
+                        <issueInfo issueNumber="000" inWork="01"/>
+                      </dmRefIdent>
+                    </dmRef>
+                </para>
+            </brAction>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00180" id="brp-s1-00180">
 					<brRelatedTo>
@@ -6542,6 +6580,12 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00180"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>The audit action shall be done by <verbatimText verbatimStyle="vs02">levelledPara.xsl</verbatimText> and Javascript <verbatimText verbatimStyle="vs28">GeneralValidation</verbatimText><verbatimText verbatimStyle="vs30">getErrorByComment</verbatimText></para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00181" id="brp-s1-00181">
 					<brRelatedTo>
@@ -20562,7 +20606,7 @@ is managed by both the creator and the customer.</para>
             <brDecisionPointContent>
               <title>Use of attribute id:</title>
               <brDecisionPointText>
-                <para>Decide what prefix value to use inside attribute id value.</para>
+                <para>Decide wheter to use attribute id on each element. If used, what prefix value to added.</para>
               </brDecisionPointText>
               <brDecisionPointValueGroup brDecisionValueSelection="multiple"/>
             </brDecisionPointContent>

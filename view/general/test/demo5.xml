@@ -35,7 +35,8 @@
         <title>level 3 Title Par 1</title>
       </levelledPara>
       <title>Par21</title>
-      <para>Footex1</para>
+      <!-- element <para> tidak boleh dikasi id -->
+      <para id="par-006">Footex1</para>
       <para>Footex2</para>
     </levelledPara>
     <levelledPara id="par-004">

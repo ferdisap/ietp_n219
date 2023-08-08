@@ -16,7 +16,6 @@
         </p>
       </xsl:when>
       <xsl:when test="child::footnote">
-        <!-- <xsl:apply-templates select="footnote"/> -->
         <xsl:call-template name="footnote"></xsl:call-template>
       </xsl:when>
       <xsl:when test="parent::footnote">
@@ -29,3 +28,4 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+</xsl:stylesheet>

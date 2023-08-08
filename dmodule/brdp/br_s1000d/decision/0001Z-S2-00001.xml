@@ -12,12 +12,13 @@
           <para><verbatimText verbatimStyle="vs12">brPara</verbatimText> - "brp-.."</para>
         </listItem>
         <listItem>
-          <para><verbatimText verbatimStyle="vs12">para</verbatimText> - "par-.."</para>
+          <para><verbatimText verbatimStyle="vs12">levelledPara</verbatimText> - "par-.."</para>
         </listItem>
         <listItem>
           <para><verbatimText verbatimStyle="vs12">structureObjectRule</verbatimText> - "sbr-.."</para>
         </listItem>
       </randomList>
     </para>
+    <para>Element <verbatimText verbatimStyle="vs12">para</verbatimText> shall not have attribute <verbatimText verbatimStyle="vs13">id</verbatimText>.</para>
   </brDecisionText>
 </brDecision>

@@ -6,7 +6,7 @@
   <xsl:include href="behavior.xsl"/>
 
   <xsl:template match="dmRef">
-  Refer to&#160;<a>
+  refer to&#160;<a>
       <xsl:attribute name="href">#<xsl:value-of select="@referredFragment"/></xsl:attribute>
       <xsl:apply-templates/>
     </a>

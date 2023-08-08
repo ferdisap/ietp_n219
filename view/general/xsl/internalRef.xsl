@@ -2,6 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:include href="subOrSuperScriptElemGroupStyle.xsl"/>
+<xsl:include href="custom_getPosition.xsl"/>
 <!-- Sebelum render page, lebih baik di clear kan \n\t nya agar spasi numbering tiadk kacau saat human read-->
 
 <xsl:template match="internalRef">
@@ -37,6 +38,7 @@
 
 <!-- get the view Prefix and Number, eg. Fig. 1, Fig. 2-->
 <xsl:template name="irtt">
+  refer to
   <xsl:choose>
     <xsl:when test="@internalRefTargetType = 'irtt01'">
       Fig.&#160;<xsl:call-template name="getPosition">
@@ -105,8 +107,10 @@
     </xsl:when>
 
     <xsl:when test="@internalRefTargetType = 'irtt07'">
+      <xsl:variable name="refId"><xsl:value-of select="@internalRefId"/></xsl:variable>
       Para.<xsl:call-template name="getPosition">
         <xsl:with-param name="xpath" select="//levelledPara"/>
+        <!-- <xsl:with-param name="idCompared" select="$refId"/> -->
         <xsl:with-param name="idCompared" select="$refId"/>
         <xsl:with-param name="includedParent" select="'yes'"/>
         <xsl:with-param name="parentName" select="'levelledPara'"/>
@@ -250,7 +254,13 @@
 </xsl:template>
 
 <!-- Refer to demo5.xsl/demo5.xml 02 -->
-<xsl:template name="getPosition">
+<!-- 
+  <xsl:template name="getPosition">
+  <xsl:template name="checkParent">
+  <xsl:template name="getParentPosition">
+    sudah dipindah ke custom_getPosition.xsl
+ -->
+<!-- <xsl:template name="getPosition">
   <xsl:param name="xpath"/>
   <xsl:param name="idCompared"/>
   <xsl:param name="includedParent" select="no"/>
@@ -285,7 +295,7 @@
       </xsl:if>
     </xsl:for-each>
   </xsl:if>
-</xsl:template>
+</xsl:template> -->
 <!-- end of Refer to demo5.xsl/demo5.xml 02 -->
 
 <!-- Refer to demo5.xsl/demo5.xml 03 -->

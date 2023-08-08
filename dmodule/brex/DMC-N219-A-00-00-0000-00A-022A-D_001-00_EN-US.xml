@@ -1371,6 +1371,10 @@
             <objectValue valueForm="single" valueAllowed="num">number</objectValue>
             <objectValue valueForm="single" valueAllowed="sym">asterisk</objectValue>
           </structureObjectRule>
+          <structureObjectRule id="sbr-032">
+            <brDecisionRef brDecisionIdentNumber="0001Z-00173"/>
+            <objectPath allowedObjectFlag="0">//commonInfo</objectPath>
+          </structureObjectRule>
         </structureObjectRuleGroup>
       </contextRules>
 
