@@ -20,36 +20,35 @@
   
   <!-- BERHASIL, cek di demo5 04. -->
   <xsl:template match="levelledPara">
-    <xsl:variable name="titlePar">
-      <xsl:call-template name="getPosition">
-        <xsl:with-param name="xpath" select="//levelledPara"/>
-        <xsl:with-param name="idCompared" select="$refId"/>
-        <xsl:with-param name="includedParent" select="'yes'"/>
-        <xsl:with-param name="parentName" select="'levelledPara'"/>
-      </xsl:call-template>&#160;<xsl:apply-templates select="title"/>
+    <xsl:variable name="numberedPar">
+      <xsl:call-template name="checkParent"/>
+      <xsl:number/>
     </xsl:variable>
   
     <xsl:variable name="error">
-      <xsl:if test="substring($titlePar,1,1) >= 6">
+      <xsl:if test="substring($numberedPar,1,1) >= 6">
         <xsl:comment>ERROR: the levelledPara only five levels allowed</xsl:comment>
         <xsl:message>ERROR: the levelledPara only five levels allowed</xsl:message>
       </xsl:if>
     </xsl:variable>
-  
+    
+    <xsl:variable name="strLength">
+      <xsl:value-of select="string-length(translate($numberedPar, '.', ''))"/>
+    </xsl:variable>
     <xsl:variable name="h">
       <xsl:choose>
-        <xsl:when test="substring($titlePar,1,1) = 1">h2</xsl:when>
-        <xsl:when test="substring($titlePar,1,1) = 2">h3</xsl:when>
-        <xsl:when test="substring($titlePar,1,1) = 3">h4</xsl:when>
-        <xsl:when test="substring($titlePar,1,1) = 4">h5</xsl:when>
-        <xsl:when test="substring($titlePar,1,1) = 5">h6</xsl:when>
+        <xsl:when test="$strLength = 1">h2</xsl:when>
+        <xsl:when test="$strLength = 2">h3</xsl:when>
+        <xsl:when test="$strLength = 3">h4</xsl:when>
+        <xsl:when test="$strLength = 4">h5</xsl:when>
+        <xsl:when test="$strLength = 5">h6</xsl:when>
         <xsl:otherwise>p</xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
   
     <xsl:element name="{$h}">
       <xsl:copy-of select="$error"/>
-      <xsl:copy-of select="$titlePar"/>
+      <xsl:copy-of select="$numberedPar"/><xsl:value-of select="' '"/><xsl:apply-templates select="title"/>
     </xsl:element>
   </xsl:template>
 

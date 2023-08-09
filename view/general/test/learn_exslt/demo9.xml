@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "demo9.xsl"?>
+
+<description>
+  <para>Text 1</para>
+  <para>Text 2</para>
+  <para>Text 3</para>
+</description>

@@ -7,26 +7,31 @@
   <xsl:template name="getPosition">
     <xsl:param name="xpath"/>
     <xsl:param name="idCompared"/>
-    <xsl:param name="includedParent" select="no"/>
+    <xsl:param name="includedParent" select="'no'"/>
     <xsl:param name="parentName" select="'levelledPara'"/>
-    <xsl:for-each select="$xpath">
-      <xsl:if test="@id = $idCompared">
-        <xsl:if test="$includedParent = 'yes'">
-          <xsl:call-template name="checkParent"><xsl:with-param name="parentName" select="$parentName"/></xsl:call-template>
-        </xsl:if><xsl:number/>
-      </xsl:if>
-    </xsl:for-each>
+  
+    <xsl:variable name="pos">
+      <xsl:for-each select="$xpath">
+        <xsl:if test="@id = $idCompared">
+          <xsl:if test="$includedParent = 'yes'">
+            <xsl:call-template name="checkParent"><xsl:with-param name="parentName" select="$parentName"/></xsl:call-template>
+          </xsl:if><xsl:number/>
+        </xsl:if>
+      </xsl:for-each>
+    </xsl:variable>
+    
+    <xsl:value-of select="$pos"/>
   </xsl:template>
-
+  
   <xsl:template name="checkParent">
     <xsl:param name="parentName" select="'levelledPara'"/>
     <xsl:if test="name(parent::*) = $parentName">
       <xsl:call-template name="getParentPosition">
         <xsl:with-param name="parentName" select="$parentName"/>
-      </xsl:call-template>.
+      </xsl:call-template><xsl:value-of select="'.'"/>
     </xsl:if>
   </xsl:template>
-
+  
   <xsl:template name="getParentPosition">
     <xsl:param name="compared" select=".."/>
     <xsl:param name="parentName" select="'levelledPara'"/>
