@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The textual applicability annotation are allowed in element &#60;assert&#62;.</para>
+    <para>The textual applicability annotation are allowed in element <verbatimText verbatimStyle="vs12">assert</verbatimText>.</para>
   </brDecisionText>
   
 </brDecision>

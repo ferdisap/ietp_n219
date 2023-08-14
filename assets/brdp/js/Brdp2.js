@@ -22,8 +22,9 @@ const Brdp = {
   BrDetail: {
     get parent() {return Brdp;},
     url: "view/brdp/style/xsl/brDetail.xsl",
-    xpath: (brDecisionId) => {
-      return `//brPara/brDecision[@brDecisionIdentNumber='${brDecisionId}']/parent::*`
+    xpath: (id) => {
+      // return `//brPara/brDecision[@brDecisionIdentNumber='${id}']/parent::*`
+      return `//brPara[@brDecisionPointUniqueIdent='${id}']`;
     },
     xslDoc: null,
     async setXslDoc(){
@@ -47,9 +48,9 @@ const Brdp = {
         this.detailOpen.push(trId);
 
         // render brdp
-        this.xmlNode = Brdp.brdpDoc.evaluate(this.xpath(brDecisionId), this.parent.brdpDoc).iterateNext();
+        // this.xmlNode = Brdp.brdpDoc.evaluate(this.xpath(brDecisionId), this.parent.brdpDoc).iterateNext();
+        this.xmlNode = Brdp.brdpDoc.evaluate(this.xpath(brIdent), this.parent.brdpDoc).iterateNext();
         this.renderBrdp(brIdent, trId + '_detail', brDecisionId);
-        // this.setURLHash(trId);
       } else {
         // close detail
         let tr = document.getElementById(trId + '_detail');
@@ -62,14 +63,17 @@ const Brdp = {
       td.setAttribute('colspan', 5);
       td.style.border = 'inherit';
 
-      let doc = this.parent.xmlToHtml(this.xmlNode, this.xslDoc);;
+      // get xml node from Brdp.brdpDoc
+      let doc = this.parent.xmlToHtml(this.xmlNode, this.xslDoc);
       td.innerHTML = doc.firstElementChild.outerHTML;
 
+      // get decision document from server
       let decisionXmlNode = await this.parent.BrDecision.getXmlDoc(brDecisionId);
-      decisionXmlNode = await decisionXmlNode.firstElementChild;
-      let docDecision = this.parent.xmlToHtml(decisionXmlNode, this.xslDoc).firstElementChild;
-
-      td.appendChild(docDecision);
+      if (decisionXmlNode){
+        decisionXmlNode = decisionXmlNode.firstElementChild;
+        let docDecision = this.parent.xmlToHtml(decisionXmlNode, this.xslDoc).firstElementChild;
+        td.appendChild(docDecision);
+      }
 
       this.parent.showContent(containerId, td);
     },
@@ -262,30 +266,30 @@ const Brdp = {
     
     setXpath(filterBy, text) {
       // // CASE Sensitive
-      // let xpath_ident = `//@brDecisionPointUniqueIdent[contains(.,'${text}')]/ancestor::brPara`;
-      // let xpath_title = `//brDecisionPointContent/title[contains(.,'${text}')]/ancestor::brPara`;
-      // let xpath_category = `//@brCategoryNumber[contains(.,'${text}')]/ancestor::brPara | //brCategory[contains(.,'${text}')]/ancestor::brPara`;
-      // let xpath_decision = `//brDecision[contains(.,'${text}')]/ancestor::brPara | //brDecision/@brDecisionIdentNumber[contains(.,'${text}')]/ancestor::brPara`;
-      // let xpath_audit = `//brAudit[contains(.,'${text}')]/ancestor::brPara`;
-      // let xpath_all;
-      // if (this.useApplSchema){
-      //   xpath_all = `//*[contains(.,'${text}')]/ancestor::brPara[${this.applSchemaXPath}] | //@*[contains(.,'${text}')]/ancestor::brPara[${this.applSchemaXPath}]`;
-      // } else {
-      //   xpath_all = `//*[contains(.,'${text}')]/ancestor::brPara | //@*[contains(.,'${text}')]/ancestor::brPara`;
-      // }
-
-      // // INCASE Sensitive
-      let xpath_ident = `//@brDecisionPointUniqueIdent[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara`;
-      let xpath_title = `//brDecisionPointContent/title[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara`;
-      let xpath_category = `//@brCategoryNumber[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara | //brCategory[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara`;
-      let xpath_decision = `//brDecision[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara | //brDecision/@brDecisionIdentNumber[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara`;
-      let xpath_audit = `//brAudit[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara`;
+      let xpath_ident = `//@brDecisionPointUniqueIdent[contains(.,'${text}')]/ancestor::brPara`;
+      let xpath_title = `//brDecisionPointContent/title[contains(.,'${text}')]/ancestor::brPara`;
+      let xpath_category = `//@brCategoryNumber[contains(.,'${text}')]/ancestor::brPara | //brCategory[contains(.,'${text}')]/ancestor::brPara`;
+      let xpath_decision = `//brDecision[contains(.,'${text}')]/ancestor::brPara | //brDecision/@brDecisionIdentNumber[contains(.,'${text}')]/ancestor::brPara`;
+      let xpath_audit = `//brAudit[contains(.,'${text}')]/ancestor::brPara | //brCurrentStatus[@brStatus = '${text}']/ancestor::brPara`;
       let xpath_all;
       if (this.useApplSchema){
-        xpath_all = `//*[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara[${this.applSchemaXPath}] | //@*[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara[${this.applSchemaXPath}]`;
+        xpath_all = `//*[contains(.,'${text}')]/ancestor::brPara[${this.applSchemaXPath}] | //@*[contains(.,'${text}')]/ancestor::brPara[${this.applSchemaXPath}]`;
       } else {
-        xpath_all = `//*[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara | //@*[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara`;
+        xpath_all = `//*[contains(.,'${text}')]/ancestor::brPara | //@*[contains(.,'${text}')]/ancestor::brPara`;
       }
+
+      // // INCASE Sensitive
+      // let xpath_ident = `//@brDecisionPointUniqueIdent[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara`;
+      // let xpath_title = `//brDecisionPointContent/title[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara`;
+      // let xpath_category = `//@brCategoryNumber[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara | //brCategory[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara`;
+      // let xpath_decision = `//brDecision[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara | //brDecision/@brDecisionIdentNumber[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara`;
+      // let xpath_audit = `//brAudit[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara`;
+      // let xpath_all;
+      // if (this.useApplSchema){
+      //   xpath_all = `//*[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara[${this.applSchemaXPath}] | //@*[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara[${this.applSchemaXPath}]`;
+      // } else {
+      //   xpath_all = `//*[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara | //@*[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),'${text}')]/ancestor::brPara`;
+      // }
 
       /**
        * INCASESENSITIVE example
@@ -373,7 +377,8 @@ const Brdp = {
         if (xhr.status >= 200 && xhr.status < 300) {
             return resolve(xhr.responseXML)
         } else {
-            reject(undefined);
+            resolve(undefined);
+            // reject(undefined);
             // reject({
             //     status: this.status,
             //     statusText: xhr.statusText
@@ -381,10 +386,12 @@ const Brdp = {
         }
       };
       xhr.onerror = () => {
-          reject({
-              status: this.status,
-              statusText: xhr.statusText
-          });
+          resolve(undefined);
+          // reject(undefined);
+          // reject({
+          //     status: this.status,
+          //     statusText: xhr.statusText
+          // });
       };
       xhr.send();
     });

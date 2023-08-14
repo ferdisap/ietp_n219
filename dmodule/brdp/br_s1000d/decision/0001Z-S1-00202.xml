@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>Currently the attribute sourceOfRqmt value are "MRB" and "AD".</para>
+    <para>Currently the attribute <verbatimText verbatimStyle="vs13">sourceOfRqmt</verbatimText> value are <verbatimText verbatimStyle="vs14">MRB</verbatimText> and <verbatimText verbatimStyle="vs14">AD</verbatimText>.</para>
   </brDecisionText>
   
 </brDecision>

@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The alternates concept for &#60;proceduralStepAlts&#62;, &#60;figureAlts&#62;, &#60;multimediaAlts&#62; is used within element &#60;mainProcedure&#62;.</para>
+    <para>The alternates concept for <verbatimText verbatimStyle="vs12">proceduralStepAlts</verbatimText>, <verbatimText verbatimStyle="vs12">figureAlts</verbatimText>, <verbatimText verbatimStyle="vs12">multimediaAlts</verbatimText> is used within element <verbatimText verbatimStyle="vs12">mainProcedure</verbatimText>.</para>
   </brDecisionText>
   
 </brDecision>

@@ -8,14 +8,14 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The element &#60;applic&#62; shall be used within one of the following child element:
+    <para>The element <verbatimText verbatimStyle="vs12">applic</verbatimText> shall be used within one of the following child element:
       <randomList>
-      <listItem><para>&#60;assert&#62; = simple use by single test to ACT/PCT/CCT</para></listItem>
-      <listItem><para>&#60;evaluate&#62; = grouping test to ACT/PCT/CCT</para></listItem>
-      <listItem><para>&#60;expression&#62; = complex test to ACT/PCT/CCT</para></listItem>
+      <listItem><para><verbatimText verbatimStyle="vs12">assert</verbatimText> = simple use by single test to ACT/PCT/CCT</para></listItem>
+      <listItem><para><verbatimText verbatimStyle="vs12">evaluate</verbatimText> = grouping test to ACT/PCT/CCT</para></listItem>
+      <listItem><para><verbatimText verbatimStyle="vs12">expression</verbatimText> = complex test to ACT/PCT/CCT</para></listItem>
       </randomList>
     </para>
-    <para>Reccomended to use element &#60;assert&#62;.</para>
+    <para>Reccomended to use element <verbatimText verbatimStyle="vs12">assert</verbatimText>.</para>
   </brDecisionText>
   
 </brDecision>

@@ -1178,63 +1178,63 @@
       <contextRules>
         <structureObjectRuleGroup>
           <structureObjectRule id="sbr-001">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00001"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00001"/>
             <objectPath allowedObjectFlag="0">//dmCode/@identCode | //dmCode/@infoCodeVariant | //issueInfo/@inwork </objectPath>
             <objectUse>Those of attribute are not allowed to have letter I and O inside the value.</objectUse>
-            <objectValue valueForm="pattern" valueAllowed="[iIoO]">the matched pattern is not allowed</objectValue>
+            <objectValue valueForm="pattern" valueAllowed="/[iIoO]/">the matched pattern is not allowed</objectValue>
           </structureObjectRule>
           <structureObjectRule id="sbr-002">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00002"/>
-            <brDecisionRef brDecisionIdentNumber="0001Z-00070"/>
-            <brDecisionRef brDecisionIdentNumber="0001Z-00071"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00002"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00070"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00071"/>
             <objectPath allowedObjectFlag="1">//originator/@enterpriseCode='0001Z'</objectPath>
             <objectUse>The XPath result shall be true.</objectUse>
           </structureObjectRule>
           <structureObjectRule id="sbr-003">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00014"/>
-            <brDecisionRef brDecisionIdentNumber="0001Z-00054"/>
-            <brDecisionRef brDecisionIdentNumber="0001Z-00558"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00014"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00054"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00558"/>
             <objectPath allowedObjectFlag="1">not(//@caveat) and not(//commercialClassification) and not(//derivativeClassification)</objectPath>
             <objectUse>The XPath result should be true. The attribute caveats must not be used in data module.</objectUse>
           </structureObjectRule>
           <structureObjectRule id="sbr-004">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00020"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00020"/>
             <objectPath allowedObjectFlag="1">//identAndStatusSection/dmAddress/dmIdent/languange/@countryIsoCode = 'GB' and //identAndStatusSection/dmAddress/dmIdent/languange/@languangeIsoCode = 'en'</objectPath>
             <objectUse>The XPath result shall be true.</objectUse>
           </structureObjectRule>
           <structureObjectRule id="sbr-005">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00095"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00095"/>
             <objectPath allowedObjectFlag="1">not(//title/internalRef) and not(//title/dmRef) and not(//title/pmRef) </objectPath>
             <objectUse>The XPath result shall be true. Element &#60;internalRef&#62; and &#60;dmRef&#62; and &#60;pmRef&#62; are not allowed.</objectUse>
           </structureObjectRule>
           <structureObjectRule id="sbr-006">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00032"/>
-            <brDecisionRef brDecisionIdentNumber="0001Z-00033"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00032"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00033"/>
             <objectPath allowedObjectFlag="1">not(//warning/@vitalWarningFlag) | not(//warning/@warningType)</objectPath>
             <objectUse>The XPath result shall be true. attribute vitalWarningFlag and  warningType is not allowed.</objectUse>
           </structureObjectRule>
           <structureObjectRule id="sbr-007">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00034"/>            
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00034"/>            
             <objectPath allowedObjectFlag="1">not(//caution/@cautionType)</objectPath>
             <objectUse>The XPath result shall be true. attribute cautionType is not allowed.</objectUse>
           </structureObjectRule>
           <structureObjectRule id="sbr-008">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00035"/>            
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00035"/>            
             <objectPath allowedObjectFlag="1">not(//note/@noteType)</objectPath>
             <objectUse>The XPath result shall be true. attribute noteType is not allowed.</objectUse>
           </structureObjectRule>
           <structureObjectRule id="sbr-009">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00090"/>            
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00090"/>            
             <objectPath allowedObjectFlag="0">//issueInfo[@inWork != '00']/ancestor::dmodule//reasonForUpdate</objectPath>
             <objectUse>The XPath result shall be 'not match'. Element &#60;reasonForUpdate&#62; is not allowed during production proccess (@inwork != 00).</objectUse>
           </structureObjectRule>
           <structureObjectRule id="sbr-010">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00118"/>            
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00118"/>            
             <objectPath allowedObjectFlag="0">//title/parent::randomList | //title/parent::sequentialList | //title/parent::attentionSequentialList</objectPath>
             <objectUse>The XPath result shall be 'not match'. Element &#60;title&#62; is not allowed.</objectUse>
           </structureObjectRule>
           <structureObjectRule id="sbr-011">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00026"/>            
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00026"/>            
             <objectPath allowedObjectFlag="2">//emphasis/@emphasisType</objectPath>
             <objectUse>If the XPath result is 'match', the value shall be in accordance with valueAllowed.</objectUse>
             <objectValue valueTailoring="closed" valueForm="single" valueAllowed="em01">bold</objectValue>
@@ -1243,7 +1243,7 @@
             <objectValue valueTailoring="closed" valueForm="single" valueAllowed="em05">strikethrough</objectValue>
           </structureObjectRule>
           <structureObjectRule id="sbr-012">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00101"/>            
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00101"/>            
             <objectPath allowedObjectFlag="1">//dmStatus/@securityClassification</objectPath>
             <objectUse>The XPath result shall be 'match'. Attribute &#60;securityClassification&#62; shall be followed the valueAllowed.</objectUse>
             <objectValue valueTailoring="closed" valueForm="single" valueAllowed="01">unclassified</objectValue>
@@ -1253,92 +1253,92 @@
             <objectValue valueTailoring="closed" valueForm="single" valueAllowed="05">top secrret</objectValue>
           </structureObjectRule>
           <structureObjectRule id="sbr-013">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00101"/>            
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00101"/>            
             <objectPath allowedObjectFlag="1">//internalRef/@internalRefId</objectPath>
             <objectUse>The XPath result shall be as match as the valueAllowed pattern.</objectUse>
-            <objectValue valueTailoring="closed" valueForm="pattern" valueAllowed="fig|tab|mma|seq|par|stp|gra|mmo|hot|pme|zon|mat|msl|acp|ftn">unclassified</objectValue>
+            <objectValue valueTailoring="closed" valueForm="pattern" valueAllowed="/fig|tab|mma|seq|par|stp|gra|mmo|hot|pme|zon|mat|msl|acp|ftn/">unclassified</objectValue>
           </structureObjectRule>
           <structureObjectRule id="sbr-014">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00135"/>            
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00135"/>            
             <objectPath allowedObjectFlag="0">//workAreaLocationGroup/zoneRef</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-015">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00135"/>            
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00135"/>            
             <objectPath allowedObjectFlag="0">//workAreaLocationGroup/accessPointRef</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-016">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00140"/>            
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00140"/>            
             <objectPath allowedObjectFlag="2">//productItem/@productItemName</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-017">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00141"/>            
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00141"/>            
             <objectPath allowedObjectFlag="2">//productItem/@productItemType</objectPath>
             <objectValue valueForm="single" valueAllowed="pi01">Frame</objectValue>
             <objectValue valueForm="single" valueAllowed="pi02">Rib</objectValue>
             <objectValue valueForm="single" valueAllowed="pi02">Stringer</objectValue>
           </structureObjectRule>
           <structureObjectRule id="sbr-018">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00142"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00142"/>
             <objectPath allowedObjectFlag="0">//taskDuration</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-019">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00143"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00143"/>
             <objectPath allowedObjectFlag="0">//reqCondCircuitBreaker</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-020">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00144"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00144"/>
             <objectPath allowedObjectFlag="0">//reqPersons</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-021">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00145"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00145"/>
             <objectPath allowedObjectFlag="0">//@personCategoryCode</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-022">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00146"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00146"/>
             <objectPath allowedObjectFlag="0">//trade</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-023">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00147"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00147"/>
             <objectPath allowedObjectFlag="0">//reqTechInfoGroup</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-024">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00151"/>
             <objectPath allowedObjectFlag="0">//supportEquipDescr | //supplyDescr | //spareDescr</objectPath>
           </structureObjectRule>
           <!-- <structureObjectRule id="sbr-024">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00151"/>
             <objectPath allowedObjectFlag="1">//supportEquipDescr/@materialUsage</objectPath>
             <objectValue valueForm="single" valueAllowed="mu05">Material set</objectValue>
           </structureObjectRule>
           <structureObjectRule id="sbr-025">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00151"/>
             <objectPath allowedObjectFlag="1">//supplyDescr/@materialUsage</objectPath>
             <objectValue valueForm="single" valueAllowed="mu05">Material set</objectValue>
           </structureObjectRule>
           <structureObjectRule id="sbr-026">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00151"/>
             <objectPath allowedObjectFlag="0">//supplyDescr/@materialUsage</objectPath>
             <objectValue valueForm="single" valueAllowed="mu01">Discarded</objectValue>
             <objectValue valueForm="single" valueAllowed="mu03">Material set</objectValue>
           </structureObjectRule>
           <structureObjectRule id="sbr-027">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00151"/>
             <objectPath allowedObjectFlag="1">//supplyDescr[//@xsi:noNamespaceSchemaLocation/contains(., 'sb.xsd')]/@materialUsage</objectPath>
             <objectValue valueForm="single" valueAllowed="mu02">Retained</objectValue>
           </structureObjectRule>
           <structureObjectRule id="sbr-028">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00151"/>
             <objectPath allowedObjectFlag="1">//spareDescr/@materialUsage</objectPath>
             <objectValue valueForm="single" valueAllowed="mu05">Material set</objectValue>
           </structureObjectRule>
           <structureObjectRule id="sbr-029">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00151"/>
             <objectPath allowedObjectFlag="1">//spareDescr//supplyDescr[//@xsi:noNamespaceSchemaLocation/contains(., 'sb.xsd')]/@materialUsage@materialUsage</objectPath>
             <objectValue valueForm="single" valueAllowed="mu01">Discarded</objectValue>
             <objectValue valueForm="single" valueAllowed="mu02">Retained</objectValue>
           </structureObjectRule> -->
           <structureObjectRule id="sbr-025">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00158"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00158"/>
             <objectPath allowedObjectFlag="2">//circuitBreakerRef/@circuitBreakerRef</objectPath>
             <objectValue valueForm="single" valueAllowed="open"/>
             <objectValue valueForm="single" valueAllowed="close"/>
@@ -1346,34 +1346,405 @@
             <objectValue valueForm="single" valueAllowed="verify-close"/>
           </structureObjectRule>
           <structureObjectRule id="sbr-026">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00159"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00159"/>
             <objectPath allowedObjectFlag="0">//circuitBreakerRef/@checksum</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-027">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00160"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00160"/>
             <objectPath allowedObjectFlag="2">//inlineSignificantData</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-028">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00169"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00169"/>
             <objectPath allowedObjectFlag="0">//indexFlag</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-029">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00171"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00171"/>
             <objectPath allowedObjectFlag="2">//symbol</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-030">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00172"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00172"/>
             <objectPath allowedObjectFlag="0">//footnote/ancestor::footnote</objectPath>
           </structureObjectRule>
           <structureObjectRule id="sbr-031">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00173"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00173"/>
             <objectPath allowedObjectFlag="2">//footnote/@footnoteMark</objectPath>
             <objectValue valueForm="single" valueAllowed="num">number</objectValue>
             <objectValue valueForm="single" valueAllowed="sym">asterisk</objectValue>
           </structureObjectRule>
           <structureObjectRule id="sbr-032">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00173"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00173"/>
             <objectPath allowedObjectFlag="0">//commonInfo</objectPath>
+          </structureObjectRule>          
+          <structureObjectRule id="sbr-033">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00316"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00317"/>
+            <objectPath allowedObjectFlag="1">//applic/child::*/name()</objectPath>
+            <objectValue valueForm="single" valueAllowed="assert"/>
+            <objectValue valueForm="single" valueAllowed="evaluate"/>
+            <objectValue valueForm="single" valueAllowed="expression"/>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-034">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00318"/>
+            <objectPath allowedObjectFlag="0">//assert/@applicDisplayClass | //evaluate/@applicDisplayClass</objectPath>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-035">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00330"/>
+            <objectPath allowedObjectFlag="2">//@quantityUnitOfMeasure</objectPath>
+            <objectValue valueForm="single" valueAllowed="%"/>
+            <objectValue valueForm="single" valueAllowed="1/bar"/>
+            <objectValue valueForm="single" valueAllowed="1/cm"/>
+            <objectValue valueForm="single" valueAllowed="1/d"/>
+            <objectValue valueForm="single" valueAllowed="1/degC"/>
+            <objectValue valueForm="single" valueAllowed="1/ft"/>
+            <objectValue valueForm="single" valueAllowed="1/ft2"/>
+            <objectValue valueForm="single" valueAllowed="1/ft3"/>
+            <objectValue valueForm="single" valueAllowed="1/g"/>
+            <objectValue valueForm="single" valueAllowed="1/galUS"/>
+            <objectValue valueForm="single" valueAllowed="1/galUK"/>
+            <objectValue valueForm="single" valueAllowed="1/h"/>
+            <objectValue valueForm="single" valueAllowed="1/in"/>
+            <objectValue valueForm="single" valueAllowed="1/kg"/>
+            <objectValue valueForm="single" valueAllowed="1/km2"/>
+            <objectValue valueForm="single" valueAllowed="1/kPa"/>
+            <objectValue valueForm="single" valueAllowed="1/L"/>
+            <objectValue valueForm="single" valueAllowed="1/lbf"/>
+            <objectValue valueForm="single" valueAllowed="1/lbm"/>
+            <objectValue valueForm="single" valueAllowed="1/m"/>
+            <objectValue valueForm="single" valueAllowed="1/m2"/>
+            <objectValue valueForm="single" valueAllowed="1/m3"/>
+            <objectValue valueForm="single" valueAllowed="1/mm"/>
+            <objectValue valueForm="single" valueAllowed="1/pa"/>
+            <objectValue valueForm="single" valueAllowed="1/psi"/>
+            <objectValue valueForm="single" valueAllowed="1/s"/>
+            <objectValue valueForm="single" valueAllowed="1/V"/>
+            <objectValue valueForm="single" valueAllowed="A"/>
+            <objectValue valueForm="single" valueAllowed="A.h"/>
+            <objectValue valueForm="single" valueAllowed="A.m"/>
+            <objectValue valueForm="single" valueAllowed="A.m2"/>
+            <objectValue valueForm="single" valueAllowed="A.cm2"/>
+            <objectValue valueForm="single" valueAllowed="A.ft2"/>
+            <objectValue valueForm="single" valueAllowed="A.mm"/>
+            <objectValue valueForm="single" valueAllowed="A.mm2"/>
+            <objectValue valueForm="single" valueAllowed="atm"/>
+            <objectValue valueForm="single" valueAllowed="atm/ft"/>
+            <objectValue valueForm="single" valueAllowed="atm/h"/>
+            <objectValue valueForm="single" valueAllowed="atm/m"/>
+            <objectValue valueForm="single" valueAllowed="bar"/>
+            <objectValue valueForm="single" valueAllowed="bar/ft"/>
+            <objectValue valueForm="single" valueAllowed="bar/h"/>
+            <objectValue valueForm="single" valueAllowed="bar/m"/>
+            <objectValue valueForm="single" valueAllowed="cm"/>
+            <objectValue valueForm="single" valueAllowed="cm/a"/>
+            <objectValue valueForm="single" valueAllowed="cm/s"/>
+            <objectValue valueForm="single" valueAllowed="cm/s2"/>
+            <objectValue valueForm="single" valueAllowed="cm2"/>
+            <objectValue valueForm="single" valueAllowed="cm2/g" />
+            <objectValue valueForm="single" valueAllowed="cm2/s" />
+            <objectValue valueForm="single" valueAllowed="cm3" />
+            <objectValue valueForm="single" valueAllowed="cm3/g" />
+            <objectValue valueForm="single" valueAllowed="cm3/s" />
+            <objectValue valueForm="single" valueAllowed="cm3/min" />
+            <objectValue valueForm="single" valueAllowed="cu ft" />
+            <objectValue valueForm="single" valueAllowed="cu in" />
+            <objectValue valueForm="single" valueAllowed="dB" />
+            <objectValue valueForm="single" valueAllowed="degC" />
+            <objectValue valueForm="single" valueAllowed="degF" />
+            <objectValue valueForm="single" valueAllowed="ft" />
+            <objectValue valueForm="single" valueAllowed="ft.lbf" />
+            <objectValue valueForm="single" valueAllowed="ft.lbf/galUS" />
+            <objectValue valueForm="single" valueAllowed="ft.lbf/lbm" />
+            <objectValue valueForm="single" valueAllowed="ft.lbf/min" />
+            <objectValue valueForm="single" valueAllowed="ft.lbf/s" />
+            <objectValue valueForm="single" valueAllowed="ft.lbm" />
+            <objectValue valueForm="single" valueAllowed="ft/h" />
+            <objectValue valueForm="single" valueAllowed="ft/in" />
+            <objectValue valueForm="single" valueAllowed="ft/m" />
+            <objectValue valueForm="single" valueAllowed="ft/mi" />
+            <objectValue valueForm="single" valueAllowed="ft/min" />
+            <objectValue valueForm="single" valueAllowed="ft/ms" />
+            <objectValue valueForm="single" valueAllowed="ft/s" />
+            <objectValue valueForm="single" valueAllowed="ft2" />
+            <objectValue valueForm="single" valueAllowed="ft3" />
+            <objectValue valueForm="single" valueAllowed="g" />
+            <objectValue valueForm="single" valueAllowed="g.ft/cm3.s" />
+            <objectValue valueForm="single" valueAllowed="g/cm3" />
+            <objectValue valueForm="single" valueAllowed="g/galUK" />
+            <objectValue valueForm="single" valueAllowed="g/L" />
+            <objectValue valueForm="single" valueAllowed="g/m3" />
+            <objectValue valueForm="single" valueAllowed="g/s" />
+            <objectValue valueForm="single" valueAllowed="galUK" />
+            <objectValue valueForm="single" valueAllowed="galUK/ft3" />
+            <objectValue valueForm="single" valueAllowed="galUK/hr" />
+            <objectValue valueForm="single" valueAllowed="galUK/mi" />
+            <objectValue valueForm="single" valueAllowed="galUK/mil" />
+            <objectValue valueForm="single" valueAllowed="galUS" />
+            <objectValue valueForm="single" valueAllowed="galUS/ft3" />
+            <objectValue valueForm="single" valueAllowed="galUS/hr" />
+            <objectValue valueForm="single" valueAllowed="galUS/mi" />
+            <objectValue valueForm="single" valueAllowed="galUS/mil" />
+            <objectValue valueForm="single" valueAllowed="GHz" />
+            <objectValue valueForm="single" valueAllowed="gn" />
+            <objectValue valueForm="single" valueAllowed="GPa" />
+            <objectValue valueForm="single" valueAllowed="Gpa/cm" />
+            <objectValue valueForm="single" valueAllowed="h" />
+            <objectValue valueForm="single" valueAllowed="h/km" />
+            <objectValue valueForm="single" valueAllowed="hp" />
+            <objectValue valueForm="single" valueAllowed="hp" />
+            <objectValue valueForm="single" valueAllowed="Hz" />
+            <objectValue valueForm="single" valueAllowed="in" />
+            <objectValue valueForm="single" valueAllowed="in/min" />
+            <objectValue valueForm="single" valueAllowed="in/s" />
+            <objectValue valueForm="single" valueAllowed="kA" />
+            <objectValue valueForm="single" valueAllowed="kbyte" />
+            <objectValue valueForm="single" valueAllowed="kg" />
+            <objectValue valueForm="single" valueAllowed="kg.m" />
+            <objectValue valueForm="single" valueAllowed="kg.m/cm2" />
+            <objectValue valueForm="single" valueAllowed="kg.m/s" />
+            <objectValue valueForm="single" valueAllowed="kg.m2" />
+            <objectValue valueForm="single" valueAllowed="kg/h" />
+            <objectValue valueForm="single" valueAllowed="kg/L" />
+            <objectValue valueForm="single" valueAllowed="kg/m" />
+            <objectValue valueForm="single" valueAllowed="kg/m.s" />
+            <objectValue valueForm="single" valueAllowed="kg/m2" />
+            <objectValue valueForm="single" valueAllowed="kg/m2.s" />
+            <objectValue valueForm="single" valueAllowed="kg/m3" />
+            <objectValue valueForm="single" valueAllowed="kg/min" />
+            <objectValue valueForm="single" valueAllowed="kg/s" />
+            <objectValue valueForm="single" valueAllowed="kgf" />
+            <objectValue valueForm="single" valueAllowed="kgf.m" />
+            <objectValue valueForm="single" valueAllowed="kgf.m/cm2" />
+            <objectValue valueForm="single" valueAllowed="kgf.m/m" />
+            <objectValue valueForm="single" valueAllowed="kgf.m2" />
+            <objectValue valueForm="single" valueAllowed="kgf.s/m2" />
+            <objectValue valueForm="single" valueAllowed="kgf/cm" />
+            <objectValue valueForm="single" valueAllowed="kgf/cm2" />
+            <objectValue valueForm="single" valueAllowed="kgf/mm2" />
+            <objectValue valueForm="single" valueAllowed="kHz" />
+            <objectValue valueForm="single" valueAllowed="km" />
+            <objectValue valueForm="single" valueAllowed="km/cm" />
+            <objectValue valueForm="single" valueAllowed="km/h" />
+            <objectValue valueForm="single" valueAllowed="km/L" />
+            <objectValue valueForm="single" valueAllowed="km/s" />
+            <objectValue valueForm="single" valueAllowed="km2" />
+            <objectValue valueForm="single" valueAllowed="kN" />
+            <objectValue valueForm="single" valueAllowed="kN.m" />
+            <objectValue valueForm="single" valueAllowed="kN.m2" />
+            <objectValue valueForm="single" valueAllowed="kN/m" />
+            <objectValue valueForm="single" valueAllowed="kN/m2" />
+            <objectValue valueForm="single" valueAllowed="knot" />
+            <objectValue valueForm="single" valueAllowed="kohm" />
+            <objectValue valueForm="single" valueAllowed="kPa" />
+            <objectValue valueForm="single" valueAllowed="kPa.s/m" />
+            <objectValue valueForm="single" valueAllowed="kPa/h" />
+            <objectValue valueForm="single" valueAllowed="kPa/s" />
+            <objectValue valueForm="single" valueAllowed="kPa/m" />
+            <objectValue valueForm="single" valueAllowed="kPa/min" />
+            <objectValue valueForm="single" valueAllowed="kpsi" />
+            <objectValue valueForm="single" valueAllowed="kV" />
+            <objectValue valueForm="single" valueAllowed="kW" />
+            <objectValue valueForm="single" valueAllowed="kW.h" />
+            <objectValue valueForm="single" valueAllowed="L" />
+            <objectValue valueForm="single" valueAllowed="L/h" />
+            <objectValue valueForm="single" valueAllowed="L/kg" />
+            <objectValue valueForm="single" valueAllowed="L/m" />
+            <objectValue valueForm="single" valueAllowed="L/m3" />
+            <objectValue valueForm="single" valueAllowed="L/min" />
+            <objectValue valueForm="single" valueAllowed="L/s" />
+            <objectValue valueForm="single" valueAllowed="lbf" />
+            <objectValue valueForm="single" valueAllowed="lbf.ft" />
+            <objectValue valueForm="single" valueAllowed="lbf.ft/in" />
+            <objectValue valueForm="single" valueAllowed="lbf.ft/in2" />
+            <objectValue valueForm="single" valueAllowed="lbf.ft/lbm" />
+            <objectValue valueForm="single" valueAllowed="lbf.in" />
+            <objectValue valueForm="single" valueAllowed="lbf.in2" />
+            <objectValue valueForm="single" valueAllowed="lbf.s/ft2" />
+            <objectValue valueForm="single" valueAllowed="lbf.s/in2" />
+            <objectValue valueForm="single" valueAllowed="lbf/ft" />
+            <objectValue valueForm="single" valueAllowed="lbf/ft2" />
+            <objectValue valueForm="single" valueAllowed="lbf/ft3" />
+            <objectValue valueForm="single" valueAllowed="lbf/galUS" />
+            <objectValue valueForm="single" valueAllowed="lbf/in" />
+            <objectValue valueForm="single" valueAllowed="lbf/in2" />
+            <objectValue valueForm="single" valueAllowed="lbm" />
+            <objectValue valueForm="single" valueAllowed="lbm/ft" />
+            <objectValue valueForm="single" valueAllowed="lbm/ft.h" />
+            <objectValue valueForm="single" valueAllowed="lbm/ft.s" />
+            <objectValue valueForm="single" valueAllowed="lbm/ft2" />
+            <objectValue valueForm="single" valueAllowed="lbm/ft3" />
+            <objectValue valueForm="single" valueAllowed="lbm/galUK" />
+            <objectValue valueForm="single" valueAllowed="lbm/galUS" />
+            <objectValue valueForm="single" valueAllowed="lbm/h" />
+            <objectValue valueForm="single" valueAllowed="lbm/h.ft" />
+            <objectValue valueForm="single" valueAllowed="m" />
+            <objectValue valueForm="single" valueAllowed="m/d" />
+            <objectValue valueForm="single" valueAllowed="m/h" />
+            <objectValue valueForm="single" valueAllowed="m/min" />
+            <objectValue valueForm="single" valueAllowed="m2" />
+            <objectValue valueForm="single" valueAllowed="m2/cm3" />
+            <objectValue valueForm="single" valueAllowed="m2/g" />
+            <objectValue valueForm="single" valueAllowed="m2/h" />
+            <objectValue valueForm="single" valueAllowed="m3" />
+            <objectValue valueForm="single" valueAllowed="m3/g" />
+            <objectValue valueForm="single" valueAllowed="m3/h" />
+            <objectValue valueForm="single" valueAllowed="m3/kg" />
+            <objectValue valueForm="single" valueAllowed="m3/km" />
+            <objectValue valueForm="single" valueAllowed="m3/s" />
+            <objectValue valueForm="single" valueAllowed="mbar" />
+            <objectValue valueForm="single" valueAllowed="Mbyte" />
+            <objectValue valueForm="single" valueAllowed="mg" />
+            <objectValue valueForm="single" valueAllowed="MHz" />
+            <objectValue valueForm="single" valueAllowed="mil" />
+            <objectValue valueForm="single" valueAllowed="min" />
+            <objectValue valueForm="single" valueAllowed="min/ft" />
+            <objectValue valueForm="single" valueAllowed="min/m" />
+            <objectValue valueForm="single" valueAllowed="mL" />
+            <objectValue valueForm="single" valueAllowed="mm" />
+            <objectValue valueForm="single" valueAllowed="mm2" />
+            <objectValue valueForm="single" valueAllowed="mm3" />
+            <objectValue valueForm="single" valueAllowed="MPa" />
+            <objectValue valueForm="single" valueAllowed="ms" />
+            <objectValue valueForm="single" valueAllowed="MW" />
+            <objectValue valueForm="single" valueAllowed="N" />
+            <objectValue valueForm="single" valueAllowed="N.m" />
+            <objectValue valueForm="single" valueAllowed="N.m2" />
+            <objectValue valueForm="single" valueAllowed="N/m" />
+            <objectValue valueForm="single" valueAllowed="N/m2" />
+            <objectValue valueForm="single" valueAllowed="N/m3" />
+            <objectValue valueForm="single" valueAllowed="nm" />
+            <objectValue valueForm="single" valueAllowed="ns" />
+            <objectValue valueForm="single" valueAllowed="ohm" />
+            <objectValue valueForm="single" valueAllowed="Pa" />
+            <objectValue valueForm="single" valueAllowed="Pa/m" />
+            <objectValue valueForm="single" valueAllowed="Pa/m3" />
+            <objectValue valueForm="single" valueAllowed="Pa/s" />
+            <objectValue valueForm="single" valueAllowed="psi" />
+            <objectValue valueForm="single" valueAllowed="rpm" />
+            <objectValue valueForm="single" valueAllowed="s" />
+            <objectValue valueForm="single" valueAllowed="s/cm" />
+            <objectValue valueForm="single" valueAllowed="s/ft" />
+            <objectValue valueForm="single" valueAllowed="s/ft3" />
+            <objectValue valueForm="single" valueAllowed="s/in" />
+            <objectValue valueForm="single" valueAllowed="s/L" />
+            <objectValue valueForm="single" valueAllowed="s/m" />
+            <objectValue valueForm="single" valueAllowed="s/m3" />
+            <objectValue valueForm="single" valueAllowed="s/qtUS" />
+            <objectValue valueForm="single" valueAllowed="V" />
+            <objectValue valueForm="single" valueAllowed="W" />
+            <objectValue valueForm="single" valueAllowed="KIas" />
+            <objectValue valueForm="single" valueAllowed="KTas" />
+            <objectValue valueForm="single" valueAllowed="KCas" />
+
+          </structureObjectRule>
+          <structureObjectRule id="sbr-036">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00331"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00332"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00333"/>
+            <objectPath allowedObjectFlag="1">//identAndStatusSection//dmCode/@modelIdentCode</objectPath>
+            <objectValue valueForm="single" valueAllowed="N219"/>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-037">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00331"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00334"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00335"/>
+            <objectPath allowedObjectFlag="1">//identAndStatusSection//dmCode/@systemDiffCode</objectPath>
+            <objectValue valueForm="pattern" valueAllowed="/[A-Z]/"/>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-038">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00331"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00336"/>
+            <objectPath allowedObjectFlag="1">//identAndStatusSection//dmCode/@systemCode</objectPath>
+            <objectValue valueForm="single" valueAllowed="00"/>
+            <objectValue valueForm="single" valueAllowed="04"/>
+            <objectValue valueForm="single" valueAllowed="05"/>
+            <objectValue valueForm="single" valueAllowed="06"/>
+            <objectValue valueForm="single" valueAllowed="07"/>
+            <objectValue valueForm="single" valueAllowed="08"/>
+            <objectValue valueForm="single" valueAllowed="09"/>
+            <objectValue valueForm="single" valueAllowed="10"/>
+            <objectValue valueForm="single" valueAllowed="11"/>
+            <objectValue valueForm="single" valueAllowed="12"/>
+            <objectValue valueForm="single" valueAllowed="14"/>
+            <objectValue valueForm="single" valueAllowed="15"/>
+            <objectValue valueForm="single" valueAllowed="20"/>
+            <objectValue valueForm="single" valueAllowed="21"/>
+            <objectValue valueForm="single" valueAllowed="22"/>
+            <objectValue valueForm="single" valueAllowed="23"/>
+            <objectValue valueForm="single" valueAllowed="24"/>
+            <objectValue valueForm="single" valueAllowed="25"/>
+            <objectValue valueForm="single" valueAllowed="26"/>
+            <objectValue valueForm="single" valueAllowed="27"/>
+            <objectValue valueForm="single" valueAllowed="28"/>
+            <objectValue valueForm="single" valueAllowed="29"/>
+            <objectValue valueForm="single" valueAllowed="30"/>
+            <objectValue valueForm="single" valueAllowed="31"/>
+            <objectValue valueForm="single" valueAllowed="32"/>
+            <objectValue valueForm="single" valueAllowed="33"/>
+            <objectValue valueForm="single" valueAllowed="34"/>
+            <objectValue valueForm="single" valueAllowed="35"/>
+            <objectValue valueForm="single" valueAllowed="44"/>
+            <objectValue valueForm="single" valueAllowed="50"/>
+            <objectValue valueForm="single" valueAllowed="51"/>
+            <objectValue valueForm="single" valueAllowed="52"/>
+            <objectValue valueForm="single" valueAllowed="53"/>
+            <objectValue valueForm="single" valueAllowed="54"/>
+            <objectValue valueForm="single" valueAllowed="55"/>
+            <objectValue valueForm="single" valueAllowed="56"/>
+            <objectValue valueForm="single" valueAllowed="57"/>
+            <objectValue valueForm="single" valueAllowed="60"/>
+            <objectValue valueForm="single" valueAllowed="61"/>
+            <objectValue valueForm="single" valueAllowed="70"/>
+            <objectValue valueForm="single" valueAllowed="71"/>
+            <objectValue valueForm="single" valueAllowed="72"/>
+            <objectValue valueForm="single" valueAllowed="73"/>
+            <objectValue valueForm="single" valueAllowed="74"/>
+            <objectValue valueForm="single" valueAllowed="75"/>
+            <objectValue valueForm="single" valueAllowed="76"/>
+            <objectValue valueForm="single" valueAllowed="78"/>
+            <objectValue valueForm="single" valueAllowed="79"/>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-039">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00331"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00336"/>
+            <objectPath allowedObjectFlag="1">//identAndStatusSection//dmCode/@subSystemCode</objectPath>
+            <objectValue valueForm="pattern" valueAllowed="/[0-9]/"/>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-040">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00331"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00336"/>
+            <objectPath allowedObjectFlag="1">//identAndStatusSection//dmCode/@subSubSystemCode</objectPath>
+            <objectValue valueForm="pattern" valueAllowed="/[0-9]/"/>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-041">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00331"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00336"/>
+            <objectPath allowedObjectFlag="1">//identAndStatusSection//dmCode/@assyCode</objectPath>
+            <objectValue valueForm="pattern" valueAllowed="/[0-9][0-9]?|99/"/>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-042">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00331"/>
+            <objectPath allowedObjectFlag="1">//identAndStatusSection//dmCode/@disassyCode</objectPath>
+            <objectValue valueForm="pattern" valueAllowed="/[0-9][0-9]?|99/"/>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-043">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00331"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00342"/>
+            <objectPath allowedObjectFlag="1">//identAndStatusSection//dmCode/@disassyCodeVariant</objectPath>
+            <objectValue valueForm="pattern" valueAllowed="/[A-Z]/"/>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-044">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00331"/>
+            <objectPath allowedObjectFlag="1">//identAndStatusSection//dmCode/@infoCode</objectPath>
+            <objectValue valueForm="pattern" valueAllowed="/[0-9][0-9][0-9A-Z]/"/>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-045">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00331"/>
+            <objectPath allowedObjectFlag="1">//identAndStatusSection//dmCode/@infoCodeVariant</objectPath>
+            <objectValue valueForm="pattern" valueAllowed="/[A-Z]/"/>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-046">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00331"/>
+            <objectPath allowedObjectFlag="1">//identAndStatusSection//dmCode/@itemLocationCode</objectPath>
+            <objectValue valueForm="pattern" valueAllowed="/[A-D]/"/>
           </structureObjectRule>
         </structureObjectRuleGroup>
       </contextRules>
@@ -1382,7 +1753,7 @@
       <contextRules rulesContext="process.xsd">
         <structureObjectRuleGroup>          
           <structureObjectRule id="sbr-processXsd-001">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00151"/>
             <objectPath allowedObjectFlag="1">//process/closeRqmts</objectPath>
           </structureObjectRule>
         </structureObjectRuleGroup>
@@ -1392,8 +1763,52 @@
       <contextRules rulesContext="fault.xsd">
         <structureObjectRuleGroup>          
           <structureObjectRule id="sbr-faultXsd-001">
-            <brDecisionRef brDecisionIdentNumber="0001Z-00151"/>
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00151"/>
             <objectPath allowedObjectFlag="1">//isolationProcedure/closeRqmts</objectPath>
+          </structureObjectRule>
+        </structureObjectRuleGroup>
+      </contextRules>
+
+      <!-- schedulXsd -->
+      <contextRules rulesContext="schedul.xsd">
+        <structureObjectRuleGroup>          
+          <structureObjectRule id="sbr-schedulXsd-001">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00197"/>
+            <objectPath allowedObjectFlag="2">//limit/@inspectionTypeCategory</objectPath>
+            <objectValue valueForm="single" valueAllowed="preflight"/>
+            <objectValue valueForm="single" valueAllowed="end of runway"/>
+            <objectValue valueForm="single" valueAllowed="thru-flight"/>
+            <objectValue valueForm="single" valueAllowed="postflight"/>
+            <objectValue valueForm="single" valueAllowed="periodic"/>
+            <objectValue valueForm="single" valueAllowed="special inspection and maintenance"/>
+            <objectValue valueForm="single" valueAllowed="special special inspection after a specific occurence"/>
+            <objectValue valueForm="single" valueAllowed="depot"/>
+            <objectValue valueForm="single" valueAllowed="acceptance and functional check"/>
+          </structureObjectRule>
+          <structureObjectRule id="sbr-schedulXsd-002">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00202"/>
+            <objectPath allowedObjectFlag="2">//rqmtSource/@sourceOfRqmt</objectPath>
+            <objectValue valueForm="single" valueAllowed="mrb">Maintenance Review Board</objectValue>
+            <objectValue valueForm="single" valueAllowed="ad">Airworthines Directive</objectValue>
+          </structureObjectRule>
+        </structureObjectRuleGroup>
+      </contextRules>
+
+      <!-- schedulXsd -->
+      <contextRules rulesContext="sb.xsd">
+        <structureObjectRuleGroup>          
+          <structureObjectRule id="sbr-sbXsd-001">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00197"/>
+            <objectPath allowedObjectFlag="2">//limit/@inspectionTypeCategory</objectPath>
+            <objectValue valueForm="single" valueAllowed="preflight"/>
+            <objectValue valueForm="single" valueAllowed="end of runway"/>
+            <objectValue valueForm="single" valueAllowed="thru-flight"/>
+            <objectValue valueForm="single" valueAllowed="postflight"/>
+            <objectValue valueForm="single" valueAllowed="periodic"/>
+            <objectValue valueForm="single" valueAllowed="special inspection and maintenance"/>
+            <objectValue valueForm="single" valueAllowed="special special inspection after a specific occurence"/>
+            <objectValue valueForm="single" valueAllowed="depot"/>
+            <objectValue valueForm="single" valueAllowed="acceptance and functional check"/>
           </structureObjectRule>
         </structureObjectRuleGroup>
       </contextRules>
@@ -1401,28 +1816,28 @@
       <!-- NON Context Rule -->
       <nonContextRules>
         <nonContextRule id="sbr-511">
-          <brDecisionRef brDecisionIdentNumber="0001Z-00003"/>
+          <brDecisionRef brDecisionIdentNumber="0001Z-S1-00003"/>
           <simplePara>Each of data module shall use S1000D issue 5.0. Check that every single schema used comes from http://www.s1000d.org/S1000D_5-0/xml_schema_flat/</simplePara>
         </nonContextRule>
         <nonContextRule id="sbr-513">
-          <brDecisionRef brDecisionIdentNumber="0001Z-00022"/>
+          <brDecisionRef brDecisionIdentNumber="0001Z-S1-00022"/>
           <simplePara>Each of data module shall use OxFord Dictionary.</simplePara>
         </nonContextRule>
         <nonContextRule id="sbr-514">
-          <brDecisionRef brDecisionIdentNumber="0001Z-00107"/>
+          <brDecisionRef brDecisionIdentNumber="0001Z-S1-00107"/>
           <simplePara>The prefix words is attached in stylesheet (XSLT) file.</simplePara>
         </nonContextRule>
         <nonContextRule id="sbr-515">
-          <brDecisionRef brDecisionIdentNumber="0001Z-00149"/>
+          <brDecisionRef brDecisionIdentNumber="0001Z-S1-00149"/>
           <simplePara>The information of the items that are identified as general/special/support tools or equipment shall be included in element &#160;reqSupportEquips&#162; and its child elements..</simplePara>
         </nonContextRule>
         <nonContextRule id="sbr-516">
-          <brDecisionRef brDecisionIdentNumber="0001Z-00166"/>
-          <brDecisionRef brDecisionIdentNumber="0001Z-00167"/>
+          <brDecisionRef brDecisionIdentNumber="0001Z-S1-00166"/>
+          <brDecisionRef brDecisionIdentNumber="0001Z-S1-00167"/>
           <simplePara>Make sure each "internal references" is same with "preliminary requirements". </simplePara>
         </nonContextRule>
         <nonContextRule id="sbr-517">
-          <brDecisionRef brDecisionIdentNumber="0001Z-00560"/>
+          <brDecisionRef brDecisionIdentNumber="0001Z-S1-00560"/>
           <simplePara>The OEM renamed part numbers can be used instead of part numbers allocated by the part design authority.</simplePara>
         </nonContextRule>
         <!-- <nonContextRule>

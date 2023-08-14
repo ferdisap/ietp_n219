@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The values of attribute quantityUnitOfMeasure allowed are:
+    <para>The values of attribute <verbatimText verbatimStyle="vs13">quantityUnitOfMeasure</verbatimText> allowed are:
       <randomList>
         <listItem><para>%</para></listItem>
         <listItem><para>1/bar</para></listItem>
@@ -39,10 +39,10 @@
         <listItem><para>1/V</para></listItem>
         <listItem><para>A</para></listItem>
         <listItem><para>A.h</para></listItem>
+        <listItem><para>A.m</para></listItem>
         <listItem><para>A.m2</para></listItem>
         <listItem><para>A.cm2</para></listItem>
         <listItem><para>A.ft2</para></listItem>
-        <listItem><para>A.m</para></listItem>
         <listItem><para>A.mm</para></listItem>
         <listItem><para>A.mm2</para></listItem>
         <listItem><para>atm</para></listItem>

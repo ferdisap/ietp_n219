@@ -8,20 +8,20 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The attribute inspectionTypeCategory value shall be as below:
+    <para>The <verbatimText verbatimStyle="vs13">inspectionTypeCategory</verbatimText> value shall be as below:
       <randomList>
-        <listItem><para>preflight</para></listItem>
-        <listItem><para>end of runway</para></listItem>
-        <listItem><para>thru-flight</para></listItem>
-        <listItem><para>postflight</para></listItem>
-        <listItem><para>periodic</para></listItem>
-        <listItem><para>special inspection and maintenance</para></listItem>
-        <listItem><para>special inspection after a specific occurence</para></listItem>
-        <listItem><para>depot</para></listItem>
-        <listItem><para>acceptance and functional check</para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">preflight</verbatimText></para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">end of runway</verbatimText></para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">thru-flight</verbatimText></para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">postflight</verbatimText></para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">periodic</verbatimText></para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">special inspection and maintenance</verbatimText></para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">special inspection after a specific occurence</verbatimText></para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">depot</verbatimText></para></listItem>
+        <listItem><para><verbatimText verbatimStyle="vs14">acceptance and functional check</verbatimText></para></listItem>
       </randomList>
     </para>
-    <para>These value input shall be lower-case.</para>
+    <para>Those value shall be lower-case.</para>
   </brDecisionText>
   
 </brDecision>

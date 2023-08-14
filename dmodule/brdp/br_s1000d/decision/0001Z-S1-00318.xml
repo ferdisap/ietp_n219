@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The attribute applicDisplayClass shall not be used to avoid duplication data from element &#62;assert&#60;, &#62;evaluate&#60;, and &#62;expression&#60;.</para>
+    <para>The attribute <verbatimText verbatimStyle="vs13">applicDisplayClass</verbatimText> shall not be used to avoid duplication data from element <verbatimText verbatimStyle="vs12">assert</verbatimText>, <verbatimText verbatimStyle="vs12">evaluate</verbatimText>, and <verbatimText verbatimStyle="vs12">expression</verbatimText>.</para>
   </brDecisionText>
   
 </brDecision>
