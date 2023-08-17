@@ -20,20 +20,20 @@
   
   <!-- BERHASIL, cek di demo5 04. -->
   <xsl:template match="levelledPara">
-    <xsl:variable name="numberedPar">
+    <xsl:variable name="numberredPar">
       <xsl:call-template name="checkParent"/>
       <xsl:number/>
     </xsl:variable>
   
     <xsl:variable name="error">
-      <xsl:if test="substring($numberedPar,1,1) >= 6">
+      <xsl:if test="substring($numberredPar,1,1) >= 6">
         <xsl:comment>ERROR: the levelledPara only five levels allowed</xsl:comment>
         <xsl:message>ERROR: the levelledPara only five levels allowed</xsl:message>
       </xsl:if>
     </xsl:variable>
     
     <xsl:variable name="strLength">
-      <xsl:value-of select="string-length(translate($numberedPar, '.', ''))"/>
+      <xsl:value-of select="string-length(translate($numberredPar, '.', ''))"/>
     </xsl:variable>
     <xsl:variable name="h">
       <xsl:choose>
@@ -48,8 +48,10 @@
   
     <xsl:element name="{$h}">
       <xsl:copy-of select="$error"/>
-      <xsl:copy-of select="$numberedPar"/><xsl:value-of select="' '"/><xsl:apply-templates select="title"/>
+      <xsl:copy-of select="$numberredPar"/><xsl:value-of select="' '"/><xsl:apply-templates select="title"/>
     </xsl:element>
+    <xsl:apply-templates select="para"/>
+    <xsl:apply-templates select="child::*[name() != 'title']"/>
   </xsl:template>
 
 </xsl:stylesheet>

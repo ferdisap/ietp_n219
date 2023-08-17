@@ -19,8 +19,15 @@
   </brDecisionText> -->
 
   <brDecisionText>
-    <para>Currently Zoning and access identification system not required, because no data module need them.</para>
-    <para>Whenever the data module of maintenance content should be as deliverable content, the zoning and access is required</para>
+    <!-- <para>Currently Zoning and access identification system not required, because no data module need them.</para>
+    <para>Whenever the data module of maintenance content should be as deliverable content, the zoning and access is required</para> -->
+    <para>Zonal has been decided, 
+      <externalPubRef>
+        <externalPubRefIdent>
+          <externalPubTitle>N219 Zonal Inspection Programs</externalPubTitle>
+        </externalPubRefIdent>
+      </externalPubRef>
+  </para>
   </brDecisionText>
 
 </brDecision>

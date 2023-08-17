@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>The element &#60;enterpriseSpec&#62; shall be used to contain manufacturer of product (aircraft).</para>
+    <para>The element <verbatimText verbatimStyle="vs12">enterpriseSpec</verbatimText> shall be used to contain manufacturer of product (aircraft).</para>
   </brDecisionText>
   
 </brDecision>

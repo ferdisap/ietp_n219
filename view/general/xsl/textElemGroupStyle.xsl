@@ -22,7 +22,7 @@
 <xsl:include href="brDecisionPointRef.xsl"/>
 <xsl:include href="sourceDocRef.xsl"/> -->
 
-<xsl:variable name="outputView">electronic</xsl:variable>
+<!-- <xsl:variable name="outputView">electronic</xsl:variable> -->
 <!-- <xsl:variable name="outputView">paper</xsl:variable> -->
 
 </xsl:stylesheet>

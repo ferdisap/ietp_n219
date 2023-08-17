@@ -3,6 +3,7 @@
 
 <!-- <xsl:include href="para.xsl"/> -->
 
+  <xsl:variable name="outputView">electronic</xsl:variable>
 
   <xsl:template match="brPara">
       <div class="container w-100">

@@ -7,15 +7,15 @@
 <!-- Bisa juga untuk Figure, tapi kan figure tidak ada levelledFigure, sehingga value $includedParent = 'no' -->
 <xsl:variable name="refId">par-005</xsl:variable>
 <xsl:template match="/">
-  <!-- <div><xsl:apply-templates/></div> -->
+  <div><xsl:apply-templates/></div>
   <!-- <div><xsl:apply-templates select="//internalRef"/><br/></div> -->
   <!-- <div><xsl:apply-templates select="//internalRef[@internalRefId = 'gra-002']"/><br/></div> -->
-  <div><xsl:apply-templates select="//internalRef[@internalRefId = 'par-003']"/><br/></div>
+  <!-- <div><xsl:apply-templates select="//internalRef[@internalRefId = 'par-003']"/><br/></div> -->
 </xsl:template>
 
 <xsl:template match="content">
   <!-- 04. BERHASIL, generate judul paragraph otomatis pakai <h2> sampai <h6>, <h1> khusus title data module nanti -->
-  <!-- <xsl:apply-templates select="//levelledPara"/> -->
+  <div><xsl:apply-templates select="//levelledPara"/></div>
 
   <!-- BERHASI generate number bullet of paragraphs  -->
   <!-- para.&#160;<xsl:call-template name="getPosition">
@@ -24,8 +24,6 @@
     <xsl:with-param name="includedParent" select="'yes'"/>
     <xsl:with-param name="parentName" select="'levelledPara'"/>
   </xsl:call-template> -->
-
-
 </xsl:template>
 
 <!-- <xsl:template match="levelledPara"> bukan untuk internalRef:levelledPara -->
@@ -60,6 +58,8 @@
     <xsl:copy-of select="$error"/>
     <xsl:copy-of select="$numberedPar"/><xsl:value-of select="' '"/><xsl:apply-templates select="title"/>
   </xsl:element>
+  <xsl:apply-templates select="para"/>
+  <xsl:apply-templates select="child::*[name() != 'title']"/>
 </xsl:template>
 
 <xsl:template name="getPosition">

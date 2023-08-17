@@ -5,7 +5,7 @@
     <xsl:message>Need bootstrap.css</xsl:message>
     <xsl:comment>Need bootstrap.css</xsl:comment>
     
-    <div id="securityClassification" class="sticky-bottom">
+    <div id="securityClassification" class="sticky-bottom" style="width:fit-content">
       <xsl:choose>
         <xsl:when test="@securityClassification = '01'">
           <h1>Unclassified</h1>

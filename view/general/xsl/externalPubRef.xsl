@@ -6,10 +6,7 @@
 <xsl:include href="behavior.xsl"/>
 
   <xsl:template match="externalPubRef">
-    Refer to&#160;<a>
-      <xsl:attribute name="href">#</xsl:attribute>
-      <xsl:apply-templates/>
-    </a>
+    refer to&#160;<a href="#"><xsl:apply-templates/></a>
   </xsl:template>
 
 </xsl:stylesheet>

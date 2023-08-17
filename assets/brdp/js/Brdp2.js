@@ -50,6 +50,7 @@ const Brdp = {
         // render brdp
         // this.xmlNode = Brdp.brdpDoc.evaluate(this.xpath(brDecisionId), this.parent.brdpDoc).iterateNext();
         this.xmlNode = Brdp.brdpDoc.evaluate(this.xpath(brIdent), this.parent.brdpDoc).iterateNext();
+        console.log(this.xmlNode);
         this.renderBrdp(brIdent, trId + '_detail', brDecisionId);
       } else {
         // close detail

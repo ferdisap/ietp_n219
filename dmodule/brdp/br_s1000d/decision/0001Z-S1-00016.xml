@@ -8,8 +8,8 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>General content of technical manuals should be assigned "01" unclassified.</para>
-    <para>Any contents which are assigned or needed security level should shall have appropriate value depending the level of security classification.</para>
+    <para>General content of technical manuals shall be assigned "01" unclassified.</para>
+    <para>Any contents which are assigned or needed security level shall have appropriate value depending the level of security classification.</para>
   </brDecisionText>
   
 </brDecision>

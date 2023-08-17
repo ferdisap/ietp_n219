@@ -8,7 +8,7 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>This rule is not applicable.</para>
+    <para>The external pub ref code is the ISBN-... or the number of document.</para>
   </brDecisionText>
   
 </brDecision>

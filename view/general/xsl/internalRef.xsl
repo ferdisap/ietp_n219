@@ -18,6 +18,7 @@
     ex. output >>> "Fig. 1 Internal Ref Text" (tanpa tooltip)
    -->
 
+   
   <span>
     <!-- setting attribute class -->
     <xsl:if test="$outputView"><xsl:attribute name="class">tooltip-trigger</xsl:attribute></xsl:if>
@@ -108,7 +109,7 @@
 
     <xsl:when test="@internalRefTargetType = 'irtt07'">
       <xsl:variable name="refId" select="@internalRefId"/>
-      <xsl:value-of select="'Para. '"/>
+      <xsl:value-of select="'para. '"/>
       <xsl:call-template name="getPosition">
         <xsl:with-param name="xpath" select="//levelledPara"/>
         <xsl:with-param name="idCompared" select="$refId"/>
@@ -237,6 +238,7 @@
     </xsl:otherwise>
   </xsl:choose>    
 </xsl:template>
+
 
 
 <!-- TEMPLATE Helper, lihat demo5.xml/demo5.xsl -->

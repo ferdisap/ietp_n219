@@ -8,7 +8,14 @@
   xmlns:dc="http://www.purl.org/dc/elements/1.1/">
 
   <brDecisionText>
-    <para>Use attribute commercialClassification as an alternative of attribute securityClassification.</para>
+    <para>Commercial classification are not used,
+      <dmRef referredFragment="brp-s1-00054">
+        <dmRefIdent>
+          <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="04" subSystemCode="0" subSubSystemCode="0" assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="024" infoCodeVariant="A" itemLocationCode="D"/>
+        </dmRefIdent>
+      </dmRef>
+    </para>
+    <!-- <para>Use attribute commercialClassification as an alternative of attribute securityClassification.</para> -->
   </brDecisionText>
   
 </brDecision>

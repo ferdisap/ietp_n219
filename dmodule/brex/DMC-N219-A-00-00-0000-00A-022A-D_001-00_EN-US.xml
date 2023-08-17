@@ -1746,6 +1746,30 @@
             <objectPath allowedObjectFlag="1">//identAndStatusSection//dmCode/@itemLocationCode</objectPath>
             <objectValue valueForm="pattern" valueAllowed="/[A-D]/"/>
           </structureObjectRule>
+          <structureObjectRule id="sbr-047">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00541"/>
+            <objectPath allowedObjectFlag="0">//@pubCodingScheme</objectPath>
+          </structureObjectRule>
+        </structureObjectRuleGroup>
+      </contextRules>
+
+      <!-- crewXsd -->
+      <contextRules rulesContext="crew.xsd">
+        <structureObjectRuleGroup>          
+          <structureObjectRule id="sbr-crewXsd-001">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00503"/>
+            <objectPath allowedObjectFlag="1">//levelledPara/title</objectPath>
+          </structureObjectRule>
+        </structureObjectRuleGroup>
+      </contextRules>
+
+      <!-- descriptXsd -->
+      <contextRules rulesContext="crew.xsd">
+        <structureObjectRuleGroup>          
+          <structureObjectRule id="sbr-descriptXsd-001">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00503"/>
+            <objectPath allowedObjectFlag="1">//levelledPara/title</objectPath>
+          </structureObjectRule>
         </structureObjectRuleGroup>
       </contextRules>
 
@@ -1794,7 +1818,7 @@
         </structureObjectRuleGroup>
       </contextRules>
 
-      <!-- schedulXsd -->
+      <!-- sbXsd -->
       <contextRules rulesContext="sb.xsd">
         <structureObjectRuleGroup>          
           <structureObjectRule id="sbr-sbXsd-001">
@@ -1809,6 +1833,10 @@
             <objectValue valueForm="single" valueAllowed="special special inspection after a specific occurence"/>
             <objectValue valueForm="single" valueAllowed="depot"/>
             <objectValue valueForm="single" valueAllowed="acceptance and functional check"/>
+          </structureObjectRule>       
+          <structureObjectRule id="sbr-sbXsd-002">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00503"/>
+            <objectPath allowedObjectFlag="1">//levelledPara/title</objectPath>
           </structureObjectRule>
         </structureObjectRuleGroup>
       </contextRules>
@@ -1839,6 +1867,27 @@
         <nonContextRule id="sbr-517">
           <brDecisionRef brDecisionIdentNumber="0001Z-S1-00560"/>
           <simplePara>The OEM renamed part numbers can be used instead of part numbers allocated by the part design authority.</simplePara>
+        </nonContextRule>
+        <nonContextRule id="sbr-518">
+          <brDecisionRef brDecisionIdentNumber="0001Z-S1-00455"/>
+          <simplePara>Aircrew Information shall use multi-data module for any kind of procedure such like: engine shutdown, engine fire, etc.</simplePara>
+        </nonContextRule>
+        <nonContextRule id="sbr-519">
+          <brDecisionRef brDecisionIdentNumber="0001Z-S1-00456"/>
+          <simplePara>The subsection of checklist are: Emergency procedures, Abnormal procedures, Normal procedures.</simplePara>
+        </nonContextRule>
+        <nonContextRule id="sbr-520">
+          <brDecisionRef brDecisionIdentNumber="0001Z-S1-00457"/>
+          <simplePara>The conditional procedures (order drills type) shall be supplemented in supplement section</simplePara>
+        </nonContextRule>
+        <nonContextRule id="sbr-521">
+          <brDecisionRef brDecisionIdentNumber="0001Z-S1-00015"/>
+          <brDecisionRef brDecisionIdentNumber="0001Z-S1-00553"/>
+          <simplePara>Technical manual content security level review shall be done periodically. Whether to change or retain the security level shall be deciced at the review.</simplePara>
+        </nonContextRule>
+        <nonContextRule id="sbr-522">
+          <brDecisionRef brDecisionIdentNumber="0001Z-S1-00361"/>
+          <simplePara>Photographics could be used as secondary method of illustration graphics.</simplePara>
         </nonContextRule>
         <!-- <nonContextRule>
           <simplePara>CSDB synchronization between partner companies must occur last Sunday of each month.</simplePara>

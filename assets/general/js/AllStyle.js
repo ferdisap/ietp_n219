@@ -28,11 +28,14 @@ const AllStyle = {
           let styleDoc = await createXML(null, 'GET', '', 'getfile','xml',`view/general/xsl/${file}`);
           for(const node of styleDoc.firstElementChild.children){
             if(node.nodeName != 'xsl:include'){
-              // ga pakai outerHTML karena akan megenerate xlmns nya
-              xsl.firstElementChild.appendChild(node);
-              if(arr[i+1] == undefined){
-                return resolve(xsl);
-              }
+              // console.log(node);
+              setTimeout(() => {
+                // ga pakai outerHTML karena akan megenerate xlmns nya
+                xsl.firstElementChild.appendChild(node);
+                if(arr[i+1] == undefined){
+                  return resolve(xsl);
+                }
+              }, 0);
             }
           };
         });
