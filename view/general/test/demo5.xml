@@ -9,6 +9,7 @@
     <figure id="fig-tes1">
       <title>Tes Figure 1</title>
       <desc>none desc</desc>
+      <graphic id="gra-003">Gambarke</graphic>
     </figure>
     <figure id="fig-tes2">
       <title>Tes Figure 2</title>

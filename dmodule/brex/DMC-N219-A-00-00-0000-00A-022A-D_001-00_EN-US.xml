@@ -1760,6 +1760,10 @@
             <brDecisionRef brDecisionIdentNumber="0001Z-S1-00503"/>
             <objectPath allowedObjectFlag="1">//levelledPara/title</objectPath>
           </structureObjectRule>
+          <structureObjectRule id="sbr-crewXsd-002">
+            <brDecisionRef brDecisionIdentNumber="0001Z-S1-00503"/>
+            <objectPath allowedObjectFlag="0">//crewDrillStep/title</objectPath>
+          </structureObjectRule>
         </structureObjectRuleGroup>
       </contextRules>
 
