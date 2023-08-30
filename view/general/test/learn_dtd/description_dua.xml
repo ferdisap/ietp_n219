@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE product [
+  <!ELEMENT product (name, manufactuer)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT manufactuer EMPTY>
+  <!ATTLIST manufactuer name ENTITY #REQUIRED>
+  <!ENTITY CompanyName SYSTEM "Liquid Technologies">
+]>
+<product>
+  <name>Liquid XML Studio</name>
+  <manufactuer name="&CompanyName;"/>
+</product>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dmodule [
+<!ELEMENT dmodule (content)>
+<!ELEMENT content (description)>
+<!ELEMENT description (levelledPara+)>
+<!ELEMENT levelledPara (title,para,figure*)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT figure (graphic)>
+<!ELEMENT graphic EMPTY>
+
+<!ATTLIST graphic infoEntityIdent ENTITY #REQUIRED>
+<!ENTITY icn SYSTEM 'tes'>
+
+]>
+<dmodule>
+  <content>
+    <description>
+      <levelledPara>
+        <title>Judul Pertama</title>
+        <para>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, ad.</para>
+        <figure>
+          <graphic infoEntityIdent="&icn;"/>
+        </figure>
+      </levelledPara>
+      <levelledPara>
+        <title>Judul Kedua</title>
+        <para>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, ad.</para>
+      </levelledPara>
+    </description>
+  </content>
+</dmodule>

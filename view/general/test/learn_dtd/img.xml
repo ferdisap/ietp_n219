@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- di https://www.liquid-technologies.com/online-xsd-validator ini valid -->
+<!-- Bahkan <!NOTATION dihapus tetap valid -->
+<!-- Tapi di https://www.freeformatter.com/xml-validator-xsd.html tidak valid -->
+<!-- 2 alasan yang sama dengan validator redHat ini -->
+<!DOCTYPE figure [
+  <!ENTITY icn SYSTEM "foo.jpg" NDATA jpg>
+  <!NOTATION jpg SYSTEM "image/jpeg">
+]>
+<figure 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="img.xsd">
+  <img src="icn"/>
+</figure>

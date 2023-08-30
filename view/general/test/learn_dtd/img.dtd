@@ -1,0 +1,4 @@
+<!ELEMENT img EMPTY>
+<!ATTLIST img src ENTITY #REQUIRED>
+<!NOTATION png SYSTEM "image/png">
+<!ENTITY icn SYSTEM "foto.png" NDATA png>

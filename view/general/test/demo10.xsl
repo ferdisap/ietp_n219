@@ -33,6 +33,7 @@
               </xsl:if>
             </xsl:attribute>
           </img>
+          <br/><span><xsl:value-of select="@infoEntityIdent"/>FOO</span>
           <xsl:choose>
             <xsl:when test="$qtyGra > 1">
               <figCaption>

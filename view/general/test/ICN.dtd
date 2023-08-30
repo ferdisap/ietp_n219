@@ -1,0 +1,5 @@
+<!ENTITY ICN-XX SYSTEM "/ietp_n219/icn/ICN-XX.jpg">
+
+<!NOTATION jpg SYSTEM "image/jpeg">
+<!NOTATION png SYSTEM "image/png">
+<!NOTATION gif SYSTEM "image/gif">

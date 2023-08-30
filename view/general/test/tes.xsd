@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="dmodule" type="dmoduleElemType" />
+<xs:complexType name="dmoduleElemType">
+    <xs:sequence>
+      <xs:element ref="content" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="content" type="contentElemType" />
+  <xs:complexType name="contentElemType">
+    <xs:sequence>
+      <xs:element ref="description" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="description" type="descriptionElemType" />
+  <xs:complexType name="descriptionElemType">
+    <xs:choice maxOccurs="unbounded">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="para" />
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+          <xs:element ref="levelledPara" />
+        </xs:choice>
+      </xs:sequence>
+      <xs:choice>
+        <xs:group ref="fmftElemGroup" />
+      </xs:choice>
+    </xs:choice>
+  </xs:complexType>
+  <xs:element name="para" type="xs:string" />
+
+  <xs:element name="levelledPara" type="levelledParaElemType" />
+  <xs:complexType name="levelledParaElemType">
+    <xs:sequence>
+      <xs:sequence minOccurs="0">
+        <xs:group minOccurs="0" ref="headingElemGroup" />
+        <xs:group minOccurs="0" ref="normalParaElemGroup" />
+      </xs:sequence>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="levelledPara" />
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute ref="id" />
+  </xs:complexType>
+  <xs:attribute name="id" type="xs:ID" />
+  
+  <xs:group name="headingElemGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="title" />
+    </xs:sequence>
+  </xs:group>
+  <xs:group name="normalParaElemGroup">
+    <xs:sequence>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="fmftElemGroup" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  <xs:element name="title" type="xs:string" />
+  <xs:group name="fmftElemGroup">
+    <xs:choice>
+      <xs:element ref="figure" />
+    </xs:choice>
+  </xs:group>
+  <xs:element name="figure" type="figureElemType" />
+  <xs:complexType name="figureElemType">
+    <xs:sequence>
+      <xs:element ref="title" />
+      <xs:element maxOccurs="unbounded" ref="graphic" />
+    </xs:sequence>
+    <xs:attribute ref="id" />
+  </xs:complexType>
+
+  <xs:element name="graphic" type="graphicElemType" />
+  <xs:complexType name="graphicElemType">
+    <xs:attribute ref="infoEntityIdent" use="required" />
+  </xs:complexType>
+  <xs:attribute name="infoEntityIdent" type="xs:ENTITY" />
+
+
+
+
+</xs:schema>

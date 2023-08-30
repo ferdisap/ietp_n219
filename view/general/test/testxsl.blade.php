@@ -106,7 +106,7 @@
 <body>
   <div id="container"></div>
   
-  <script src="/?utility=getfile&ct=javascript&path=view/general/test/tesxsl.js"></script>
-  <script src="/?utility=getfile&ct=javascript&path=assets/general/js/createXML.js"></script>
+  <script src="/ietp_n219/view/general/test/tesxsl.js"></script>
+  <script src="/ietp_n219/assets/general/js/createXML.js"></script>
 </body>
 </html>

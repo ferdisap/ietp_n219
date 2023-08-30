@@ -3,10 +3,12 @@ console.log('Brdp2.js')
 const Brdp = {
   BrList: {
     get parent() {return Brdp;},
-    url: "view/brdp/style/xsl/brList.xsl",
+    // url: "view/brdp/style/xsl/brList.xsl",
+    url: "/ietp_n219/view/brdp/style/xsl/brList.xsl",
     xslDoc: null,
     async setXslDoc(){
-      return this.xslDoc = await this.parent.createXML(this.url);
+      // return this.xslDoc = await this.parent.createXML(this.url);
+      return this.xslDoc = await createXML(null, this.url, 'GET');
     },
     htmlDoc:null,
     async setHtmlDoc(){
@@ -21,14 +23,16 @@ const Brdp = {
   },
   BrDetail: {
     get parent() {return Brdp;},
-    url: "view/brdp/style/xsl/brDetail.xsl",
+    // url: "view/brdp/style/xsl/brDetail.xsl",
+    url: "/ietp_n219/view/brdp/style/xsl/brDetail.xsl",
     xpath: (id) => {
       // return `//brPara/brDecision[@brDecisionIdentNumber='${id}']/parent::*`
       return `//brPara[@brDecisionPointUniqueIdent='${id}']`;
     },
     xslDoc: null,
     async setXslDoc(){
-      return await this.parent.createXML(this.url);
+      // return await this.parent.createXML(this.url);
+      return await createXML(null, this.url, 'GET');
     },
     detailOpen: [],
     async openDetail(brIdent, brDecisionId, trId, el){
@@ -107,7 +111,8 @@ const Brdp = {
      * @returns XMLDoc
      */
     async getXmlDoc(brDecisionId) {
-      return await this.parent.createXML(`dmodule/brdp/br_s1000d/decision/${brDecisionId}.xml`, 'GET');
+      // return await this.parent.createXML(`dmodule/brdp/br_s1000d/decision/${brDecisionId}.xml`, 'GET');
+      return await createXML(null, `/ietp_n219/dmodule/brdp/br_s1000d/decision/${brDecisionId}.xml`, 'GET');
     },
     requestToServer: false,
     async getListAllDecision(){
@@ -119,12 +124,15 @@ const Brdp = {
       }
       let allDecisionArr = this.parent.brdpDoc.querySelectorAll("brDecision[brDecisionIdentNumber]");
       let lists = [];
-      let serialized;
-      await allDecisionArr.forEach(async (el, i) => {
+      let serialized; 
+      await allDecisionArr.forEach(async (el, i) => {        
         let brDecisionIdentNumber = el.getAttribute("brDecisionIdentNumber");
+        // console.log(brDecisionIdentNumber);
         let doc = await this.getXmlDoc(brDecisionIdentNumber); 
-        doc = this.removerAttr(doc);
-        lists.push(doc.firstElementChild.outerHTML);
+        if (doc){
+          doc = this.removerAttr(doc);
+          lists.push(doc.firstElementChild.outerHTML);
+        }
         if(i == allDecisionArr.length-1){
           serialized = JSON.stringify(lists);
           localStorage.setItem("allDecision", serialized);
@@ -146,6 +154,7 @@ const Brdp = {
 
     async attachDecisionToParentXmlDoc(){
       let serialized = await this.getListAllDecision(); // jika null akan mengambil semua Litst
+      // console.log(serialized);
       let lists = JSON.parse(serialized);
       const parser = new DOMParser();
       
@@ -362,42 +371,44 @@ const Brdp = {
     },    
   },
 
-  url: "dmodule/brdp/br_s1000d/DMC-N219-A-00-00-0000-00A-024A-D_001-00_EN-US.xml",
+  // url: "dmodule/brdp/br_s1000d/DMC-N219-A-00-00-0000-00A-024A-D_001-00_EN-US.xml",
+  url: "/ietp_n219/dmodule/brdp/br_s1000d/DMC-N219-A-00-00-0000-00A-024A-D_001-00_EN-US.xml",
   brdpDoc: null,
 
-  /**  
-   * @param {String} url
-   * @param {String} method 
-   * @returns XMLDocument if using async
-   */
-  createXML(url, method = 'GET'){
-    xhr = new XMLHttpRequest();
-    let prom = new Promise((resolve,reject) => {
-      xhr.open(method, "/?utility=getfile&ct=xml&path=" + url, false); 
-      xhr.onload = () => {
-        if (xhr.status >= 200 && xhr.status < 300) {
-            return resolve(xhr.responseXML)
-        } else {
-            resolve(undefined);
-            // reject(undefined);
-            // reject({
-            //     status: this.status,
-            //     statusText: xhr.statusText
-            // });
-        }
-      };
-      xhr.onerror = () => {
-          resolve(undefined);
-          // reject(undefined);
-          // reject({
-          //     status: this.status,
-          //     statusText: xhr.statusText
-          // });
-      };
-      xhr.send();
-    });
-    return prom
-  },
+  // /**  
+  //  * @param {String} url
+  //  * @param {String} method 
+  //  * @returns XMLDocument if using async
+  //  */
+  // createXML(url, method = 'GET'){
+  //   xhr = new XMLHttpRequest();
+  //   let prom = new Promise((resolve,reject) => {
+  //     // xhr.open(method, "/?utility=getfile&ct=xml&path=" + url, false); 
+  //     xhr.open(method, url, false); 
+  //     xhr.onload = () => {
+  //       if (xhr.status >= 200 && xhr.status < 300) {
+  //           return resolve(xhr.responseXML)
+  //       } else {
+  //           resolve(undefined);
+  //           // reject(undefined);
+  //           // reject({
+  //           //     status: this.status,
+  //           //     statusText: xhr.statusText
+  //           // });
+  //       }
+  //     };
+  //     xhr.onerror = () => {
+  //         resolve(undefined);
+  //         // reject(undefined);
+  //         // reject({
+  //         //     status: this.status,
+  //         //     statusText: xhr.statusText
+  //         // });
+  //     };
+  //     xhr.send();
+  //   });
+  //   return prom
+  // },
 
   /** 
    * @param {String} idContainer 
@@ -460,7 +471,8 @@ const Brdp = {
   
   /** */
   async refresh(){
-    return this.brdpDoc = await this.createXML(this.url);
+    // return this.brdpDoc = await this.createXML(this.url);
+    return this.brdpDoc = await createXML(null, this.url, 'GET');
   },
 }
 

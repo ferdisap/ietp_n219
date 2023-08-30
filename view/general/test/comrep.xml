@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<content 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="comrep.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+  <commonRepository>
+    <warningRepository>
+      <warningSpec>
+        <warningIdent warningIdentNumber="warn-001"/>
+        <warningAndCautionPara>Warning 001 Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, vel.</warningAndCautionPara>
+        <warningAndCautionPara>Warning 001 Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ab impedit quos mollitia nemo reiciendis maiores tempora nobis eveniet quas.</warningAndCautionPara>
+      </warningSpec>
+    </warningRepository>
+    <cautionRepository>
+      <cautionSpec>
+        <cautionIdent cautionIdentNumber="caut-001"/>
+        <warningAndCautionPara>Caution 001, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, sequi!</warningAndCautionPara>
+      </cautionSpec>
+    </cautionRepository>
+  </commonRepository>
+
+</content>

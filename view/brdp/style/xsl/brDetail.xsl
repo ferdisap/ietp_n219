@@ -17,7 +17,7 @@
           </h1>
           
           <h4>
-            <xsl:value-of select="//brDecisionPointContent/title"/>
+            <xsl:value-of select="descendant::brDecisionPointContent/title"/>
           </h4>
 
           <hr/>
@@ -32,9 +32,9 @@
                 <span class="fw-bold">Place in specification:</span>
                 <p class="mt-0 mb-3">
                   <span class="fw-bold">
-                    <xsl:apply-templates select="//brRelatedTo//dmCode" />
+                    <xsl:apply-templates select="brRelatedTo/descendant::dmCode" />
                   </span>
-                  &#160; <xsl:value-of select="//brRelatedTo//dmRef/@referredFragment"/>
+                  &#160; <xsl:value-of select="brRelatedTo/descendant::dmRef/@referredFragment"/>
                 </p>
               </div>
 
@@ -42,11 +42,11 @@
               <xsl:comment>business rule category</xsl:comment>
               <div class="mt-0 mb-3``">
                 <div onclick="hideShow(this)">
-                  <span class="fw-bold">Business rule category: <xsl:value-of select="//brRelatedTo//brCategory/@brCategoryNumber" /></span>
-                  &#160; <xsl:value-of select="//brRelatedTo//brCategory/title"/>
+                  <span class="fw-bold">Business rule category: <xsl:value-of select="brRelatedTo/descendant::brCategory/@brCategoryNumber" /></span>
+                  &#160; <xsl:value-of select="brRelatedTo/descendant::brCategory/title"/>
                 </div>
                 <div class="d-none">
-                  <p><xsl:value-of select="brRelatedTo//brCategoryDescription"/></p>
+                  <p><xsl:value-of select="brRelatedTo/descendant::brCategoryDescription"/></p>
                 </div>
               </div>
 
@@ -63,18 +63,18 @@
               <div class="mt-0 mb-3``">
                 
                 <span class="fw-bold">Business rule decision point content: </span> &#160;
-                      <xsl:apply-templates select="//brDecisionPointContent/title">
+                      <xsl:apply-templates select="descendant::brDecisionPointContent/title">
                         <xsl:with-param name="heading">none</xsl:with-param>
                       </xsl:apply-templates>
 
-                <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointText">
+                <xsl:apply-templates select="descendant::brDecisionPointContent/brDecisionPointText">
                   <xsl:with-param name="isShowDmCode" select="'yes'"/>
                 </xsl:apply-templates>
               </div>
 
               <!-- value Allowed -->
               <div class="mt-0 mb-3``">
-                <xsl:apply-templates select="//brDecisionPointContent/brDecisionPointValueGroup">
+                <xsl:apply-templates select="descendant::brDecisionPointContent/brDecisionPointValueGroup">
                     <xsl:with-param name="marginBottom" select="'no'"/>
                 </xsl:apply-templates>
                </div>
@@ -116,7 +116,7 @@
         <span class="fw-bold">Value allowed: &#160;</span><xsl:value-of select="@brDecisionValueAllowed"/><br/>
         <xsl:apply-templates>
           <xsl:with-param name="marginBottom" select = "$marginBottom" />
-        </xsl:apply-templates>
+        </xsl:apply-templates><br/>
       </xsl:for-each>
     </div>
   </xsl:template>

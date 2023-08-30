@@ -19193,6 +19193,12 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00569"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>The audit action shall be done by <verbatimText verbatimStyle="vs02">figure.xsl</verbatimText></para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00513" id="brp-s1-00513">
 					<brRelatedTo>
@@ -19236,6 +19242,9 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00513"/>
+          <brAudit>
+            <brCurrentStatus brStatus="brst10"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00514" id="brp-s1-00514">
 					<brRelatedTo>
@@ -19276,6 +19285,12 @@ is managed by both the creator and the customer.</para>
 						</brDecisionPointValueGroup>
 					</brDecisionPointContent>
 					<brDecision brDecisionIdentNumber="0001Z-S1-00514"/>
+          <brAudit>
+            <brAction brActionOwner="0001Z">
+              <para>The audit action shall be done by <verbatimText verbatimStyle="vs02">warning.xsl</verbatimText>, <verbatimText verbatimStyle="vs02">caution.xsl</verbatimText></para>
+            </brAction>
+            <brCurrentStatus brStatus="brst01"/>
+          </brAudit>
 				</brPara>
 				<brPara brDecisionPointUniqueIdent="BRDP-S1-00515" id="brp-s1-00515">
 					<brRelatedTo>

@@ -4,8 +4,9 @@
   <xsl:include href="attentionSequentialList.xsl"/> 
   <xsl:include href="attentionRandomList.xsl"/> 
 
+  <!-- cek demo11 -->
   <xsl:template match="notePara">
-    <xsl:apply-templates />
+    <p class="text-start"><xsl:apply-templates/></p>
   </xsl:template>
 
 </xsl:stylesheet>

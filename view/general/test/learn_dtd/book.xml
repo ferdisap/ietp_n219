@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE experiment_a [
+
+<!ELEMENT experiment_a (book)>
+<!ELEMENT book (chp)*>
+<!ELEMENT chapter ANY>
+<!ENTITY BookChapter1 SYSTEM "Chapter1.xml">
+]>
+
+<!-- <img src="icn"/> -->
+<experiment_a>
+  <book>&BookChapter1;</book>
+</experiment_a>

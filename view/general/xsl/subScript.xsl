@@ -2,9 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:template match="subScript">
-    <span>
-      <xsl:apply-templates/>
-    </span>
+    <sub><xsl:value-of select="."/></sub>
   </xsl:template>
 
 </xsl:stylesheet>

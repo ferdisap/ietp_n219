@@ -4,10 +4,11 @@ const Brex = {
 
   SnsRule: {
     get parent() {return Brex;},
-    url: "view/brex/style/xsl/snsRules.xml",
+    url: "/ietp_n219/view/brex/style/xsl/snsRules.xml",
     xslDoc: async () => {
       // console.log(this);
-      return await Brex.createXML(Brex.SnsRule.url);
+      // return await Brex.createXML(Brex.SnsRule.url);
+      return await createXML(null, Brex.SnsRule.url, 'GET');
     },
     htmlDoc: () => {
       return Brex.xmlToHtml(Brex.brexDoc, Brex.SnsRule.xslDoc).firstElementChild
@@ -23,10 +24,11 @@ const Brex = {
 
   ContextRule: {
     get parent() {return Brex;},
-    url: "view/brex/style/xsl/contextRules.xml",
+    url: "/ietp_n219/view/brex/style/xsl/contextRules.xml",
     xslDoc: async () => {
       // console.log(this);
-      return await Brex.createXML(Brex.ContextRule.url);
+      // return await Brex.createXML(Brex.ContextRule.url);
+      return await createXML(null, Brex.ContextRule.url, 'GET');
     },
     htmlDoc: () => {
       return Brex.xmlToHtml(Brex.brexDoc, Brex.ContextRule.xslDoc).firstElementChild
@@ -40,7 +42,7 @@ const Brex = {
     }
   },
 
-  url: "dmodule/brex/DMC-N219-A-00-00-0000-00A-022A-D_001-00_EN-US.xml",
+  url: "/ietp_n219/dmodule/brex/DMC-N219-A-00-00-0000-00A-022A-D_001-00_EN-US.xml",
   brexDoc: null,
 
   createXML(url, method = 'GET'){
@@ -113,7 +115,7 @@ const Brex = {
   },
 
   async refresh(){
-    this.brexDoc = await this.createXML(this.url);
+    this.brexDoc = await createXML(null, this.url, 'GET');
   },
 }
 

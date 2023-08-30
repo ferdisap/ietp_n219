@@ -17,15 +17,19 @@ const AllStyle = {
     }
     if(data == false ){
       // jika refresh == true
-      let arr = await createXML(null,"GET", "", 'requestList', 'json');
+      // let arr = await createXML(null,"GET", "", 'requestList', 'json');
+      let arr = await createXML(null, "refreshLocalStorage/requestList", "GET",);
+      
     
       let xsl;
-      await createXML(["http://www.w3.org/1999/XSL/Transform", 'xsl:stylesheet'], null).then(doc => xsl = doc);  
+      // await createXML(["http://www.w3.org/1999/XSL/Transform", 'xsl:stylesheet'], null).then(doc => xsl = doc);  
+      await createXML(["http://www.w3.org/1999/XSL/Transform", 'xsl:stylesheet']).then(doc => xsl = doc);  
   
       new Promise(async (resolve) => {
         arr.forEach(async (file, i) => {
           // let styleDoc = await this.createXML('','getfile','xml',`view/general/xsl/${file}`,'GET');
-          let styleDoc = await createXML(null, 'GET', '', 'getfile','xml',`view/general/xsl/${file}`);
+          // let styleDoc = await createXML(null, 'GET', '', 'getfile','xml',`view/general/xsl/${file}`);
+          let styleDoc = await createXML(null, `ietp_n219/view/general/xsl/${file}`, 'GET');
           for(const node of styleDoc.firstElementChild.children){
             if(node.nodeName != 'xsl:include'){
               // console.log(node);

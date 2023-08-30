@@ -1,7 +1,14 @@
 :root {
   --custom-color-green1- : #007936;
   --custom-color-red1- : #d30038;
+  --custom-color-red2- : #ff0000;
   --custom-color-amber1-: #FFC107;
+  /* --border-style-hashed-: url("../tag_FILL1_wght700_GRAD0_opsz20.svg") */
+  --border-style-hashed-: url("?utility=getfile&ct=svg&path=view/general/css/tag_FILL1_wght700_GRAD0_opsz20.svg");
+}
+
+.dump_red{
+  border: 1px solid red;
 }
 
 /** MARGIN digonakan di XSL */
@@ -84,7 +91,7 @@ code.xml-elementName {
 }
 .bg-black-txt-red {
   background-color: black !important;
-  color: red !important;
+  color: #ff0000 !important;
 }
 .bg-black-txt-green {
   background-color: black !important;
@@ -95,3 +102,48 @@ code.xml-elementName {
   color:  var(--custom-color-amber1-)!important;
 }
 
+/** WARNING, CAUTION, NOTE */
+.warning, .caution, .note{
+  width: 40%;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0.5rem !important;
+}
+.heading {
+  height: 60px;
+  text-align: center;
+}
+.warning > .heading > span{
+  color:var(--custom-color-red2-);
+  font-weight: 700 !important;
+  font-size: 20pt;
+  border: 10px solid var(--custom-color-red2-);
+  border-image: repeating-linear-gradient(45deg, transparent, transparent 6px, var(--custom-color-red2-) 6px, var(--custom-color-red2-) 15px, transparent 15px, transparent 15px) 10/10px;
+  padding-left:1rem;
+  padding-right:1rem;
+}
+
+.caution > .heading > span{
+  color: var(--custom-color-amber1-);
+  font-weight: 700 !important;
+  font-size: 20pt;
+  border: 10px dotted var(--custom-color-amber1-);
+  padding-left:1rem;
+  padding-right:1rem;
+}
+
+.note > .heading > span{
+  color: #000000;
+  font-weight: 700 !important;
+  font-size: 20pt;
+  border: 7px solid #000000;
+  padding-left:1rem;
+  padding-right:1rem;
+}
+
+/* applic */
+.applicRefId {
+  font-size: 8pt;
+  font-weight: bold;
+  margin-left: 8pt;
+}

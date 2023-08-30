@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="appliccrossreftable.xsd"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+
+<identAndStatusSection>
+  <dmAddress>
+    <dmIdent>
+      <dmCode modelIdentCode="N219" systemDiffCode="A"
+        systemCode="00" subSystemCode="0" subSubSystemCode="0"
+        assyCode="00" disassyCode="00" disassyCodeVariant="A"
+        infoCode="0A2" infoCodeVariant="A" itemLocationCode="D" />
+      <language languageIsoCode="en" countryIsoCode="US" />
+      <issueInfo issueNumber="000" inWork="01" />
+    </dmIdent>
+    <dmAddressItems>
+      <issueDate day="01" month="01" year="2016" />
+      <dmTitle>
+        <techName>N219</techName>
+        <infoName>CIR</infoName>
+        <infoNameVariant>Applicable Repository</infoNameVariant>
+      </dmTitle>
+    </dmAddressItems>
+  </dmAddress>
+  <dmStatus issueType="new">
+    <security securityClassification="01" />
+    <responsiblePartnerCompany enterpriseCode="SI">
+      <enterpriseName>0001Z</enterpriseName>
+    </responsiblePartnerCompany>
+    <originator enterpriseCode="SI">
+      <enterpriseName>0001Z</enterpriseName>
+    </originator>
+    <applicCrossRefTableRef>
+      <dmRef>
+        <dmRefIdent>
+          <dmCode modelIdentCode="N219" systemDiffCode="A"
+          systemCode ="00" subSystemCode="0" subSubSystemCode="0"
+          assyCode="00" disassyCode="00" disassyCodeVariant="A"
+          infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+        </dmRefIdent>
+      </dmRef>
+    </applicCrossRefTableRef>
+    <applic>
+      <displayText>
+        <simplePara>SN</simplePara>
+      </displayText>
+      <!-- <assert>all</assert> -->
+      <assert applicPropertyIdent="model" 
+      applicPropertyType="prodattr"/>
+    </applic>
+    <brexDmRef>
+      <dmRef>
+        <dmRefIdent>
+          <dmCode modelIdentCode="N219" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+          <issueInfo issueNumber="001" inWork="00"/>
+        </dmRefIdent>
+      </dmRef>
+    </brexDmRef>
+    <qualityAssurance>
+      <firstVerification verificationType="tabtop" />
+    </qualityAssurance>
+  </dmStatus>
+</identAndStatusSection>
+<content>
+  <applicCrossRefTable>
+    <productAttributeList>
+      <productAttribute id="serialnumber">
+        <name>Serial No</name>
+        <displayName>SN</displayName>
+        <descr>The serial number can be seen in placard, located in tail.</descr>
+      </productAttribute>
+    </productAttributeList>
+  </applicCrossRefTable>
+
+</content>
+
+</dmodule>

@@ -27,40 +27,46 @@
 </xsl:template>
 
 <!-- <xsl:template match="levelledPara"> bukan untuk internalRef:levelledPara -->
-<xsl:template match="levelledPara">
-  <xsl:variable name="numberedPar">
-    <xsl:call-template name="checkParent"/>
-    <xsl:number/>
-  </xsl:variable>
+  <xsl:template match="levelledPara">
+    <div>
+      <xsl:if test="@id">
+        <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
+      </xsl:if>
+    
+      <xsl:variable name="numberedPar">
+        <xsl:call-template name="checkParent"/>
+        <xsl:number/>
+      </xsl:variable>
 
-  <xsl:variable name="error">
-    <xsl:if test="substring($numberedPar,1,1) >= 6">
-      <xsl:comment>ERROR: the levelledPara only five levels allowed</xsl:comment>
-      <xsl:message>ERROR: the levelledPara only five levels allowed</xsl:message>
-    </xsl:if>
-  </xsl:variable>
-  
-  <xsl:variable name="strLength">
-    <xsl:value-of select="string-length(translate($numberedPar, '.', ''))"/>
-  </xsl:variable>
-  <xsl:variable name="h">
-    <xsl:choose>
-      <xsl:when test="$strLength = 1">h2</xsl:when>
-      <xsl:when test="$strLength = 2">h3</xsl:when>
-      <xsl:when test="$strLength = 3">h4</xsl:when>
-      <xsl:when test="$strLength = 4">h5</xsl:when>
-      <xsl:when test="$strLength = 5">h6</xsl:when>
-      <xsl:otherwise>p</xsl:otherwise>
-    </xsl:choose>
-  </xsl:variable>
+      <xsl:variable name="error">
+        <xsl:if test="substring($numberedPar,1,1) >= 6">
+          <xsl:comment>ERROR: the levelledPara only five levels allowed</xsl:comment>
+          <xsl:message>ERROR: the levelledPara only five levels allowed</xsl:message>
+        </xsl:if>
+      </xsl:variable>
+      
+      <xsl:variable name="strLength">
+        <xsl:value-of select="string-length(translate($numberedPar, '.', ''))"/>
+      </xsl:variable>
+      <xsl:variable name="h">
+        <xsl:choose>
+          <xsl:when test="$strLength = 1">h2</xsl:when>
+          <xsl:when test="$strLength = 2">h3</xsl:when>
+          <xsl:when test="$strLength = 3">h4</xsl:when>
+          <xsl:when test="$strLength = 4">h5</xsl:when>
+          <xsl:when test="$strLength = 5">h6</xsl:when>
+          <xsl:otherwise>p</xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
 
-  <xsl:element name="{$h}">
-    <xsl:copy-of select="$error"/>
-    <xsl:copy-of select="$numberedPar"/><xsl:value-of select="' '"/><xsl:apply-templates select="title"/>
-  </xsl:element>
-  <xsl:apply-templates select="para"/>
-  <xsl:apply-templates select="child::*[name() != 'title']"/>
-</xsl:template>
+      <xsl:element name="{$h}">
+        <xsl:copy-of select="$error"/>
+        <xsl:copy-of select="$numberedPar"/><xsl:value-of select="' '"/><xsl:apply-templates select="title"/>
+      </xsl:element>
+      <xsl:apply-templates select="para"/>
+      <xsl:apply-templates select="child::*[name() != 'title']"/>
+    </div>
+  </xsl:template>
 
 <xsl:template name="getPosition">
   <xsl:param name="xpath"/>

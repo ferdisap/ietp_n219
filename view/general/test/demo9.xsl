@@ -5,7 +5,8 @@
 <!-- need crew.css -->
   <xsl:template match="content">
     <div class="content">
-      <link rel="stylesheet" href="/?utility=getfile&#38;ct=css&#38;path=assets/general/css/crew.css"/>
+      <!-- <link rel="stylesheet" href="/?utility=getfile&#38;ct=css&#38;path=assets/general/css/crew.css"/> -->
+      <link rel="stylesheet" href="/ietp_n219/assets/general/css/crew.css"/>
       <xsl:apply-templates/>
     </div>
   </xsl:template>

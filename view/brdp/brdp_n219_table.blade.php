@@ -1,10 +1,10 @@
 @extends('html_head')
 @section('styles')
-<link rel="stylesheet" href="/?utility=getfile&ct=css&path=view/brdp/style/css/table.css">
-<link rel="stylesheet" href="/?utility=getfile&ct=css&path=view/general/css/general.css">
+<link rel="stylesheet" href="/ietp_n219/view/brdp/style/css/table.css">
+<link rel="stylesheet" href="/ietp_n219/view/general/css/general.css">
 @endSection
 @section('scripts_onTop')
-<script src="/?utility=getfile&ct=javascript&path=assets/general/js/hideShow.js"></script>
+<script src="/ietp_n219/assets/general/js/hideShow.js"></script>
 @endsection
 @section('body')
 <header>
@@ -23,7 +23,7 @@
       <span class="input-group-text">
         <div class="input-group">
           <input class="me-2" type="checkbox" onclick="Brdp.BrSearch.useApplSchema = this.checked">
-          <input class="form-control bg-white" data-bs-toggle="modal" data-bs-target="#applSchema" placeholder="select schema" style="max-width:130px" disabled/>
+          <button class="bg-white" data-bs-toggle="modal" data-bs-target="#applSchema" style="max-width:130px">Select Schema</button>
         </div>
       </span>
       <input class="form-control w-50 flex-inherit" type="text" filterBy="all" placeholder="find everything of business rule.." aria-label="find business rule" onkeypress="Brdp.BrSearch.listener(event)">
@@ -143,9 +143,9 @@
 @endsection
 
 @section('scripts_onBottom')
-<script src="/?utility=getfile&ct=javascript&path=assets/general/js/createXML.js"></script>
-<script src="/?utility=getfile&ct=javascript&path=assets/general/js/AllStyle.js"></script>
-<script src="/?utility=getfile&ct=javascript&path=assets/brdp/js/Brdp2.js"></script>
+<script src="/ietp_n219/assets/general/js/createXML.js"></script>
+<script src="/ietp_n219/assets/general/js/AllStyle.js"></script>
+<script src="/ietp_n219/assets/brdp/js/Brdp2.js"></script>
 <script>
   function refresh(){
     Brdp.refresh()
@@ -155,7 +155,7 @@
     .then((v) =>  {
       if (v) {
         Brdp.renderHtml('BrList', Brdp.BrList.htmlDoc.firstElementChild);
-        document.querySelector(window.location.hash).scrollIntoView(true);
+        (hash = window.location.hash) != '' ? document.querySelector(hash).scrollIntoView(true) : null;
       }
     })
   }

@@ -1,6 +1,5 @@
 @extends('html_head')
 @section('styles')
-{{-- <link rel="stylesheet" href="/css/brdp/table.css"> --}}
 <style>
   .dump_red {
     border: 1px solid red;
@@ -31,8 +30,8 @@
   <div class="d-flex justify-content-center flex-column container">
     <p>Sns is structured by the number of characters which is defined by the BRDP. This system is designed to provide standardization in the arrangement or addressing of the Product</p>
     <div class="d-flex justify-content-center w-100">
-      <img class="align-self-center" style="max-width: 400px" src="/?utility=getfile&ct=jpeg&path=assets/brex/images/ICN-AE-A-040303-0-C0419-00004-A-03-1.jpeg" alt="SNS Structure - chapterized">
-      <img class="align-self-center" style="max-width: 400px" src="/?utility=getfile&ct=jpeg&path=assets/brex/images/ICN-AE-A-040303-0-C0419-00005-A-04-1.jpg" alt="SNS Structure - non chapterized">
+      <img class="align-self-center" style="max-width: 400px" src="/ietp_n219/assets/brex/images/ICN-AE-A-040303-0-C0419-00004-A-03-1.jpeg" alt="SNS Structure - chapterized">
+      <img class="align-self-center" style="max-width: 400px" src="/ietp_n219/assets/brex/images/ICN-AE-A-040303-0-C0419-00005-A-04-1.jpg" alt="SNS Structure - non chapterized">
     </div>
   </div>
 </article>
@@ -42,7 +41,7 @@
 @endsection
 
 @section('scripts_onBottom')
-<script src="/?utility=getfile&ct=javascript&path=assets/general/js/createXML.js"></script>
-<script src="/?utility=getfile&ct=javascript&path=assets/general/js/AllStyle.js"></script>
-<script src="/?utility=getfile&ct=javascript&path=assets/brex/js/Brex.js"></script>
+<script src="/ietp_n219/assets/general/js/createXML.js"></script>
+<script src="/ietp_n219/assets/general/js/AllStyle.js"></script>
+<script src="/ietp_n219/assets/brex/js/Brex.js"></script>
 @endsection
