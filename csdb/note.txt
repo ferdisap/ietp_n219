@@ -1,1 +1,2 @@
-This folder contains all csdb object need to proceessed.
+1. This folder contains all csdb object need to proceessed.
+2. This folder shall not be contained any stylesheet
