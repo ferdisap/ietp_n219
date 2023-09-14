@@ -1,5 +1,0 @@
-<?php 
-
-/**
- * need Csdb@XsdSchemaValidator
- */
